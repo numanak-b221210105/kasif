@@ -16,8 +16,8 @@ from .demo import SCHEMA as DEMO_DDL
 from .execute import QueryTimeout, connect_ro, run
 from .guard import GuardError, check
 from .insights import choose_chart, infer_columns, summarize
-from .parser import Plan, build_sql, explain, label_of, parse
-from .schema import Answer, Attempt, Column, PlanStep
+from .parser import Plan, build_sql, explain, label_of, parse, spans
+from .schema import Answer, Attempt, Column, PlanStep, Preview
 from .semantic import Layer, auto_layer, demo_layer, load_values
 from .store import History
 from .text import local_today
@@ -235,6 +235,24 @@ class Engine:
         ex.append("Kaç kayıt var?" if tr else "How many rows are there?")
         return ex
 
+    # ------------------------------------------------------------ canlı önizleme
+    def preview(self, question: str, lang: str = "tr") -> Preview:
+        """Soru yazılırken: kural motoru bunu nasıl anlıyor? (SQL çalıştırmaz)"""
+        if re.match(r"\s*(select|with)\b", question, re.I):
+            return Preview(understood=True, confident=True, sql=True)
+        layer = self.layer()
+        if not layer:
+            return Preview(understood=False, confident=False)
+        plan = parse(question, layer, self.today, lang)
+        steps = [PlanStep(**p) for p in explain(plan, layer, lang)] if plan.understood else []
+        return Preview(
+            understood=plan.understood,
+            confident=plan.understood and not plan.unknown,
+            plan=steps,
+            unknown=plan.unknown,
+            tokens=spans(question, plan),
+        )
+
     # ------------------------------------------------------------ soru
     def ask(self, question: str, mode: str = "auto", lang: str = "tr") -> Answer:
         t0 = time.perf_counter()
@@ -295,6 +313,8 @@ class Engine:
                 )
             ans.unknown = plan.unknown if plan else []
             ans.suggestions = self.examples(lang)[:6]
+        if plan is not None:
+            ans.tokens = spans(question, plan)
         _normalize(ans)
         ans.elapsed_ms = round((time.perf_counter() - t0) * 1000)
         ans.dataset = ds.name
@@ -306,6 +326,7 @@ class Engine:
     def _execute(self, ans: Answer, sql: str, lang: str) -> None:
         checked = check(sql, self.tables(), self.s.max_rows)
         ans.tables = checked.tables
+        ans.checks = checked.checks
         cols, rows, truncated, ms = run(self.path(), checked.sql, self.s.max_rows, self.s.timeout_s)
         ans.rows, ans.row_count, ans.truncated, ans.query_ms = rows, len(rows), truncated, ms
         ans.columns = cols  # type: ignore[assignment] - aşağıda Column listesine çevrilir

@@ -13,6 +13,11 @@ class AskIn(BaseModel):
     lang: Literal["tr", "en"] = "tr"
 
 
+class ParseIn(BaseModel):
+    question: str = Field(max_length=500)
+    lang: Literal["tr", "en"] = "tr"
+
+
 class SqlIn(BaseModel):
     sql: str = Field(min_length=1, max_length=20000)
     lang: Literal["tr", "en"] = "tr"
@@ -58,7 +63,9 @@ class Answer(BaseModel):
     suggestions: list[str] = []
     followups: list[str] = []
     attempts: list[Attempt] = []
+    tokens: list[dict] = Field(default=[], description="Sorudaki sözcüklerin anlaşılma biçimi: {s, e, k}")
     tables: list[str] = []
+    checks: list[str] = Field(default_factory=list, description="Geçilen güvenlik denetimleri")
     elapsed_ms: int = 0
     query_ms: int = 0
     query_id: int | None = None
@@ -87,3 +94,12 @@ class DatasetOut(BaseModel):
     active: bool = False
     tables: int = 0
     rows: int = 0
+
+
+class Preview(BaseModel):
+    understood: bool
+    confident: bool
+    plan: list[PlanStep] = []
+    unknown: list[str] = []
+    sql: bool = Field(False, description="Girdi bir SQL sorgusu gibi görünüyor")
+    tokens: list[dict] = Field(default=[], description="Sözcüklerin karakter aralığı ve türü: {s, e, k}")

@@ -6,7 +6,7 @@
 
 **Ask your database in Turkish. See exactly how the answer was found.**
 
-Kâşif turns a plain-language question such as *"Geçen çeyrekte bölgelere göre ciro"* (revenue by region last quarter) into SQL, runs it on a **read-only, validated** connection, and returns a chart, a sortable table and a short written summary. It also shows **how it understood the question**: which measure, which period, which filters and which business rules it applied, plus the SQL itself.
+Kâşif turns a plain-language question such as *"Geçen çeyrekte bölgelere göre ciro"* (revenue by region last quarter) into SQL, runs it on a **read-only, validated** connection, and returns a chart, a sortable table and a short written summary. It also shows **how it understood the question**, live, while you type: every word is underlined in the color of what it became (measure, breakdown, period, filter, ranking), and words it does not know get a red wavy line before you even press Enter.
 
 It works **without an LLM**. A rule engine built on a *semantic layer* handles everyday analytics questions deterministically. When a local or hosted LLM is connected, it also answers free-form questions. The SQL the model writes goes through the same safety checks, and if a query fails, the model sees the error and fixes its own query.
 
@@ -14,7 +14,7 @@ It works **without an LLM**. A rule engine built on a *semantic layer* handles e
 
 ![Kâşif web UI](docs/screenshot.jpg)
 
-> 🇹🇷 **Türkçe özet:** Veritabanına Türkçe soru sorup cevap alan bir analiz asistanı. Soruyu ölçü, boyut, dönem ve filtrelere ayırır, güvenli bir SQL'e çevirir, salt-okunur çalıştırır ve sonucu grafik, tablo ve özetle sunar. Nasıl anladığını adım adım gösterir. Anlamadığı soruda tahmin yürütmez, kullanıcıya sorar. LLM olmadan da çalışır; bağlıysa serbest soruları da yanıtlar ve hatalı SQL'ini kendisi düzeltir. Kendi CSV ya da SQLite dosyanızı yükleyebilirsiniz.
+> 🇹🇷 **Türkçe özet:** Veritabanına Türkçe soru sorup cevap alan bir analiz asistanı. Soruyu ölçü, boyut, dönem ve filtrelere ayırır, güvenli bir SQL'e çevirir, salt-okunur çalıştırır ve sonucu grafik, tablo ve özetle sunar. Nasıl anladığını adım adım gösterir. Siz yazarken her kelimeyi neye dönüştürdüğünü renkli altı çizgilerle canlı gösterir. Anlamadığı soruda tahmin yürütmez, kullanıcıya sorar. LLM olmadan da çalışır; bağlıysa serbest soruları da yanıtlar ve hatalı SQL'ini kendisi düzeltir. Kendi CSV ya da SQLite dosyanızı yükleyebilirsiniz.
 
 ## Why
 
@@ -32,27 +32,43 @@ It works **without an LLM**. A rule engine built on a *semantic layer* handles e
 |---|---|
 | ![LLM self-correction](docs/llm.jpg) | ![Refusal](docs/refuse.jpg) |
 
+## Design
+
+The interface is a macOS-style desktop app in the browser, built around one idea: **an analyst should see what the machine understood before trusting the number.**
+
+| | |
+|---|---|
+| **Spotlight (`⌘K` / `Ctrl+K`)** | Ask from anywhere. As you type, the `/parse` endpoint returns character spans and each word is underlined live: measure blue, breakdown teal, period orange, filter pink, ranking purple, unknown **red wavy**. The same coloring stays on the answer's title. |
+| **Inspector** | A side panel for the selected answer: the question, a *How I understood it* timeline (measure → breakdown → period → filters → rules, or model → tables → fix for LLM answers), a **security checklist** that ticks every guard check that actually passed (single statement, SELECT only, no writes, known tables, known columns, LIMIT, read-only connection, time limit), timings and the SQL. |
+| **Source list sidebar** | Explore, Boards, History, Schema, Datasets, and every table with its row count; the active dataset and LLM status sit at the bottom. |
+| **Widgets** | Pinned answers become desktop-style widgets that re-run their SQL with fresh data every time a board opens. |
+| **Settings sheet** | A System-Settings-style sheet: General (theme, language), Model (endpoint, test connection), Security (limits) and About. |
+| **Desktop** | Menubar with clock, a wallpaper that follows light / dark mode, notification banners. On narrow screens the sidebar and Inspector become floating panels. |
+
+| Spotlight with live understanding | Answer + Inspector |
+|---|---|
+| ![Spotlight](docs/spotlight2.jpg) | ![Inspector](docs/screenshot.jpg) |
+
 ## Features
 
 | | |
 |---|---|
-| **Explore** | Notebook-style cells: plan chips (measure, breakdown, period, filters, order, rules), a computed summary, and Chart / Table / SQL tabs. Charts are picked automatically: KPI, bar, line, multi-series line, donut. |
+| **Answers** | Plan, a computed summary, and Chart / Table / SQL tabs. Charts are picked automatically: KPI, bar, line, multi-series line, donut. |
 | **Turkish understanding** | Relative dates (*geçen çeyrek*, *son 3 ay*, *Ekim 2025*, *yılbaşından beri*), rankings (*en çok satan 5 ürün*, *en az*), comparisons (*Ankara ve İzmir*), exclusions (*İstanbul hariç*), shares (*Web kanalının payı*), year-over-year comparisons on the **same date range** (*bu yıl geçen yıla göre*) and Turkish suffixes (*İzmir'deki kafelerin*). Basic English works too. |
 | **Follow-ups** | Each answer suggests next questions: a time breakdown, a drill-down into the top item (*Marmara → cities*), or a related measure. Every suggestion is validated by the parser before it is shown. |
-| **Boards** | Pin any answer; boards re-run the SQL with fresh data every time they open. |
-| **Schema** | An ER diagram with animated foreign-key links, sample rows per table, and the full semantic layer: every measure's SQL and every dimension's values. |
+| **Schema** | An ER diagram with foreign-key links, sample rows per table, and the full semantic layer: every measure's SQL and every dimension's values. |
 | **Bring your own data** | Upload a CSV or SQLite file. Turkish CSVs from Excel just work: `;` separators, Windows-1254 encoding, `1.234,56` numbers and `31.12.2025` dates. A semantic layer is generated automatically, so the rule engine answers questions on your data too. |
 | **SQL editor** | Edit any generated query and run it; the same safety checks apply. |
 | **History** | Every question with its method (rules / LLM / SQL), row count and duration. |
-| **Everything else** | CSV export (Excel-friendly), light and dark themes, Turkish and English, keyboard shortcuts (`/`, `Alt+1…6`, `Ctrl+Enter`), drag-and-drop upload, mobile layout. The UI is a single dependency-free HTML file. |
-
-| Schema and relationships | Semantic layer |
-|---|---|
-| ![Schema](docs/schema.jpg) | ![Semantic layer](docs/layer.jpg) |
+| **Everything else** | CSV export (Excel-friendly), light and dark themes, Turkish and English, keyboard shortcuts, drag-and-drop upload, mobile layout. The UI is a single dependency-free HTML file. |
 
 | Boards | Your own CSV |
 |---|---|
 | ![Boards](docs/boards.jpg) | ![CSV dataset](docs/csv.jpg) |
+
+| Schema and relationships | Settings |
+|---|---|
+| ![Schema](docs/schema.jpg) | ![Settings](docs/settings.jpg) |
 
 | Dark mode | History |
 |---|---|
@@ -141,7 +157,8 @@ Interactive docs are served at `/docs`.
 
 | Method | Path | Description |
 |---|---|---|
-| `POST` | `/ask` | `{"question": "...", "mode": "auto" \| "rules" \| "llm", "lang": "tr" \| "en"}` → plan, SQL, columns, rows, chart, summary, follow-ups, LLM attempts |
+| `POST` | `/ask` | `{"question": "...", "mode": "auto" \| "rules" \| "llm", "lang": "tr" \| "en"}` → plan, SQL, columns, rows, chart, summary, follow-ups, LLM attempts, `tokens` and the passed security `checks` |
+| `POST` | `/parse` | `{"question": "..."}` → live preview: understood / confident, plan steps, unknown words and `tokens` (`{"s", "e", "k"}` character spans by kind) used for the colored underlines |
 | `POST` | `/sql` | `{"sql": "SELECT ..."}`: run validated, read-only SQL |
 | `GET` | `/schema` | Tables, columns, foreign keys, sample rows and the semantic layer |
 | `GET` | `/examples` | Example questions for the active dataset |
@@ -179,7 +196,7 @@ Rule engine, no LLM:
 ## Tests
 
 ```bash
-pytest -q          # 52 tests: parser, guard, engine, LLM self-correction (fake model), uploads, API, eval
+pytest -q          # 54 tests: parser, guard, engine, LLM self-correction (fake model), uploads, API, eval
 ruff check src tests evals && ruff format --check src tests evals
 ```
 

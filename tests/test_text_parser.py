@@ -90,7 +90,15 @@ def test_unknown_words_are_reported(layer):
     assert not p.understood and "personel" in p.unknown
 
 
-@pytest.mark.parametrize("q,grain", [("her ay ciro", "ay"), ("her yıl sipariş sayısı", "yil"), ("çeyreklik ciro", "ceyrek"),
-                                     ("haftalık sipariş", "hafta"), ("aylara göre ciro", "ay")])
+@pytest.mark.parametrize(
+    "q,grain",
+    [
+        ("her ay ciro", "ay"),
+        ("her yıl sipariş sayısı", "yil"),
+        ("çeyreklik ciro", "ceyrek"),
+        ("haftalık sipariş", "hafta"),
+        ("aylara göre ciro", "ay"),
+    ],
+)
 def test_grains(layer, q, grain):
     assert parse(q, layer, T).grain == grain

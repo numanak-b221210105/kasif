@@ -15,6 +15,7 @@ from dataclasses import dataclass, field
 from datetime import date, timedelta
 
 from .semantic import Dimension, Layer, Metric
+from .text import _WORD as _WORD_RE
 from .text import STOPWORDS, local_today, tok_match, tokens, tr_lower
 
 NUM_WORDS = {
@@ -163,6 +164,7 @@ class Plan:
     share: bool = False
     highlight: list[str] = field(default_factory=list)
     unknown: list[str] = field(default_factory=list)
+    kinds: dict[int, str] = field(default_factory=dict)  # sözcük sırası → metric | dim | filter | time | ...
     plural: bool = False
 
     @property
@@ -441,6 +443,7 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
     reserved = frozenset(t for d in layer.dimensions if len(d.values) <= 400 for v in d.values for t in tokens(v))
     time = parse_time(toks, used, today, lang, reserved) if layer.date_expr else None
     plan.time = time
+    plan.kinds.update(dict.fromkeys(used, "time"))
 
     # aday eşleşmeler: ölçüler, boyutlar ve boyut değerleri
     cands: list[_Cand] = []
@@ -514,6 +517,8 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
 
     weak: list[Metric] = []
     for c in chosen:
+        kind = {"metric": "metric", "dim": "dim", "value": "filter"}[c.kind]
+        plan.kinds.update(dict.fromkeys(range(c.start, c.start + c.length), kind))
         if c.kind == "metric" and c.obj not in plan.metrics:
             plan.metrics.append(c.obj)
             plan.explicit_metric = True
@@ -537,7 +542,9 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
             after = [toks[j] for j in range(c.start + c.length, min(len(toks), c.start + c.length + 3))]
             neg = any(a in NEGATE for a in after[:2])
             if neg:
-                taken |= {c.start + c.length + k for k, a in enumerate(after[:2]) if a in NEGATE}
+                neg_idx = {c.start + c.length + k for k, a in enumerate(after[:2]) if a in NEGATE}
+                taken |= neg_idx
+                plan.kinds.update(dict.fromkeys(neg_idx, "filter"))
             f = next((f for f in plan.filters if f.dim is d and f.negate == neg), None)
             if f:
                 if v not in f.values:
@@ -574,8 +581,10 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
             ):
                 plan.grain = plan.grain or g
                 used.add(i)
+                plan.kinds[i] = "grain"
                 if t == "her":
                     used.add(i + 1)
+                    plan.kinds[i + 1] = "grain"
     if plan.grain is None and any(t in TREND for t in toks) and layer.date_expr:
         span = (plan.time.end - plan.time.start).days if plan.time else 9999
         plan.grain = "gun" if span <= 31 else "ay" if span <= 800 else "ceyrek"
@@ -595,9 +604,12 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
         if t in ("en", "daha") and (nxt in DESC or nxt in ASC or any(tok_match(nxt, w) for w in ("kârlı", "karlı"))):
             plan.order = "asc" if nxt in ASC else "desc"
             used |= {i, i + 1}
+            plan.kinds.setdefault(i, "order")
+            plan.kinds.setdefault(i + 1, "order")
         elif t in ("top", "ilk") and (nxt.isdigit() or nxt in NUM_WORDS or t == "top"):
             plan.order = plan.order or "desc"
             used.add(i)
+            plan.kinds[i] = "order"
         elif t in ("bottom", "least", "lowest", "worst"):
             plan.order = "asc"
             used.add(i)
@@ -612,9 +624,11 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
             if k and 1 <= k <= 100:
                 plan.limit = k
                 used.add(i)
+                plan.kinds[i] = "limit"
                 break
 
     plan.share = any(t in SHARE for t in toks)
+    plan.kinds.update({i: "share" for i, t in enumerate(toks) if t in SHARE})
 
     # "hangi şehirlerde müşterimiz var" → şehir bazında müşteri sayısı
     cat_groups = [g for g in plan.groups]
@@ -657,7 +671,18 @@ def parse(question: str, layer: Layer, today: date | None = None, lang: str = "t
         if any(tok_match(t, s) for s in STOPWORDS if len(s) >= 3):
             continue
         plan.unknown.append(t)
+        plan.kinds[i] = "unknown"
     return plan
+
+
+def spans(question: str, plan: Plan) -> list[dict]:
+    """Sorudaki her tanınan sözcüğün karakter aralığı ve türü (arayüzde renklendirme için)."""
+    out = []
+    for i, m in enumerate(_WORD_RE.finditer(tr_lower(question))):
+        k = plan.kinds.get(i)
+        if k:
+            out.append({"s": m.start(), "e": m.end(), "k": k})
+    return out
 
 
 # ---------------------------------------------------------------- SQL üretimi

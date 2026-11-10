@@ -74,6 +74,7 @@ class Checked:
     sql: str
     tables: list[str]
     warnings: list[str] = field(default_factory=list)
+    checks: list[str] = field(default_factory=list)
 
 
 def check(sql: str, schema: dict[str, dict[str, str]], max_rows: int = 1000) -> Checked:
@@ -127,8 +128,10 @@ def check(sql: str, schema: dict[str, dict[str, str]], max_rows: int = 1000) -> 
         pass
 
     warnings: list[str] = []
-    if isinstance(root, exp.Select) and not root.args.get("limit"):
+    added = not root.args.get("limit")
+    if isinstance(root, exp.Select) and added:
         root = root.limit(max_rows + 1)
-    elif not isinstance(root, exp.Select) and not root.args.get("limit"):
+    elif added:
         root = exp.select("*").from_(root.subquery("q")).limit(max_rows + 1)
-    return Checked(root.sql(dialect="sqlite", pretty=True), sorted(set(tables)), warnings)
+    checks = ["single", "select", "no_write", "tables", "columns", "limit_added" if added else "limit"]
+    return Checked(root.sql(dialect="sqlite", pretty=True), sorted(set(tables)), warnings, checks)

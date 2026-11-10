@@ -48,3 +48,25 @@ def test_dataset_upload_flow(client, tmp_path):
     assert a["ok"] and {r[0]: r[1] for r in a["rows"]} == {"Mat": 85.0, "Fiz": 70.0}
     assert client.post("/datasets/demo/activate").json()["active"]
     assert client.delete(f"/datasets/{ds_id}").status_code == 204
+
+
+def test_live_preview(client):
+    r = client.post("/parse", json={"question": "Geçen çeyrekte bölgelere göre ciro"}).json()
+    assert r["understood"] and r["confident"] and {p["kind"] for p in r["plan"]} >= {"metric", "dim", "time"}
+    r = client.post("/parse", json={"question": "Personel maaşları"}).json()
+    assert not r["understood"] and "personel" in r["unknown"]
+    assert client.post("/parse", json={"question": "select * from urunler"}).json()["sql"]
+    a = client.post("/ask", json={"question": "Bu yıl ciro"}).json()
+    assert "limit_added" in a["checks"] or "limit" in a["checks"]
+
+
+def test_live_parse_preview(client):
+    q = "Geçen çeyrekte İzmir'deki kafelerin maaşları"
+    r = client.post("/parse", json={"question": q}).json()
+    words = {q[t["s"] : t["e"]]: t["k"] for t in r["tokens"]}
+    assert words["Geçen"] == "time" and words["İzmir"] == "filter" and words["kafelerin"] == "filter"
+    assert words["maaşları"] == "unknown" and r["understood"] and not r["confident"]
+    r = client.post("/parse", json={"question": "En çok satan 5 ürün"}).json()
+    words = {"En çok satan 5 ürün"[t["s"] : t["e"]]: t["k"] for t in r["tokens"]}
+    assert words == {"En": "order", "çok": "order", "satan": "metric", "5": "limit", "ürün": "dim"}
+    assert r["confident"]

@@ -12,7 +12,7 @@ from . import __version__, llm
 from .config import settings
 from .datasets import DatasetError
 from .engine import Engine
-from .schema import Answer, AskIn, DatasetOut, HistoryItem, SqlIn
+from .schema import Answer, AskIn, DatasetOut, HistoryItem, ParseIn, Preview, SqlIn
 
 STATIC = Path(__file__).parent / "static"
 
@@ -60,6 +60,12 @@ def status() -> dict:
 @app.post("/ask", response_model=Answer)
 def ask(body: AskIn) -> Answer:
     return engine().ask(body.question.strip(), body.mode, body.lang)
+
+
+@app.post("/parse", response_model=Preview)
+def preview(body: ParseIn) -> Preview:
+    """Yazarken canlı önizleme: soru nasıl anlaşılıyor (SQL çalıştırmaz, geçmişe yazılmaz)."""
+    return engine().preview(body.question, body.lang)
 
 
 @app.post("/sql", response_model=Answer)
