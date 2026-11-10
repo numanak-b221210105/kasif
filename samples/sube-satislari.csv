@@ -1,0 +1,2288 @@
+Tarih;Þube;Þehir;Ürün;Kategori;Adet;Tutar (TL);Ödeme Tipi
+01.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;443,98;Kart
+01.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;89,27;Kart
+01.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;145,84;Mobil
+01.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;137,82;Mobil
+01.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;87,28;Kart
+01.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;291,89;Kart
+01.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;167,85;Kart
+01.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;75,32;Kart
+01.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;168,70;Kart
+01.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;75,54;Mobil
+01.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;670,98;Mobil
+01.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;297,51;Kart
+01.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;321,72;Nakit
+01.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;306,75;Mobil
+01.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;68,40;Mobil
+01.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;323,11;Mobil
+01.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,35;Nakit
+01.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;211,19;Mobil
+01.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;87,27;Mobil
+01.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;160,65;Nakit
+01.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;651,47;Mobil
+01.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;480,82;Mobil
+01.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;109,96;Kart
+01.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;264,00;Kart
+01.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;574,01;Mobil
+01.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,48;Nakit
+01.08.2026;Nilüfer;Bursa;Latte;Ýçecek;4;449,61;Nakit
+02.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;287,69;Kart
+02.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;166,44;Kart
+02.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;346,75;Kart
+02.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;203,75;Mobil
+02.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;226,48;Nakit
+02.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;109,71;Mobil
+02.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;546,68;Mobil
+02.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;165,59;Kart
+02.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;273,45;Kart
+02.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;85,34;Kart
+02.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;68,20;Kart
+02.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;293,67;Nakit
+02.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;224,65;Kart
+02.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;370,65;Mobil
+02.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;553,68;Kart
+02.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;258,68;Mobil
+02.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;180,18;Kart
+02.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;141,60;Kart
+02.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;277,75;Kart
+02.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;495,55;Kart
+02.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;140,27;Nakit
+02.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;332,24;Kart
+02.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;183,44;Kart
+02.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;436,19;Kart
+02.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;269,55;Kart
+02.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;493,43;Nakit
+02.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;68,83;Kart
+03.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;324,15;Kart
+03.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;427,55;Kart
+03.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;92,21;Kart
+03.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;278,89;Nakit
+03.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;339,25;Kart
+03.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;323,47;Kart
+03.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;448,09;Kart
+03.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;302,83;Nakit
+03.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;213,68;Kart
+03.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;328,69;Kart
+03.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;174,90;Kart
+03.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;142,21;Nakit
+03.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;285,61;Kart
+03.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;506,81;Mobil
+03.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;180,34;Kart
+03.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;365,97;Kart
+03.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;219,65;Kart
+03.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;74,22;Mobil
+03.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;92,07;Kart
+03.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;217,06;Kart
+03.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;142,18;Kart
+03.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;422,84;Kart
+03.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;493,58;Mobil
+03.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;151,79;Nakit
+03.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;153,06;Kart
+03.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;139,10;Nakit
+03.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,27;Kart
+04.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;92,14;Kart
+04.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;484,40;Kart
+04.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;284,14;Kart
+04.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;548,67;Kart
+04.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;453,04;Mobil
+04.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;277,59;Kart
+04.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;480,73;Mobil
+04.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;139,03;Nakit
+04.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;73,26;Kart
+04.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;83,80;Kart
+04.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;142,69;Nakit
+04.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;280,61;Mobil
+04.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;482,81;Kart
+04.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;179,19;Kart
+04.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,54;Kart
+04.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;146,10;Kart
+04.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;138,65;Mobil
+04.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;136,16;Kart
+04.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;167,57;Kart
+04.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;210,39;Kart
+04.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;280,00;Kart
+04.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;213,83;Nakit
+04.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;82,54;Kart
+05.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;287,30;Kart
+05.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;666,20;Mobil
+05.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;227,53;Kart
+05.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;142,79;Kart
+05.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;432,14;Kart
+05.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,64;Nakit
+05.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;272,53;Mobil
+05.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;497,93;Nakit
+05.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;333,58;Nakit
+05.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;138,01;Nakit
+05.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;221,55;Nakit
+05.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;323,72;Nakit
+05.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;139,79;Kart
+05.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;107,30;Kart
+05.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;139,11;Nakit
+05.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,51;Kart
+05.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;670,47;Mobil
+05.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;334,44;Kart
+05.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;365,05;Kart
+05.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,47;Kart
+05.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;82,66;Nakit
+05.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;561,97;Kart
+05.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;329,79;Kart
+05.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;142,09;Kart
+06.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;334,94;Kart
+06.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;265,70;Kart
+06.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;439,84;Mobil
+06.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;348,37;Nakit
+06.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;90,63;Kart
+06.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;168,28;Nakit
+06.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;145,61;Kart
+06.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;70,81;Mobil
+06.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;209,55;Mobil
+06.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;92,66;Kart
+06.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;71,83;Kart
+06.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;272,88;Mobil
+06.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;275,13;Kart
+06.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;73,39;Nakit
+06.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;140,87;Nakit
+06.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;250,89;Mobil
+06.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;164,94;Mobil
+06.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;656,25;Kart
+06.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;416,88;Kart
+06.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;261,93;Nakit
+06.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;351,79;Kart
+06.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;168,98;Nakit
+06.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,55;Kart
+06.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;284,30;Kart
+06.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;68,12;Nakit
+06.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;325,04;Nakit
+06.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;412,18;Nakit
+07.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;348,43;Kart
+07.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;160,54;Mobil
+07.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;282,43;Nakit
+07.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;143,46;Kart
+07.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;437,75;Nakit
+07.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;213,01;Nakit
+07.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;326,06;Mobil
+07.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;171,46;Kart
+07.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;441,33;Mobil
+07.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;278,78;Kart
+07.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;107,85;Kart
+07.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;138,89;Kart
+07.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;655,36;Kart
+07.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;415,92;Kart
+07.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;421,87;Nakit
+07.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;321,93;Kart
+07.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;564,90;Mobil
+07.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;68,43;Mobil
+07.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;678,54;Mobil
+07.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;348,78;Mobil
+07.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;284,76;Kart
+07.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;220,30;Kart
+08.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;82,46;Kart
+08.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;110,96;Nakit
+08.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;330,56;Mobil
+08.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;161,03;Nakit
+08.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;148,99;Kart
+08.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;87,36;Nakit
+08.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;211,82;Kart
+08.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;280,79;Kart
+08.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;408,79;Kart
+08.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;545,92;Kart
+08.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;676,84;Kart
+08.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;141,64;Mobil
+08.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;648,04;Nakit
+08.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;162,08;Kart
+08.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;137,74;Kart
+08.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;205,07;Mobil
+08.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;153,57;Mobil
+08.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;169,44;Kart
+08.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;137,59;Kart
+08.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;141,76;Kart
+08.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;573,38;Nakit
+08.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;169,93;Kart
+08.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;137,36;Mobil
+08.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;285,70;Nakit
+08.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;273,43;Kart
+08.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,38;Kart
+09.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;178,71;Nakit
+09.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;351,10;Mobil
+09.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;330,82;Mobil
+09.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;327,31;Mobil
+09.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;334,86;Mobil
+09.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;330,51;Kart
+09.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;88,69;Kart
+09.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;207,13;Kart
+09.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;215,35;Nakit
+09.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;82,57;Kart
+09.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;344,40;Mobil
+09.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;366,26;Mobil
+09.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;352,07;Mobil
+09.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;112,00;Nakit
+09.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;148,45;Nakit
+09.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;427,15;Kart
+09.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;149,03;Kart
+09.08.2026;Çankaya;Ankara;Latte;Ýçecek;4;428,51;Kart
+09.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;220,42;Mobil
+09.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;83,80;Kart
+09.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;109,48;Mobil
+09.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;215,15;Mobil
+09.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;152,23;Kart
+09.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;266,66;Nakit
+09.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;206,21;Kart
+09.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;216,51;Nakit
+09.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;148,44;Mobil
+09.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;140,06;Kart
+09.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;166,52;Kart
+10.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;347,81;Kart
+10.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;368,95;Kart
+10.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;136,80;Kart
+10.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;184,65;Nakit
+10.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;149,54;Nakit
+10.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,87;Nakit
+10.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;109,13;Kart
+10.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;175,10;Kart
+10.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,83;Nakit
+10.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;412,07;Nakit
+10.08.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,95;Mobil
+10.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;331,87;Mobil
+10.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;332,76;Kart
+10.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;417,73;Nakit
+10.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;492,56;Kart
+10.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;208,92;Kart
+10.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;272,34;Mobil
+10.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;109,57;Kart
+10.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;142,69;Mobil
+10.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;224,47;Kart
+10.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;107,04;Kart
+10.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;643,73;Nakit
+10.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;322,99;Nakit
+11.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;153,83;Kart
+11.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;568,52;Kart
+11.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;142,83;Kart
+11.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;408,75;Mobil
+11.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;332,78;Kart
+11.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;302,07;Kart
+11.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;353,15;Kart
+11.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;278,04;Kart
+11.08.2026;Çankaya;Ankara;Latte;Ýçecek;2;226,21;Kart
+11.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;85,86;Nakit
+11.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;561,68;Nakit
+11.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;652,41;Kart
+11.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;565,34;Mobil
+11.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;271,99;Mobil
+11.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;279,11;Mobil
+11.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;183,35;Mobil
+11.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;83,11;Mobil
+11.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,27;Kart
+11.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;165,74;Nakit
+11.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;87,59;Mobil
+12.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;87,53;Kart
+12.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;226,36;Mobil
+12.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;141,56;Kart
+12.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;256,69;Nakit
+12.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;215,10;Mobil
+12.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;330,04;Mobil
+12.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;332,29;Kart
+12.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;204,16;Kart
+12.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;333,56;Mobil
+12.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;322,38;Kart
+12.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;508,84;Mobil
+12.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;73,88;Mobil
+12.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;488,01;Nakit
+12.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;148,74;Kart
+12.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;221,52;Kart
+12.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;207,61;Nakit
+12.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;167,45;Kart
+12.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;332,30;Mobil
+12.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;429,97;Kart
+12.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;281,89;Kart
+12.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;85,34;Nakit
+12.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;255,52;Mobil
+12.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;226,20;Kart
+13.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;293,86;Kart
+13.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;182,24;Mobil
+13.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,70;Nakit
+13.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;431,77;Kart
+13.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;497,81;Mobil
+13.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;295,47;Kart
+13.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;85,16;Mobil
+13.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;215,50;Kart
+13.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;166,35;Kart
+13.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;305,64;Kart
+13.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;219,11;Kart
+13.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;668,53;Kart
+13.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;365,30;Mobil
+13.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;333,38;Kart
+13.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;141,21;Kart
+13.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;212,67;Nakit
+13.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;667,36;Nakit
+13.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,52;Kart
+13.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;142,87;Kart
+13.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;323,90;Mobil
+13.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;138,99;Mobil
+13.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;143,00;Mobil
+13.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;228,90;Mobil
+13.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;75,29;Kart
+13.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;106,88;Kart
+13.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;148,60;Kart
+14.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,16;Kart
+14.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;167,34;Kart
+14.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;265,13;Kart
+14.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;167,00;Kart
+14.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;87,29;Kart
+14.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;269,63;Kart
+14.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;167,90;Nakit
+14.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;407,93;Nakit
+14.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;70,91;Nakit
+14.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;367,59;Kart
+14.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;349,87;Kart
+14.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;283,44;Kart
+14.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;165,74;Nakit
+14.08.2026;Çankaya;Ankara;Latte;Ýçecek;4;426,83;Kart
+14.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;87,32;Mobil
+14.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;343,98;Kart
+14.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;431,52;Nakit
+14.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;148,05;Kart
+14.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;329,97;Kart
+14.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;141,07;Nakit
+14.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;348,74;Kart
+14.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;138,92;Nakit
+15.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;277,97;Kart
+15.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;280,53;Kart
+15.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;210,27;Mobil
+15.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;485,19;Mobil
+15.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;497,35;Kart
+15.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;280,13;Nakit
+15.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;141,88;Kart
+15.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;498,06;Nakit
+15.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;217,73;Kart
+15.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;68,59;Kart
+15.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;288,13;Nakit
+15.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;493,07;Kart
+15.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;83,88;Mobil
+15.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;135,91;Mobil
+15.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;224,50;Kart
+15.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;271,69;Kart
+15.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;364,35;Mobil
+15.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;181,81;Kart
+15.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;164,54;Nakit
+15.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,66;Kart
+15.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;364,60;Kart
+15.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;279,71;Kart
+16.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;360,39;Kart
+16.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;503,26;Mobil
+16.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;368,82;Kart
+16.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;255,66;Kart
+16.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;330,38;Kart
+16.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;360,89;Mobil
+16.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;75,63;Nakit
+16.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;284,07;Mobil
+16.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;218,58;Kart
+16.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;499,09;Nakit
+16.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;278,31;Kart
+16.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;348,47;Nakit
+16.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;219,72;Nakit
+16.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;677,42;Kart
+16.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;274,36;Kart
+16.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;179,67;Kart
+16.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;178,41;Mobil
+16.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;426,55;Kart
+16.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;356,86;Kart
+16.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;283,15;Mobil
+16.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;142,57;Nakit
+16.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;141,30;Nakit
+16.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;557,60;Kart
+16.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;484,69;Nakit
+16.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;86,67;Nakit
+16.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;180,33;Nakit
+16.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;166,56;Kart
+16.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;251,18;Kart
+16.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;153,19;Kart
+16.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;356,68;Kart
+17.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;281,84;Kart
+17.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;486,01;Kart
+17.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;76,09;Mobil
+17.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;165,55;Nakit
+17.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;219,65;Kart
+17.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;573,62;Mobil
+17.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;431,15;Kart
+17.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;329,37;Mobil
+17.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;505,11;Nakit
+17.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;576,80;Kart
+17.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;499,04;Kart
+17.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;85,93;Nakit
+17.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;90,06;Mobil
+17.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;174,97;Mobil
+17.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;71,52;Nakit
+17.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;284,68;Kart
+17.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;277,34;Nakit
+17.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,47;Nakit
+17.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;357,92;Nakit
+17.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;277,69;Mobil
+17.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;89,09;Nakit
+17.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;483,94;Kart
+17.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;89,45;Mobil
+18.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;74,54;Kart
+18.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,42;Mobil
+18.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;76,30;Mobil
+18.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;151,14;Kart
+18.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,10;Mobil
+18.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;322,11;Kart
+18.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;89,58;Kart
+18.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;142,41;Nakit
+18.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;264,89;Kart
+18.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;69,71;Kart
+18.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;76,46;Mobil
+18.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;299,04;Kart
+18.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;663,72;Kart
+18.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;561,64;Kart
+18.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;648,61;Kart
+18.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;164,28;Kart
+18.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;88,48;Kart
+18.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;427,27;Kart
+18.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;287,10;Nakit
+18.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;162,95;Mobil
+18.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;430,42;Kart
+18.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;160,16;Kart
+18.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;163,90;Nakit
+19.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;442,88;Nakit
+19.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;279,49;Kart
+19.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;109,10;Kart
+19.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;659,09;Mobil
+19.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;207,38;Kart
+19.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;229,99;Kart
+19.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;181,09;Nakit
+19.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;277,93;Mobil
+19.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,77;Nakit
+19.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;163,23;Nakit
+19.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;281,46;Kart
+19.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;142,62;Kart
+19.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;277,43;Kart
+19.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;305,35;Kart
+19.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,75;Mobil
+19.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;338,43;Kart
+19.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;359,13;Kart
+19.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;228,67;Kart
+19.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;230,20;Nakit
+19.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;274,78;Kart
+19.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;173,12;Nakit
+19.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;208,77;Kart
+19.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;112,79;Mobil
+19.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,46;Mobil
+19.08.2026;Nilüfer;Bursa;Latte;Ýçecek;3;331,92;Nakit
+19.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;68,30;Kart
+19.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;361,87;Kart
+20.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;268,80;Mobil
+20.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;177,34;Kart
+20.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;144,15;Mobil
+20.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;82,71;Nakit
+20.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;359,72;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;676,72;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;210,81;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;647,43;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;144,13;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;112,92;Nakit
+20.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;86,72;Kart
+20.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;272,54;Kart
+20.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;92,37;Nakit
+20.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;304,64;Kart
+20.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;416,77;Mobil
+20.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;254,71;Kart
+20.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;285,17;Kart
+20.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;335,92;Kart
+20.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;175,44;Nakit
+20.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;335,51;Kart
+20.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;141,08;Mobil
+20.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;214,07;Mobil
+20.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;249,53;Kart
+20.08.2026;Nilüfer;Bursa;Latte;Ýçecek;4;441,41;Kart
+20.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;276,08;Mobil
+20.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;213,74;Nakit
+21.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;177,42;Kart
+21.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;286,77;Kart
+21.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;110,86;Kart
+21.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;306,04;Kart
+21.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;143,95;Mobil
+21.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;214,69;Nakit
+21.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;272,57;Nakit
+21.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;109,62;Nakit
+21.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;149,49;Nakit
+21.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;328,72;Mobil
+21.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,96;Kart
+21.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;151,90;Kart
+21.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;76,48;Mobil
+21.08.2026;Çankaya;Ankara;Limonata;Ýçecek;3;264,74;Kart
+21.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;331,64;Kart
+21.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;85,98;Mobil
+21.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;90,10;Nakit
+21.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;214,31;Mobil
+21.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;84,54;Mobil
+21.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;325,02;Nakit
+21.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;172,06;Kart
+21.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;308,44;Kart
+21.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;258,28;Nakit
+21.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;361,65;Kart
+21.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,91;Mobil
+21.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;140,26;Kart
+22.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;108,18;Kart
+22.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;108,76;Kart
+22.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;87,17;Kart
+22.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;340,47;Mobil
+22.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;260,65;Kart
+22.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;249,23;Mobil
+22.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;219,74;Kart
+22.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;280,70;Kart
+22.08.2026;Çankaya;Ankara;Latte;Ýçecek;4;446,51;Kart
+22.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;92,36;Mobil
+22.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;663,84;Kart
+22.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;142,33;Nakit
+22.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;334,27;Nakit
+22.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;367,51;Kart
+22.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;143,85;Nakit
+22.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;444,31;Kart
+22.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,13;Kart
+22.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;274,97;Kart
+22.08.2026;Nilüfer;Bursa;Latte;Ýçecek;4;452,40;Mobil
+22.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;168,06;Kart
+22.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;261,39;Nakit
+22.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;166,20;Nakit
+23.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;74,70;Kart
+23.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;69,18;Kart
+23.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,48;Nakit
+23.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;278,99;Kart
+23.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;281,30;Nakit
+23.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;111,59;Nakit
+23.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;151,35;Kart
+23.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;224,47;Nakit
+23.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;299,44;Nakit
+23.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;168,30;Kart
+23.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;308,45;Mobil
+23.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;249,83;Kart
+23.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;224,88;Nakit
+23.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;321,23;Kart
+23.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;110,70;Nakit
+23.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;140,14;Mobil
+23.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,09;Kart
+23.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;205,47;Kart
+23.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;229,34;Kart
+23.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;650,84;Kart
+23.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;135,84;Kart
+23.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;575,55;Kart
+23.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;429,39;Kart
+24.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;364,16;Nakit
+24.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;488,85;Mobil
+24.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;302,67;Kart
+24.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;357,42;Nakit
+24.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;336,00;Mobil
+24.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;301,47;Kart
+24.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;143,85;Kart
+24.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;136,01;Nakit
+24.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;296,40;Nakit
+24.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;300,31;Mobil
+24.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;555,22;Nakit
+24.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;85,13;Kart
+24.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;420,02;Kart
+24.08.2026;Çankaya;Ankara;Latte;Ýçecek;4;439,65;Mobil
+24.08.2026;Çankaya;Ankara;Limonata;Ýçecek;3;273,10;Kart
+24.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;326,40;Kart
+24.08.2026;Çankaya;Ankara;Limonata;Ýçecek;3;270,20;Kart
+24.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;504,52;Mobil
+24.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;330,48;Kart
+24.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;149,21;Kart
+24.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;163,55;Kart
+24.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;640,63;Kart
+24.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;169,13;Mobil
+24.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;90,47;Kart
+24.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;219,97;Nakit
+24.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;180,80;Mobil
+24.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;73,40;Kart
+25.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,32;Mobil
+25.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;362,44;Kart
+25.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;166,83;Nakit
+25.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;327,11;Kart
+25.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;256,97;Kart
+25.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;139,58;Mobil
+25.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;83,57;Mobil
+25.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;89,67;Kart
+25.08.2026;Çankaya;Ankara;Latte;Ýçecek;2;213,98;Kart
+25.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;71,68;Mobil
+25.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;281,72;Mobil
+25.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;171,81;Kart
+25.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;417,44;Mobil
+25.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;165,79;Kart
+25.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;271,73;Nakit
+25.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;410,30;Mobil
+25.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;282,54;Kart
+25.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;421,36;Mobil
+25.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;434,29;Kart
+25.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;257,51;Nakit
+25.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;177,21;Kart
+25.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;167,65;Kart
+25.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;299,41;Kart
+25.08.2026;Nilüfer;Bursa;Latte;Ýçecek;3;327,09;Mobil
+25.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;276,59;Mobil
+26.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;224,73;Kart
+26.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;497,85;Mobil
+26.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;225,47;Mobil
+26.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;146,63;Kart
+26.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;165,42;Nakit
+26.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;641,34;Kart
+26.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;69,54;Kart
+26.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;178,07;Kart
+26.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;259,67;Nakit
+26.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;111,44;Kart
+26.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;322,60;Mobil
+26.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;285,79;Mobil
+26.08.2026;Çankaya;Ankara;Limonata;Ýçecek;2;184,72;Kart
+26.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;257,75;Nakit
+26.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;141,34;Mobil
+26.08.2026;Çankaya;Ankara;Latte;Ýçecek;4;436,10;Kart
+26.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,04;Kart
+26.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;164,06;Kart
+26.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;284,32;Kart
+26.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;140,44;Kart
+26.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;180,76;Nakit
+26.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;430,98;Kart
+26.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;276,50;Kart
+26.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;106,95;Nakit
+26.08.2026;Nilüfer;Bursa;Latte;Ýçecek;3;334,94;Kart
+26.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;576,74;Kart
+26.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,37;Mobil
+27.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;280,15;Kart
+27.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;279,82;Kart
+27.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;250,02;Kart
+27.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;180,47;Kart
+27.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;168,55;Mobil
+27.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;171,39;Kart
+27.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;666,75;Kart
+27.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;320,22;Mobil
+27.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;333,92;Kart
+27.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;331,73;Kart
+27.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;165,48;Kart
+27.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;331,95;Mobil
+27.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;367,15;Kart
+27.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;480,52;Mobil
+27.08.2026;Çankaya;Ankara;Latte;Ýçecek;1;107,10;Nakit
+27.08.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;111,33;Mobil
+27.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;168,21;Mobil
+27.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;222,16;Kart
+27.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;84,84;Mobil
+27.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;262,35;Nakit
+27.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;678,09;Mobil
+27.08.2026;Nilüfer;Bursa;Latte;Ýçecek;3;320,26;Kart
+27.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;498,79;Nakit
+28.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;172,52;Kart
+28.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;367,33;Nakit
+28.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;143,88;Kart
+28.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;258,71;Nakit
+28.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;326,44;Nakit
+28.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;336,69;Nakit
+28.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;106,97;Mobil
+28.08.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;169,94;Mobil
+28.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;339,81;Kart
+28.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;215,56;Mobil
+28.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,79;Mobil
+28.08.2026;Çankaya;Ankara;Latte;Ýçecek;2;222,94;Kart
+28.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;332,72;Kart
+28.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;165,14;Mobil
+28.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,74;Kart
+28.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;327,60;Kart
+28.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;271,09;Mobil
+28.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;255,26;Mobil
+28.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;154,27;Kart
+28.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;91,20;Nakit
+28.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;225,88;Mobil
+28.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;282,63;Kart
+28.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;270,49;Kart
+28.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;177,00;Mobil
+28.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;161,50;Nakit
+28.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;297,48;Kart
+28.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;298,13;Kart
+29.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;220,64;Kart
+29.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;332,96;Kart
+29.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;227,82;Kart
+29.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;295,08;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;76,58;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;352,10;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;164,60;Mobil
+29.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;154,21;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;304,95;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;69,60;Kart
+29.08.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;67,96;Kart
+29.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,87;Mobil
+29.08.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;170,64;Nakit
+29.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;334,86;Nakit
+29.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;91,76;Kart
+29.08.2026;Çankaya;Ankara;Latte;Ýçecek;3;330,26;Nakit
+29.08.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;641,92;Nakit
+29.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;213,82;Kart
+29.08.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;167,50;Kart
+29.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;641,04;Mobil
+29.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;89,94;Kart
+29.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;264,90;Nakit
+29.08.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;367,26;Nakit
+30.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;508,33;Kart
+30.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;262,57;Mobil
+30.08.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;306,72;Kart
+30.08.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;171,23;Mobil
+30.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;370,10;Mobil
+30.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;286,27;Kart
+30.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;210,36;Nakit
+30.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;73,70;Nakit
+30.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;653,32;Mobil
+30.08.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;415,32;Nakit
+30.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;297,01;Kart
+30.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;141,10;Kart
+30.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;276,19;Nakit
+30.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;144,13;Kart
+30.08.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;76,68;Mobil
+30.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;163,64;Nakit
+30.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;184,03;Kart
+30.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;163,06;Nakit
+30.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;495,26;Kart
+30.08.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;277,22;Nakit
+30.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;506,39;Mobil
+30.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;230,32;Kart
+30.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;216,11;Mobil
+30.08.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;556,51;Nakit
+30.08.2026;Nilüfer;Bursa;Latte;Ýçecek;1;107,65;Nakit
+30.08.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;204,63;Kart
+30.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;75,38;Nakit
+31.08.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;277,60;Mobil
+31.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;168,35;Nakit
+31.08.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;337,88;Kart
+31.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;181,37;Kart
+31.08.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;162,21;Mobil
+31.08.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;286,60;Nakit
+31.08.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;88,36;Kart
+31.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;73,11;Nakit
+31.08.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;320,20;Nakit
+31.08.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;75,63;Kart
+31.08.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;326,57;Kart
+31.08.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;411,80;Mobil
+31.08.2026;Çankaya;Ankara;Limonata;Ýçecek;1;87,77;Nakit
+31.08.2026;Çankaya;Ankara;Limonata;Ýçecek;4;370,54;Mobil
+31.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;286,27;Kart
+31.08.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;204,41;Nakit
+31.08.2026;Çankaya;Ankara;Latte;Ýçecek;1;106,82;Kart
+31.08.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;74,36;Nakit
+31.08.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;420,97;Kart
+31.08.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;486,98;Nakit
+31.08.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;365,69;Nakit
+31.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;662,35;Nakit
+31.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;220,03;Kart
+31.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;292,80;Nakit
+31.08.2026;Nilüfer;Bursa;Latte;Ýçecek;2;218,69;Kart
+31.08.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;166,15;Kart
+31.08.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;147,83;Nakit
+31.08.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;337,98;Kart
+01.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;259,26;Kart
+01.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;550,36;Nakit
+01.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;359,14;Nakit
+01.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;87,88;Kart
+01.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;343,55;Nakit
+01.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;170,65;Mobil
+01.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;272,12;Kart
+01.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;649,78;Nakit
+01.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;335,13;Nakit
+01.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;275,24;Kart
+01.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;431,45;Kart
+01.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;266,48;Nakit
+01.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;274,31;Mobil
+01.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;112,53;Kart
+01.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;262,65;Mobil
+01.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;288,31;Nakit
+01.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;168,02;Kart
+01.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;174,20;Kart
+01.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;219,57;Kart
+01.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;643,77;Nakit
+01.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;675,13;Kart
+01.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;147,31;Kart
+01.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;170,05;Kart
+01.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;303,57;Kart
+01.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;248,34;Kart
+02.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;280,43;Kart
+02.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;222,45;Kart
+02.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;165,30;Mobil
+02.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;142,97;Kart
+02.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;162,75;Kart
+02.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;251,47;Kart
+02.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;74,59;Nakit
+02.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,27;Kart
+02.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;661,74;Nakit
+02.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;679,10;Nakit
+02.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;421,01;Mobil
+02.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;446,89;Mobil
+02.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;184,30;Kart
+02.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;333,83;Mobil
+02.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;222,16;Kart
+02.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;92,21;Kart
+02.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;500,49;Mobil
+02.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;224,40;Kart
+02.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;560,34;Mobil
+02.09.2026;Nilüfer;Bursa;Latte;Ýçecek;4;436,18;Kart
+02.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;422,84;Nakit
+02.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;174,32;Nakit
+03.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;367,73;Nakit
+03.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;301,27;Kart
+03.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;255,37;Kart
+03.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;265,77;Kart
+03.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;431,49;Kart
+03.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;428,37;Mobil
+03.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;332,94;Nakit
+03.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;138,86;Nakit
+03.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;138,11;Nakit
+03.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;139,57;Mobil
+03.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;174,66;Kart
+03.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;280,35;Kart
+03.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;225,32;Mobil
+03.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,24;Kart
+03.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,38;Nakit
+03.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;507,38;Nakit
+03.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;336,62;Kart
+03.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;306,46;Kart
+03.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;452,10;Nakit
+03.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;230,68;Mobil
+03.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;408,45;Nakit
+03.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;416,28;Mobil
+03.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;184,59;Kart
+03.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;262,93;Kart
+03.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;68,24;Mobil
+03.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;560,87;Mobil
+03.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;161,12;Mobil
+04.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;656,63;Mobil
+04.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;109,60;Mobil
+04.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,12;Kart
+04.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;143,58;Nakit
+04.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;228,63;Mobil
+04.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,58;Kart
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,85;Kart
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;180,70;Kart
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;182,28;Mobil
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;90,27;Mobil
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;185,38;Kart
+04.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;178,06;Kart
+04.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;73,59;Nakit
+04.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,21;Nakit
+04.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;496,65;Mobil
+04.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;163,09;Kart
+04.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;366,52;Nakit
+04.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,91;Kart
+04.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;230,84;Mobil
+04.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;327,34;Nakit
+04.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;141,93;Kart
+04.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;74,59;Nakit
+04.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;250,71;Mobil
+04.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;141,77;Mobil
+04.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;648,27;Kart
+04.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,32;Kart
+04.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;173,70;Kart
+04.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;353,09;Kart
+04.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;282,92;Nakit
+04.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;180,37;Kart
+05.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;180,18;Mobil
+05.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;172,90;Kart
+05.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;282,67;Nakit
+05.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;667,36;Kart
+05.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;320,93;Mobil
+05.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;143,15;Nakit
+05.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;326,23;Nakit
+05.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;146,87;Kart
+05.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;138,55;Kart
+05.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;486,78;Kart
+05.09.2026;Çankaya;Ankara;Latte;Ýçecek;4;430,73;Kart
+05.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;424,51;Kart
+05.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;263,88;Kart
+05.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;162,93;Nakit
+05.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;347,94;Kart
+05.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;429,17;Kart
+05.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;219,61;Kart
+05.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;218,69;Kart
+05.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;250,32;Kart
+06.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;168,30;Mobil
+06.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;277,14;Nakit
+06.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,90;Nakit
+06.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;91,21;Mobil
+06.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;86,47;Mobil
+06.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;82,65;Kart
+06.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;278,58;Nakit
+06.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;258,48;Kart
+06.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;141,37;Kart
+06.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;71,44;Mobil
+06.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;137,99;Kart
+06.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;169,96;Kart
+06.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;275,73;Kart
+06.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;223,20;Kart
+06.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;280,93;Kart
+06.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;337,73;Kart
+06.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;84,94;Kart
+06.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;321,82;Kart
+06.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;339,86;Mobil
+06.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;74,06;Kart
+06.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;167,29;Kart
+06.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;175,39;Nakit
+06.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;83,55;Kart
+06.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;267,44;Mobil
+06.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;145,60;Mobil
+07.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;86,47;Kart
+07.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;323,09;Nakit
+07.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;176,80;Kart
+07.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;501,20;Kart
+07.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;330,57;Nakit
+07.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,47;Kart
+07.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;351,20;Nakit
+07.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,73;Mobil
+07.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;645,54;Nakit
+07.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;346,78;Kart
+07.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;570,93;Nakit
+07.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;73,06;Nakit
+07.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;177,19;Mobil
+07.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;153,40;Kart
+07.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;569,87;Nakit
+07.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;357,97;Kart
+07.09.2026;Çankaya;Ankara;Latte;Ýçecek;3;333,23;Mobil
+07.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;261,97;Mobil
+07.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,93;Mobil
+07.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;563,52;Mobil
+07.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;330,90;Kart
+07.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;285,79;Kart
+07.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;204,81;Nakit
+07.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;437,56;Kart
+07.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;171,87;Kart
+07.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;178,81;Nakit
+07.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;323,41;Nakit
+07.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;355,87;Nakit
+07.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;153,21;Kart
+07.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;135,80;Kart
+07.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,54;Nakit
+08.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;169,80;Mobil
+08.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;333,29;Kart
+08.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;224,25;Nakit
+08.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;212,03;Mobil
+08.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;76,83;Mobil
+08.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;68,14;Kart
+08.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;299,06;Kart
+08.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;641,59;Nakit
+08.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;271,72;Nakit
+08.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;221,16;Kart
+08.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;284,16;Nakit
+08.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,67;Mobil
+08.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;168,02;Mobil
+08.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;424,81;Nakit
+08.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;142,80;Mobil
+08.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;276,38;Kart
+08.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;73,48;Kart
+08.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;507,11;Nakit
+08.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;277,49;Kart
+08.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;214,93;Mobil
+08.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;338,48;Mobil
+08.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;252,89;Nakit
+08.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;552,17;Kart
+08.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;300,02;Mobil
+09.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;262,61;Nakit
+09.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;363,49;Mobil
+09.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;88,79;Nakit
+09.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;661,16;Nakit
+09.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;284,56;Kart
+09.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;223,02;Nakit
+09.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;143,24;Kart
+09.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;673,24;Kart
+09.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;141,22;Kart
+09.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;357,72;Nakit
+09.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;559,99;Nakit
+09.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;141,78;Kart
+09.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;303,05;Nakit
+09.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;217,87;Kart
+09.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,79;Kart
+09.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;298,27;Nakit
+09.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;176,23;Kart
+09.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,79;Kart
+09.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;675,00;Kart
+09.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;664,45;Nakit
+09.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;271,74;Kart
+09.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,41;Kart
+09.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;70,84;Kart
+10.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;265,44;Mobil
+10.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;328,95;Kart
+10.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;136,13;Mobil
+10.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;276,54;Nakit
+10.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;137,63;Kart
+10.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;68,84;Kart
+10.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;268,77;Kart
+10.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;501,67;Kart
+10.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;560,41;Mobil
+10.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;168,01;Nakit
+10.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;482,27;Mobil
+10.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;149,38;Mobil
+10.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;332,29;Kart
+10.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;335,14;Kart
+10.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;164,39;Kart
+10.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;182,95;Kart
+10.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;228,34;Kart
+10.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;160,67;Kart
+10.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;142,82;Nakit
+11.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;140,55;Nakit
+11.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;205,03;Kart
+11.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;492,65;Kart
+11.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;365,89;Nakit
+11.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;168,61;Mobil
+11.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;143,46;Nakit
+11.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;285,88;Nakit
+11.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;277,54;Kart
+11.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;338,82;Mobil
+11.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;352,68;Mobil
+11.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;213,57;Kart
+11.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;641,29;Kart
+11.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;137,51;Kart
+11.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;267,38;Mobil
+11.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;174,68;Kart
+11.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;286,39;Kart
+11.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;154,00;Mobil
+11.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;568,79;Kart
+11.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;352,85;Kart
+11.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;667,60;Mobil
+11.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;112,70;Mobil
+11.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;173,06;Kart
+11.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;341,35;Kart
+11.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;162,45;Kart
+11.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;87,51;Kart
+11.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;287,41;Kart
+11.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;92,32;Mobil
+11.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,67;Mobil
+11.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;91,40;Kart
+11.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;224,05;Kart
+11.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;219,68;Mobil
+11.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;86,79;Kart
+12.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;75,93;Nakit
+12.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;565,74;Kart
+12.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;173,36;Mobil
+12.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,37;Kart
+12.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;679,14;Kart
+12.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;227,40;Kart
+12.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;336,92;Kart
+12.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;207,51;Nakit
+12.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;442,81;Nakit
+12.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;174,67;Kart
+12.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;170,21;Mobil
+12.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;287,00;Kart
+12.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,11;Kart
+12.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;366,50;Kart
+12.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;328,85;Kart
+12.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;214,36;Kart
+12.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;273,19;Mobil
+12.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;670,39;Nakit
+12.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;135,91;Kart
+12.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;140,37;Nakit
+12.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;261,93;Kart
+13.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;90,17;Kart
+13.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;253,85;Nakit
+13.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;70,16;Mobil
+13.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;220,41;Kart
+13.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;141,24;Kart
+13.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;91,16;Mobil
+13.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;169,85;Kart
+13.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;302,06;Kart
+13.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;502,52;Kart
+13.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;215,80;Kart
+13.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;498,51;Kart
+13.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;165,97;Mobil
+13.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;68,17;Kart
+13.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;73,08;Kart
+13.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,00;Nakit
+13.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;353,04;Kart
+13.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;208,67;Kart
+13.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;143,03;Mobil
+13.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;136,06;Kart
+13.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;173,09;Nakit
+13.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,45;Kart
+13.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;172,88;Nakit
+13.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;485,51;Kart
+14.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;84,40;Kart
+14.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;146,06;Nakit
+14.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;260,39;Kart
+14.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;210,53;Kart
+14.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;335,70;Nakit
+14.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;205,79;Kart
+14.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;177,68;Mobil
+14.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;88,51;Kart
+14.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;449,32;Kart
+14.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;650,61;Kart
+14.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;346,86;Kart
+14.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,88;Mobil
+14.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;84,80;Mobil
+14.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;139,87;Kart
+14.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;438,42;Kart
+14.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;108,46;Mobil
+14.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;331,08;Kart
+14.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;149,86;Kart
+14.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;292,98;Mobil
+14.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;73,83;Kart
+14.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;221,12;Kart
+14.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;419,21;Mobil
+15.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;342,67;Kart
+15.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;333,23;Nakit
+15.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;86,04;Mobil
+15.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;411,94;Kart
+15.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;343,81;Kart
+15.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,45;Kart
+15.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;484,46;Nakit
+15.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;168,54;Nakit
+15.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;333,96;Kart
+15.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;307,23;Kart
+15.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;285,88;Nakit
+15.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;217,42;Nakit
+15.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;153,95;Mobil
+15.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;165,03;Mobil
+15.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;109,85;Mobil
+15.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;332,40;Kart
+15.09.2026;Çankaya;Ankara;Latte;Ýçecek;4;432,13;Mobil
+15.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;320,73;Kart
+15.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;282,83;Kart
+15.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;228,65;Kart
+15.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;88,14;Nakit
+15.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;299,55;Mobil
+15.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;140,52;Nakit
+15.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;286,89;Kart
+15.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;230,22;Kart
+15.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;218,98;Kart
+16.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;366,26;Nakit
+16.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;153,24;Nakit
+16.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;643,96;Mobil
+16.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;92,52;Nakit
+16.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;258,88;Kart
+16.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;179,14;Mobil
+16.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;274,97;Kart
+16.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;444,17;Nakit
+16.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;149,42;Nakit
+16.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;294,27;Nakit
+16.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;328,26;Nakit
+16.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;166,99;Kart
+16.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;294,82;Nakit
+16.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;554,63;Kart
+16.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;427,20;Kart
+16.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;143,85;Kart
+16.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;575,51;Kart
+16.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;208,49;Mobil
+16.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;263,97;Kart
+16.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;337,50;Kart
+16.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;173,92;Mobil
+16.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;164,70;Mobil
+16.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;208,05;Mobil
+16.09.2026;Nilüfer;Bursa;Latte;Ýçecek;4;445,10;Kart
+16.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;410,35;Nakit
+16.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;181,45;Kart
+16.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;211,87;Kart
+16.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;90,55;Kart
+17.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;344,60;Nakit
+17.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;86,52;Kart
+17.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;164,94;Kart
+17.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;337,93;Kart
+17.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;82,87;Kart
+17.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;219,60;Kart
+17.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;222,57;Mobil
+17.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;267,29;Kart
+17.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;138,03;Kart
+17.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;75,88;Nakit
+17.09.2026;Çankaya;Ankara;Latte;Ýçecek;3;326,87;Mobil
+17.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;221,39;Kart
+17.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;183,66;Mobil
+17.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;68,86;Kart
+17.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;351,23;Kart
+17.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;448,03;Kart
+17.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,46;Mobil
+17.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;293,49;Kart
+17.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;146,47;Mobil
+17.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;270,02;Nakit
+17.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;160,36;Kart
+17.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;324,29;Mobil
+17.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;153,62;Kart
+18.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;484,05;Kart
+18.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;447,16;Nakit
+18.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;420,58;Nakit
+18.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;248,71;Kart
+18.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;137,07;Kart
+18.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;168,17;Nakit
+18.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;661,16;Kart
+18.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;85,63;Mobil
+18.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;137,92;Kart
+18.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;428,88;Mobil
+18.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;270,57;Nakit
+18.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,37;Kart
+18.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;484,10;Kart
+18.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;343,75;Kart
+18.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;71,48;Nakit
+18.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;137,02;Kart
+18.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;160,37;Kart
+18.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;75,90;Nakit
+18.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;352,85;Kart
+18.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;566,99;Nakit
+18.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;169,57;Kart
+18.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;261,78;Mobil
+18.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;221,37;Nakit
+18.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;357,69;Kart
+18.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;334,93;Mobil
+18.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;259,62;Kart
+18.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;285,28;Kart
+18.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;266,98;Nakit
+19.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;642,43;Kart
+19.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;180,81;Kart
+19.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;271,73;Kart
+19.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;142,93;Nakit
+19.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;211,48;Mobil
+19.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;410,18;Kart
+19.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;345,23;Kart
+19.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;92,65;Kart
+19.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;183,38;Nakit
+19.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;491,46;Nakit
+19.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;220,52;Nakit
+19.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;163,47;Kart
+19.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;276,14;Kart
+19.09.2026;Çankaya;Ankara;Limonata;Ýçecek;1;91,59;Mobil
+19.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;284,75;Kart
+19.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;490,87;Kart
+19.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;260,92;Kart
+19.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;321,50;Kart
+19.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;137,47;Mobil
+19.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;287,63;Nakit
+19.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;652,81;Nakit
+19.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;502,10;Nakit
+19.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;75,45;Kart
+19.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;557,19;Kart
+19.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;218,18;Nakit
+20.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;164,62;Mobil
+20.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;169,28;Kart
+20.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;336,34;Nakit
+20.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;108,15;Mobil
+20.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;443,62;Kart
+20.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;277,10;Nakit
+20.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;329,83;Kart
+20.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;332,08;Mobil
+20.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;176,58;Kart
+20.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;262,77;Kart
+20.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;112,65;Kart
+20.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;307,79;Kart
+20.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;221,73;Kart
+20.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;332,06;Kart
+20.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;280,22;Mobil
+20.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,40;Nakit
+20.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;334,92;Kart
+20.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;221,38;Kart
+20.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;225,33;Kart
+20.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;167,47;Kart
+20.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;287,14;Kart
+20.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;139,52;Kart
+20.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;92,15;Mobil
+20.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;329,21;Kart
+20.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;223,76;Kart
+20.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;215,53;Mobil
+21.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;296,46;Kart
+21.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;328,92;Kart
+21.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;322,56;Nakit
+21.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;439,46;Mobil
+21.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;359,42;Nakit
+21.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;149,75;Kart
+21.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;147,60;Nakit
+21.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;678,49;Mobil
+21.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;258,58;Nakit
+21.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;282,44;Mobil
+21.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,52;Mobil
+21.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;308,14;Nakit
+21.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;112,97;Kart
+21.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;500,28;Mobil
+21.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;271,46;Kart
+21.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;140,41;Mobil
+21.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;68,47;Kart
+21.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;229,14;Mobil
+21.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;416,56;Kart
+21.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;211,75;Mobil
+21.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;208,58;Nakit
+21.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;259,59;Kart
+21.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,06;Nakit
+22.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;352,66;Mobil
+22.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,44;Kart
+22.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;323,01;Kart
+22.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;109,58;Kart
+22.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;169,42;Kart
+22.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;272,27;Mobil
+22.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;358,32;Kart
+22.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;154,29;Kart
+22.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;83,27;Kart
+22.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,74;Kart
+22.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;166,91;Nakit
+22.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;327,24;Mobil
+22.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;551,71;Kart
+22.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;144,16;Kart
+22.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;225,19;Nakit
+22.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;164,46;Kart
+22.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;361,02;Kart
+22.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;140,85;Nakit
+22.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;660,45;Kart
+22.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;92,24;Kart
+22.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;283,16;Kart
+22.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;165,00;Kart
+22.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;268,61;Kart
+23.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;554,41;Mobil
+23.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;148,35;Mobil
+23.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;339,77;Kart
+23.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;92,65;Nakit
+23.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;213,79;Nakit
+23.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;451,93;Kart
+23.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;137,05;Kart
+23.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;422,18;Mobil
+23.09.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;160,91;Kart
+23.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;335,44;Kart
+23.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;298,95;Nakit
+23.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;343,03;Kart
+23.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;346,82;Nakit
+23.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;111,02;Nakit
+23.09.2026;Çankaya;Ankara;Latte;Ýçecek;4;447,10;Nakit
+23.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;417,51;Mobil
+23.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,27;Kart
+23.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;262,77;Kart
+23.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;286,01;Nakit
+23.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;339,55;Kart
+23.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;83,55;Mobil
+23.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;167,27;Nakit
+23.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;184,93;Kart
+23.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;336,70;Nakit
+23.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;137,18;Kart
+23.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;275,80;Kart
+23.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;339,33;Kart
+23.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;661,31;Mobil
+23.09.2026;Nilüfer;Bursa;Latte;Ýçecek;1;109,45;Mobil
+23.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;272,95;Mobil
+24.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;4;659,24;Kart
+24.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;140,17;Kart
+24.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;223,72;Kart
+24.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;439,20;Nakit
+24.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;70,23;Nakit
+24.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;337,64;Nakit
+24.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;144,05;Kart
+24.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;431,76;Mobil
+24.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;148,32;Kart
+24.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;139,65;Nakit
+24.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;421,59;Nakit
+24.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;330,86;Kart
+24.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;140,88;Nakit
+24.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;141,76;Kart
+24.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;137,56;Kart
+24.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,67;Kart
+24.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;166,82;Kart
+24.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;162,69;Mobil
+24.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;252,14;Kart
+24.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;297,30;Kart
+24.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;174,98;Kart
+24.09.2026;Nilüfer;Bursa;Latte;Ýçecek;1;108,47;Nakit
+24.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;656,24;Kart
+24.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;332,05;Nakit
+25.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;436,42;Kart
+25.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;87,52;Mobil
+25.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;334,48;Kart
+25.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;206,91;Kart
+25.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;215,40;Kart
+25.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;73,47;Kart
+25.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;298,43;Kart
+25.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;430,51;Kart
+25.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;324,88;Kart
+25.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;361,92;Mobil
+25.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;137,67;Kart
+25.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;287,12;Kart
+25.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;108,41;Nakit
+25.09.2026;Çankaya;Ankara;Limonata;Ýçecek;1;89,13;Kart
+25.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;409,27;Mobil
+25.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;323,51;Mobil
+25.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,87;Mobil
+25.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;109,99;Kart
+25.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;88,84;Kart
+25.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;85,11;Kart
+25.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;294,03;Kart
+25.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;424,06;Kart
+25.09.2026;Nilüfer;Bursa;Latte;Ýçecek;4;426,89;Kart
+25.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;644,20;Mobil
+26.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;231,67;Nakit
+26.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;333,20;Nakit
+26.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;109,34;Mobil
+26.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;107,17;Kart
+26.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;69,51;Mobil
+26.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;136,63;Mobil
+26.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;355,51;Mobil
+26.09.2026;Çankaya;Ankara;Latte;Ýçecek;2;214,29;Mobil
+26.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,30;Kart
+26.09.2026;Çankaya;Ankara;Limonata;Ýçecek;1;87,91;Nakit
+26.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;108,16;Nakit
+26.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;141,64;Nakit
+26.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;411,48;Mobil
+26.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;107,57;Mobil
+26.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;181,48;Kart
+26.09.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;501,44;Kart
+26.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;351,19;Kart
+26.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;165,33;Nakit
+26.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;262,59;Nakit
+26.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;370,14;Kart
+26.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;139,86;Nakit
+26.09.2026;Nilüfer;Bursa;Latte;Ýçecek;3;327,12;Kart
+26.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;227,15;Kart
+26.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;74,63;Kart
+26.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;251,57;Mobil
+26.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;270,28;Kart
+27.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;300,79;Nakit
+27.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;142,68;Mobil
+27.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;141,93;Nakit
+27.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;493,66;Kart
+27.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;273,78;Kart
+27.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;185,22;Mobil
+27.09.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;499,02;Kart
+27.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;74,29;Mobil
+27.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;349,42;Nakit
+27.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;178,28;Mobil
+27.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;169,87;Nakit
+27.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;337,85;Kart
+27.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;286,18;Mobil
+27.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;274,21;Kart
+27.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;334,21;Nakit
+27.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;71,77;Kart
+27.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;173,99;Mobil
+27.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;274,16;Nakit
+27.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;73,25;Nakit
+27.09.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;576,64;Nakit
+27.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;337,76;Mobil
+27.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;483,54;Nakit
+27.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;141,51;Kart
+27.09.2026;Nilüfer;Bursa;Latte;Ýçecek;1;110,52;Kart
+28.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;2;172,12;Kart
+28.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;442,27;Nakit
+28.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,37;Kart
+28.09.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;293,20;Kart
+28.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;432,43;Nakit
+28.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;108,89;Mobil
+28.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;433,23;Kart
+28.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;140,17;Nakit
+28.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;558,92;Kart
+28.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;339,22;Kart
+28.09.2026;Çankaya;Ankara;Limonata;Ýçecek;4;361,04;Mobil
+28.09.2026;Çankaya;Ankara;Latte;Ýçecek;1;113,16;Mobil
+28.09.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;254,42;Kart
+28.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;87,07;Kart
+28.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,72;Mobil
+28.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;210,20;Kart
+28.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;293,05;Nakit
+28.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;176,98;Mobil
+28.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;211,28;Nakit
+29.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;90,64;Nakit
+29.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;1;89,28;Nakit
+29.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;333,45;Kart
+29.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;139,31;Nakit
+29.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;426,90;Kart
+29.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;417,63;Kart
+29.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;431,15;Nakit
+29.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,46;Kart
+29.09.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;282,95;Mobil
+29.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;305,42;Kart
+29.09.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;171,98;Nakit
+29.09.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;182,18;Kart
+29.09.2026;Çankaya;Ankara;Limonata;Ýçecek;3;266,60;Kart
+29.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;669,22;Kart
+29.09.2026;Çankaya;Ankara;Latte;Ýçecek;3;326,21;Kart
+29.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;151,55;Nakit
+29.09.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;152,28;Nakit
+29.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;561,67;Kart
+29.09.2026;Çankaya;Ankara;Limonata;Ýçecek;1;90,83;Kart
+29.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;75,41;Kart
+29.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;68,64;Kart
+29.09.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;169,39;Mobil
+29.09.2026;Nilüfer;Bursa;Latte;Ýçecek;2;216,08;Nakit
+29.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;73,34;Nakit
+29.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;82,56;Kart
+29.09.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;172,05;Nakit
+29.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,55;Mobil
+29.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;225,72;Kart
+29.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;91,25;Kart
+30.09.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;342,29;Kart
+30.09.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;555,86;Mobil
+30.09.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;184,75;Kart
+30.09.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;213,09;Kart
+30.09.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;327,94;Kart
+30.09.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;451,99;Nakit
+30.09.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;420,03;Kart
+30.09.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;223,67;Kart
+30.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;548,45;Kart
+30.09.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;279,53;Kart
+30.09.2026;Çankaya;Ankara;Limonata;Ýçecek;2;181,66;Kart
+30.09.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,01;Nakit
+30.09.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;164,83;Mobil
+30.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;148,34;Kart
+30.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;266,01;Kart
+30.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;151,81;Kart
+30.09.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;71,20;Mobil
+30.09.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;358,63;Mobil
+30.09.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;107,73;Kart
+30.09.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;148,36;Mobil
+30.09.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;136,64;Kart
+30.09.2026;Nilüfer;Bursa;Latte;Ýçecek;4;442,28;Kart
+30.09.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;571,32;Kart
+30.09.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;179,40;Kart
+30.09.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;294,92;Nakit
+30.09.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;338,70;Kart
+01.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;69,92;Kart
+01.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;333,79;Kart
+01.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;68,15;Kart
+01.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;216,12;Nakit
+01.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;69,00;Kart
+01.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;261,39;Kart
+01.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;142,42;Mobil
+01.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;173,71;Kart
+01.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;69,80;Mobil
+01.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;92,68;Kart
+01.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;258,93;Mobil
+01.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;649,06;Mobil
+01.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;343,61;Mobil
+01.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;142,75;Mobil
+01.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;110,39;Mobil
+01.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;107,23;Nakit
+01.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;135,91;Mobil
+01.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;336,79;Mobil
+01.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;2;184,05;Mobil
+01.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;322,93;Mobil
+01.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;166,56;Kart
+01.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;567,40;Kart
+01.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;165,40;Kart
+01.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,22;Nakit
+01.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;175,85;Kart
+01.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,17;Nakit
+01.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;332,30;Mobil
+02.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;335,92;Mobil
+02.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;139,46;Kart
+02.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;277,01;Mobil
+02.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;229,51;Kart
+02.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;650,60;Kart
+02.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;437,09;Nakit
+02.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;140,87;Kart
+02.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;287,37;Kart
+02.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;84,57;Kart
+02.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;430,36;Mobil
+02.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;161,06;Kart
+02.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;420,15;Kart
+02.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;357,06;Mobil
+02.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;82,59;Kart
+02.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;168,12;Kart
+02.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;73,37;Mobil
+02.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;138,43;Kart
+02.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;75,19;Mobil
+02.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;71,53;Kart
+02.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;140,61;Kart
+02.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;227,40;Nakit
+02.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;427,36;Mobil
+02.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;210,64;Kart
+02.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;336,74;Nakit
+02.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;255,13;Nakit
+02.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;491,25;Mobil
+02.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;226,28;Kart
+02.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;551,84;Kart
+02.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;224,09;Kart
+03.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;138,83;Kart
+03.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;4;549,05;Kart
+03.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;68,67;Mobil
+03.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;437,12;Mobil
+03.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;333,30;Nakit
+03.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;560,52;Kart
+03.10.2026;Çankaya;Ankara;Latte;Ýçecek;3;339,75;Mobil
+03.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;83,68;Kart
+03.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;336,60;Nakit
+03.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;359,47;Nakit
+03.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;231,53;Kart
+03.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;176,44;Kart
+03.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;149,81;Kart
+03.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;146,79;Kart
+03.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;277,62;Nakit
+03.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,02;Mobil
+03.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;334,29;Mobil
+03.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;347,38;Mobil
+03.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;87,81;Kart
+03.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;136,00;Kart
+03.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;562,76;Kart
+03.10.2026;Nilüfer;Bursa;Latte;Ýçecek;4;434,37;Kart
+03.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,62;Kart
+03.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;90,69;Mobil
+03.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;152,82;Kart
+04.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;416,11;Kart
+04.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,37;Nakit
+04.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;307,59;Nakit
+04.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;218,89;Nakit
+04.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;72,92;Nakit
+04.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;499,83;Mobil
+04.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;358,91;Mobil
+04.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;70,79;Kart
+04.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;88,64;Kart
+04.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;216,16;Nakit
+04.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;339,83;Mobil
+04.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;141,11;Kart
+04.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;88,24;Kart
+04.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;330,43;Mobil
+04.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;74,61;Kart
+04.10.2026;Çankaya;Ankara;Limonata;Ýçecek;1;90,47;Kart
+04.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;211,64;Mobil
+04.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;141,22;Kart
+04.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,45;Mobil
+04.10.2026;Çankaya;Ankara;Latte;Ýçecek;2;217,83;Kart
+04.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;86,80;Mobil
+04.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;678,46;Kart
+04.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;301,45;Kart
+04.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;492,31;Kart
+04.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;546,68;Kart
+04.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;139,98;Mobil
+04.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;87,93;Mobil
+04.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;262,64;Mobil
+04.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;500,00;Kart
+05.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;331,52;Mobil
+05.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;256,97;Kart
+05.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;210,54;Mobil
+05.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;74,69;Kart
+05.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;296,47;Kart
+05.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;508,27;Kart
+05.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;71,11;Kart
+05.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;173,06;Kart
+05.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;673,35;Nakit
+05.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;154,09;Kart
+05.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;575,18;Kart
+05.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;352,98;Nakit
+05.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,12;Mobil
+05.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;83,28;Kart
+05.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;89,06;Kart
+05.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;430,33;Nakit
+05.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;75,36;Kart
+05.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;360,16;Kart
+05.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;137,62;Kart
+05.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;265,61;Kart
+05.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;263,48;Kart
+05.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;362,89;Nakit
+05.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;184,55;Nakit
+06.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;336,91;Mobil
+06.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;211,32;Kart
+06.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;337,71;Kart
+06.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;166,71;Kart
+06.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;335,27;Nakit
+06.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;71,01;Mobil
+06.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;429,61;Nakit
+06.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;274,32;Kart
+06.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,79;Mobil
+06.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;167,42;Kart
+06.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;362,72;Kart
+06.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;336,75;Kart
+06.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;303,86;Mobil
+06.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;143,16;Kart
+06.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;276,34;Kart
+06.10.2026;Çankaya;Ankara;Latte;Ýçecek;4;435,39;Nakit
+06.10.2026;Çankaya;Ankara;Latte;Ýçecek;4;434,82;Kart
+06.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;331,08;Mobil
+06.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;354,74;Nakit
+06.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;137,75;Kart
+06.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;288,24;Mobil
+06.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;416,88;Kart
+06.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,90;Kart
+06.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;280,25;Nakit
+06.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;285,55;Nakit
+06.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;362,42;Kart
+06.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;332,78;Kart
+06.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;162,77;Mobil
+06.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;139,39;Kart
+06.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;567,68;Kart
+06.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;168,06;Kart
+06.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;421,93;Mobil
+06.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;654,68;Kart
+07.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;255,29;Mobil
+07.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;363,48;Mobil
+07.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;324,85;Mobil
+07.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;208,56;Mobil
+07.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;341,29;Kart
+07.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;168,10;Kart
+07.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;213,56;Kart
+07.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;447,40;Mobil
+07.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;300,59;Kart
+07.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;161,76;Kart
+07.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;287,04;Nakit
+07.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;68,49;Nakit
+07.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;649,09;Kart
+07.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;408,26;Mobil
+07.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;491,18;Kart
+07.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;139,73;Kart
+07.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;502,69;Kart
+07.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;304,73;Kart
+07.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;339,38;Nakit
+07.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;151,25;Kart
+07.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;223,43;Nakit
+07.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;84,72;Mobil
+08.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;275,50;Kart
+08.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;141,87;Nakit
+08.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;301,31;Mobil
+08.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,38;Kart
+08.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;302,35;Nakit
+08.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;447,50;Kart
+08.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;139,74;Kart
+08.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;284,66;Nakit
+08.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;141,15;Mobil
+08.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;177,68;Mobil
+08.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,06;Kart
+08.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;407,97;Nakit
+08.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;140,65;Kart
+08.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;410,34;Kart
+08.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;251,20;Mobil
+08.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;287,36;Nakit
+08.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;212,00;Kart
+08.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;324,64;Kart
+08.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;4;354,88;Nakit
+08.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;251,66;Nakit
+08.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;218,22;Nakit
+08.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,03;Mobil
+08.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;70,33;Mobil
+08.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;210,33;Kart
+08.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;287,02;Nakit
+08.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;149,78;Nakit
+08.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;225,09;Kart
+08.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;225,11;Kart
+08.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;215,13;Mobil
+09.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;357,27;Kart
+09.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;219,01;Mobil
+09.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;111,39;Kart
+09.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;252,69;Mobil
+09.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;225,99;Kart
+09.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;153,25;Kart
+09.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;140,69;Nakit
+09.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;143,63;Nakit
+09.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;353,68;Nakit
+09.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;347,98;Kart
+09.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;111,25;Mobil
+09.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;181,09;Kart
+09.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;107,96;Nakit
+09.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;69,62;Kart
+09.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;285,13;Mobil
+09.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;427,87;Nakit
+09.10.2026;Çankaya;Ankara;Limonata;Ýçecek;1;88,31;Kart
+09.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;333,51;Mobil
+09.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;113,01;Kart
+09.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;75,48;Kart
+09.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;574,82;Nakit
+09.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,62;Nakit
+09.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;73,97;Mobil
+09.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;216,61;Kart
+09.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;484,05;Mobil
+09.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,73;Kart
+09.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;74,99;Kart
+10.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;329,86;Mobil
+10.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;223,66;Mobil
+10.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;180,04;Mobil
+10.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;204,77;Kart
+10.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;421,76;Kart
+10.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;146,74;Kart
+10.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;324,62;Kart
+10.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;272,18;Mobil
+10.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;284,34;Nakit
+10.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;176,15;Mobil
+10.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;352,82;Nakit
+10.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;183,29;Kart
+10.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;328,83;Kart
+10.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;499,40;Kart
+10.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;166,54;Kart
+10.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;562,44;Kart
+10.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;282,16;Kart
+10.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;281,02;Nakit
+10.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;278,77;Nakit
+10.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,75;Nakit
+10.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;163,96;Mobil
+10.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;109,12;Kart
+10.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;73,43;Kart
+10.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;505,99;Nakit
+10.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;173,43;Kart
+10.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;279,06;Kart
+10.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;223,94;Nakit
+10.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;256,43;Mobil
+10.10.2026;Nilüfer;Bursa;Latte;Ýçecek;1;109,50;Kart
+10.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;343,38;Mobil
+10.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;175,68;Kart
+11.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;280,06;Kart
+11.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;149,46;Kart
+11.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;219,47;Kart
+11.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;508,87;Kart
+11.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;68,37;Mobil
+11.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;151,24;Nakit
+11.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;138,51;Kart
+11.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;330,71;Kart
+11.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;221,69;Nakit
+11.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;177,77;Mobil
+11.10.2026;Çankaya;Ankara;Latte;Ýçecek;2;221,15;Mobil
+11.10.2026;Çankaya;Ankara;Latte;Ýçecek;2;222,97;Kart
+11.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;417,58;Mobil
+11.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;284,61;Kart
+11.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;411,84;Nakit
+11.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;428,21;Kart
+11.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;280,22;Kart
+11.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;221,90;Nakit
+11.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;333,60;Nakit
+11.10.2026;Nilüfer;Bursa;Latte;Ýçecek;1;112,13;Mobil
+11.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;144,08;Nakit
+11.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;272,87;Kart
+12.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;165,72;Kart
+12.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;337,24;Kart
+12.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;353,36;Mobil
+12.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;224,38;Nakit
+12.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;69,57;Nakit
+12.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;273,39;Kart
+12.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;266,47;Nakit
+12.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;174,94;Kart
+12.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;4;336,94;Kart
+12.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;653,65;Nakit
+12.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;224,83;Nakit
+12.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;110,35;Kart
+12.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;330,27;Mobil
+12.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;450,40;Mobil
+12.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;260,06;Kart
+12.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;505,00;Kart
+12.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;76,27;Kart
+12.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;214,03;Kart
+12.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;335,82;Mobil
+12.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;330,84;Nakit
+12.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;136,92;Kart
+12.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;4;549,26;Nakit
+12.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;280,86;Kart
+12.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;427,56;Kart
+12.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;226,43;Mobil
+12.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;90,36;Kart
+12.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;326,48;Mobil
+12.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;82,96;Mobil
+13.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;68,51;Nakit
+13.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;163,73;Nakit
+13.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;338,39;Mobil
+13.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;138,65;Nakit
+13.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;167,43;Kart
+13.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;667,28;Nakit
+13.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;269,18;Kart
+13.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;256,96;Kart
+13.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;641,75;Nakit
+13.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;149,19;Kart
+13.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,19;Mobil
+13.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;169,26;Kart
+13.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,47;Kart
+13.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;274,23;Mobil
+13.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;261,98;Kart
+13.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;489,18;Mobil
+13.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;89,26;Kart
+13.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;645,32;Nakit
+13.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;167,10;Mobil
+13.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;145,58;Mobil
+13.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;70,62;Kart
+13.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;331,36;Mobil
+13.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;137,99;Mobil
+13.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;164,45;Mobil
+13.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;225,41;Nakit
+13.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;285,48;Kart
+14.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;258,25;Mobil
+14.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;339,08;Kart
+14.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;217,91;Mobil
+14.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;3;204,41;Mobil
+14.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;281,64;Nakit
+14.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;179,69;Mobil
+14.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;136,62;Nakit
+14.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;112,33;Mobil
+14.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;177,09;Nakit
+14.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;163,30;Nakit
+14.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;281,64;Kart
+14.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;213,98;Kart
+14.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;110,59;Kart
+14.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;432,19;Kart
+14.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;250,65;Mobil
+14.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;231,17;Nakit
+14.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;87,28;Nakit
+14.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;482,31;Mobil
+14.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;230,54;Kart
+14.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;4;272,01;Nakit
+14.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;69,44;Kart
+14.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;429,31;Nakit
+14.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;252,68;Kart
+14.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;657,99;Kart
+14.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;338,62;Nakit
+14.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;363,67;Nakit
+15.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;146,26;Kart
+15.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;73,41;Mobil
+15.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;139,23;Nakit
+15.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;271,65;Kart
+15.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;175,98;Mobil
+15.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;182,32;Kart
+15.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;3;267,08;Kart
+15.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;413,38;Kart
+15.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;287,26;Kart
+15.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;167,17;Mobil
+15.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;74,21;Nakit
+15.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;284,96;Mobil
+15.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;326,52;Mobil
+15.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;75,81;Kart
+15.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;4;546,73;Kart
+15.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;505,48;Kart
+15.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;299,51;Mobil
+15.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;332,17;Mobil
+15.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;287,22;Nakit
+15.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,78;Kart
+15.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;206,51;Kart
+15.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;4;445,03;Mobil
+15.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;298,86;Kart
+15.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;336,62;Nakit
+15.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;84,01;Mobil
+15.10.2026;Nilüfer;Bursa;Latte;Ýçecek;4;443,45;Mobil
+15.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;331,26;Kart
+16.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;272,05;Kart
+16.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;328,29;Kart
+16.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;140,35;Nakit
+16.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;112,91;Nakit
+16.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;160,41;Nakit
+16.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;82,58;Mobil
+16.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;304,43;Nakit
+16.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;645,81;Kart
+16.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;435,06;Nakit
+16.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;349,63;Nakit
+16.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,38;Kart
+16.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;140,20;Kart
+16.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;366,68;Kart
+16.10.2026;Çankaya;Ankara;Limonata;Ýçecek;1;88,75;Mobil
+16.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;2;168,94;Kart
+16.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;498,20;Mobil
+16.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;339,64;Kart
+16.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;2;172,56;Kart
+16.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;208,63;Kart
+16.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;282,78;Mobil
+16.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;330,40;Kart
+16.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;275,06;Mobil
+17.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;71,46;Mobil
+17.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;149,17;Mobil
+17.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;82,95;Nakit
+17.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;74,94;Kart
+17.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;165,27;Kart
+17.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;181,30;Mobil
+17.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;276,12;Kart
+17.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;498,93;Kart
+17.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;431,65;Mobil
+17.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;250,68;Kart
+17.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;430,32;Nakit
+17.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;321,56;Kart
+17.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;336,84;Kart
+17.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;271,70;Nakit
+17.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;279,73;Nakit
+17.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;337,06;Kart
+17.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;416,47;Nakit
+17.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;110,03;Nakit
+17.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;666,44;Kart
+17.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;4;565,27;Mobil
+17.10.2026;Nilüfer;Bursa;Latte;Ýçecek;1;112,92;Mobil
+17.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;72,77;Kart
+18.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;151,16;Mobil
+18.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;75,71;Kart
+18.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;263,13;Kart
+18.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;4;435,94;Kart
+18.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;296,01;Kart
+18.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;281,25;Mobil
+18.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;3;327,66;Kart
+18.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;176,36;Nakit
+18.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;220,33;Kart
+18.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;275,07;Kart
+18.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;428,83;Nakit
+18.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;3;499,64;Kart
+18.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;110,60;Kart
+18.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;165,74;Kart
+18.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;251,03;Mobil
+18.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;223,30;Mobil
+18.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;284,53;Kart
+18.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;137,62;Mobil
+18.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;278,84;Mobil
+18.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;1;109,93;Mobil
+18.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;425,67;Mobil
+18.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;273,40;Mobil
+18.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;1;164,48;Nakit
+18.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;333,14;Nakit
+18.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;69,96;Kart
+18.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;169,38;Nakit
+18.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;420,76;Mobil
+18.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;149,63;Kart
+18.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;205,59;Nakit
+18.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;279,89;Kart
+19.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;225,35;Kart
+19.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;417,11;Mobil
+19.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;75,64;Kart
+19.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;1;70,93;Kart
+19.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;76,80;Nakit
+19.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;282,40;Nakit
+19.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;412,49;Kart
+19.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;433,95;Mobil
+19.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;169,43;Mobil
+19.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;92,65;Nakit
+19.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;87,93;Kart
+19.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;279,52;Mobil
+19.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;214,43;Mobil
+19.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;112,18;Kart
+19.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;306,54;Kart
+19.10.2026;Çankaya;Ankara;Latte;Ýçecek;4;433,83;Kart
+19.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;425,61;Kart
+19.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;229,87;Nakit
+19.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;73,88;Kart
+19.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;2;332,30;Mobil
+19.10.2026;Nilüfer;Bursa;Latte;Ýçecek;4;427,05;Kart
+19.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;3;489,33;Kart
+19.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;272,76;Mobil
+20.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;275,91;Kart
+20.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;220,08;Kart
+20.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;352,81;Nakit
+20.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;420,44;Kart
+20.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;217,09;Mobil
+20.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;351,25;Kart
+20.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;2;275,35;Kart
+20.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;214,03;Kart
+20.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;370,04;Nakit
+20.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;86,63;Kart
+20.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;74,88;Mobil
+20.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;257,93;Kart
+20.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;138,63;Kart
+20.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;1;71,97;Nakit
+20.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;349,31;Kart
+20.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;293,13;Kart
+20.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;2;171,27;Kart
+20.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;87,41;Nakit
+20.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;221,08;Kart
+20.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;261,07;Kart
+21.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;151,02;Kart
+21.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,59;Kart
+21.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;83,92;Mobil
+21.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;297,42;Kart
+21.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;110,43;Kart
+21.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;279,39;Mobil
+21.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;294,26;Nakit
+21.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;291,23;Kart
+21.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;252,16;Mobil
+21.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;4;368,90;Kart
+21.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;68,98;Kart
+21.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;178,76;Mobil
+21.10.2026;Çankaya;Ankara;Latte;Ýçecek;3;326,62;Kart
+21.10.2026;Çankaya;Ankara;Limonata;Ýçecek;3;276,51;Nakit
+21.10.2026;Çankaya;Ankara;Latte;Ýçecek;3;321,51;Kart
+21.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;252,50;Mobil
+21.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;205,72;Nakit
+21.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,19;Kart
+21.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;337,09;Nakit
+21.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;676,80;Mobil
+21.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;140,15;Nakit
+21.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;143,67;Mobil
+21.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;138,50;Kart
+21.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;85,05;Mobil
+22.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;214,55;Kart
+22.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;281,63;Kart
+22.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;339,01;Kart
+22.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;145,90;Kart
+22.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;165,44;Kart
+22.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;1;162,71;Mobil
+22.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;137,33;Nakit
+22.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;82,77;Mobil
+22.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;250,13;Nakit
+22.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;143,33;Kart
+22.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;107,20;Mobil
+22.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;288,20;Nakit
+22.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;335,70;Kart
+22.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;221,70;Nakit
+22.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;329,21;Nakit
+22.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;3;425,41;Kart
+22.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;217,31;Nakit
+22.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;4;642,84;Nakit
+22.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;1;138,04;Nakit
+22.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;84,93;Nakit
+22.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;4;339,64;Kart
+22.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;2;146,16;Mobil
+23.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;488,84;Kart
+23.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;299,86;Mobil
+23.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;75,79;Mobil
+23.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;262,58;Kart
+23.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;449,38;Nakit
+23.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;141,27;Nakit
+23.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;2;137,94;Mobil
+23.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;210,69;Nakit
+23.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;4;561,52;Mobil
+23.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;3;248,46;Kart
+23.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;1;74,99;Nakit
+23.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;183,27;Kart
+23.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;251,58;Kart
+23.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;84,28;Kart
+23.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;77,06;Kart
+23.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;3;214,47;Kart
+23.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;321,46;Kart
+23.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;422,73;Nakit
+23.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;221,10;Kart
+23.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;137,38;Nakit
+23.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;308,95;Kart
+23.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;214,21;Kart
+23.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;336,46;Kart
+24.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;330,94;Kart
+24.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;3;263,02;Mobil
+24.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;2;177,74;Kart
+24.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;84,81;Kart
+24.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;148,73;Mobil
+24.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;90,18;Mobil
+24.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;305,74;Nakit
+24.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;679,79;Kart
+24.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;111,97;Mobil
+24.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;1;84,53;Kart
+24.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;2;337,02;Mobil
+24.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;338,68;Mobil
+24.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;4;285,07;Nakit
+24.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;151,83;Nakit
+24.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;320,88;Nakit
+24.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;338,29;Kart
+24.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;1;74,01;Mobil
+24.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;3;414,75;Mobil
+24.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;3;227,95;Mobil
+24.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;138,28;Mobil
+24.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;323,74;Kart
+25.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;2;223,96;Kart
+25.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;283,37;Nakit
+25.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;1;85,90;Mobil
+25.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;365,18;Nakit
+25.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;410,35;Kart
+25.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;143,06;Nakit
+25.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;216,21;Nakit
+25.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;173,70;Kart
+25.10.2026;Çankaya;Ankara;Latte;Ýçecek;3;339,16;Mobil
+25.10.2026;Çankaya;Ankara;Latte;Ýçecek;4;427,45;Kart
+25.10.2026;Çankaya;Ankara;Latte;Ýçecek;3;337,40;Nakit
+25.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;224,14;Mobil
+25.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;151,51;Mobil
+25.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;2;136,82;Mobil
+25.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;3;229,42;Nakit
+25.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;88,43;Kart
+25.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;3;219,02;Kart
+25.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;277,92;Nakit
+25.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;1;88,55;Kart
+25.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;87,45;Mobil
+25.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;70,06;Nakit
+25.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;139,33;Kart
+26.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;481,48;Kart
+26.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;369,29;Kart
+26.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;150,36;Kart
+26.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;2;339,68;Kart
+26.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;1;142,80;Kart
+26.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;169,86;Mobil
+26.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;109,40;Mobil
+26.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;1;88,46;Mobil
+26.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;2;166,14;Kart
+26.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;4;294,94;Mobil
+26.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;4;445,01;Kart
+26.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;4;677,84;Nakit
+26.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;139,14;Kart
+26.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;1;143,94;Kart
+26.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;1;70,75;Mobil
+26.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;3;427,45;Kart
+26.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;83,68;Kart
+26.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;2;146,29;Kart
+26.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;3;335,02;Mobil
+26.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;90,29;Kart
+26.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;4;299,32;Mobil
+26.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;167,77;Mobil
+26.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;165,43;Nakit
+26.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;70,46;Kart
+26.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;4;285,16;Mobil
+27.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;353,23;Nakit
+27.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;2;149,54;Nakit
+27.10.2026;Kadýköy;Ýstanbul;Limonata;Ýçecek;4;357,67;Mobil
+27.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;286,33;Mobil
+27.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;4;284,56;Kart
+27.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;213,62;Nakit
+27.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;225,68;Kart
+27.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;323,13;Kart
+27.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;145,88;Nakit
+27.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;3;220,60;Nakit
+27.10.2026;Çankaya;Ankara;Cheesecake;Tatlý;2;285,63;Kart
+27.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;85,75;Kart
+27.10.2026;Çankaya;Ankara;Limonata;Ýçecek;4;355,88;Kart
+27.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;179,05;Kart
+27.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;330,57;Mobil
+27.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;91,43;Nakit
+27.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;335,19;Kart
+27.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;147,02;Kart
+27.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;215,20;Kart
+27.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;2;176,77;Kart
+27.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;161,65;Nakit
+28.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;162,16;Nakit
+28.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;4;332,45;Mobil
+28.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;164,93;Kart
+28.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;1;143,32;Kart
+28.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;2;217,64;Kart
+28.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;326,71;Kart
+28.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;1;71,12;Nakit
+28.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;210,10;Kart
+28.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;4;663,66;Nakit
+28.10.2026;Çankaya;Ankara;Latte;Ýçecek;2;217,37;Kart
+28.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;3;501,38;Nakit
+28.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;4;340,29;Kart
+28.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;147,84;Nakit
+28.10.2026;Alsancak;Ýzmir;Cheesecake;Tatlý;2;274,31;Mobil
+28.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;70,99;Nakit
+28.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;1;71,98;Kart
+28.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;4;658,82;Nakit
+28.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;292,31;Mobil
+28.10.2026;Nilüfer;Bursa;Latte;Ýçecek;3;325,33;Kart
+28.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;4;368,25;Kart
+28.10.2026;Nilüfer;Bursa;Limonata;Ýçecek;3;265,92;Kart
+29.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;3;421,85;Mobil
+29.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;300,32;Kart
+29.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;4;285,79;Nakit
+29.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;3;500,60;Kart
+29.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;169,13;Nakit
+29.10.2026;Kadýköy;Ýstanbul;Cheesecake;Tatlý;2;277,48;Kart
+29.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;209,43;Kart
+29.10.2026;Beþiktaþ;Ýstanbul;Filtre kahve;Ýçecek;3;259,57;Mobil
+29.10.2026;Beþiktaþ;Ýstanbul;Limonata;Ýçecek;2;177,38;Mobil
+29.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;302,97;Nakit
+29.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;1;161,14;Kart
+29.10.2026;Çankaya;Ankara;Sandviç;Yiyecek;3;492,43;Kart
+29.10.2026;Çankaya;Ankara;Limonata;Ýçecek;2;180,64;Kart
+29.10.2026;Çankaya;Ankara;Limonata;Ýçecek;3;275,42;Kart
+29.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;1;90,44;Nakit
+29.10.2026;Alsancak;Ýzmir;Latte;Ýçecek;2;224,81;Mobil
+29.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;2;146,71;Kart
+29.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;85,29;Kart
+29.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;276,07;Kart
+29.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;213,18;Kart
+29.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;300,21;Nakit
+29.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;3;211,98;Nakit
+29.10.2026;Nilüfer;Bursa;Sandviç;Yiyecek;1;161,85;Kart
+30.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;3;228,86;Nakit
+30.10.2026;Kadýköy;Ýstanbul;Sandviç;Yiyecek;1;161,10;Nakit
+30.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;296,87;Kart
+30.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;4;296,08;Nakit
+30.10.2026;Kadýköy;Ýstanbul;Latte;Ýçecek;1;110,26;Kart
+30.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;320,43;Nakit
+30.10.2026;Beþiktaþ;Ýstanbul;Türk kahvesi;Ýçecek;3;210,00;Kart
+30.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;1;110,66;Mobil
+30.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;2;152,91;Nakit
+30.10.2026;Çankaya;Ankara;Latte;Ýçecek;1;111,31;Kart
+30.10.2026;Çankaya;Ankara;Kruvasan;Fýrýn;4;306,18;Nakit
+30.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;4;331,46;Kart
+30.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;136,86;Kart
+30.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;74,66;Kart
+30.10.2026;Alsancak;Ýzmir;Limonata;Ýçecek;3;272,79;Kart
+30.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;2;278,09;Kart
+30.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;3;260,91;Kart
+30.10.2026;Nilüfer;Bursa;Kruvasan;Fýrýn;4;304,36;Nakit
+30.10.2026;Nilüfer;Bursa;Türk kahvesi;Ýçecek;2;140,14;Kart
+30.10.2026;Nilüfer;Bursa;Cheesecake;Tatlý;1;139,09;Kart
+30.10.2026;Nilüfer;Bursa;Latte;Ýçecek;1;109,74;Mobil
+31.10.2026;Kadýköy;Ýstanbul;Kruvasan;Fýrýn;1;76,28;Mobil
+31.10.2026;Kadýköy;Ýstanbul;Filtre kahve;Ýçecek;3;253,63;Nakit
+31.10.2026;Kadýköy;Ýstanbul;Türk kahvesi;Ýçecek;2;139,93;Nakit
+31.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;327,45;Nakit
+31.10.2026;Beþiktaþ;Ýstanbul;Latte;Ýçecek;3;339,08;Mobil
+31.10.2026;Beþiktaþ;Ýstanbul;Kruvasan;Fýrýn;1;76,37;Nakit
+31.10.2026;Beþiktaþ;Ýstanbul;Sandviç;Yiyecek;2;329,48;Mobil
+31.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;416,53;Mobil
+31.10.2026;Beþiktaþ;Ýstanbul;Cheesecake;Tatlý;3;411,83;Nakit
+31.10.2026;Çankaya;Ankara;Filtre kahve;Ýçecek;1;83,47;Nakit
+31.10.2026;Çankaya;Ankara;Latte;Ýçecek;4;439,82;Mobil
+31.10.2026;Çankaya;Ankara;Latte;Ýçecek;2;217,60;Kart
+31.10.2026;Çankaya;Ankara;Türk kahvesi;Ýçecek;3;204,00;Kart
+31.10.2026;Alsancak;Ýzmir;Türk kahvesi;Ýçecek;2;141,65;Kart
+31.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;1;85,25;Kart
+31.10.2026;Alsancak;Ýzmir;Filtre kahve;Ýçecek;3;260,60;Kart
+31.10.2026;Alsancak;Ýzmir;Kruvasan;Fýrýn;1;76,22;Kart
+31.10.2026;Alsancak;Ýzmir;Sandviç;Yiyecek;2;323,66;Kart
+31.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;83,53;Kart
+31.10.2026;Nilüfer;Bursa;Filtre kahve;Ýçecek;1;83,91;Kart
+31.10.2026;Nilüfer;Bursa;Latte;Ýçecek;2;214,54;Nakit
