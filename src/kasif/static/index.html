@@ -1,0 +1,1286 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Kâşif</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%230c1a2b'/%3E%3Cpath d='M20 7l4.5 13h-9z' fill='%2312b5a5'/%3E%3Cpath d='M20 33l-4.5-13h9z' fill='%23e0a33a'/%3E%3C/svg%3E">
+<style>
+/* =====================================================================
+   Kâşif — "keşif defteri" tasarım dili
+   Serin lacivert + camgöbeği, topoğrafik doku, pusula, kesin ölçüler.
+   ===================================================================== */
+:root {
+  --sans: "Inter", "Segoe UI Variable Text", "Segoe UI", -apple-system, system-ui, sans-serif;
+  --display: "Inter", "Segoe UI Variable Display", "Segoe UI", -apple-system, system-ui, sans-serif;
+  --mono: "JetBrains Mono", "Cascadia Code", "SF Mono", Consolas, monospace;
+  --ease: cubic-bezier(.2, .75, .2, 1);
+  --bg: #f3f6f9; --panel: #ffffff; --panel-2: #f7f9fb; --panel-3: #eef2f6;
+  --ink: #0c1a2b; --ink-2: #435469; --ink-3: #8492a6;
+  --line: #e2e8ef; --line-2: #d0d9e3;
+  --accent: #0d8a8c; --accent-2: #12b5a5; --accent-soft: #def3f1; --accent-ink: #ffffff;
+  --gold: #c9750a; --gold-soft: #fcf1df;
+  --ok: #15803d; --ok-soft: #dcf2e3; --bad: #c62828; --bad-soft: #fbe3e3; --warn: #a15c07; --warn-soft: #fbefd9;
+  --grad: linear-gradient(135deg, #0b7c87 0%, #12b5a5 55%, #39b6e6 100%);
+  --glow: rgba(18, 181, 165, .14); --glow-2: rgba(57, 182, 230, .10); --contour: rgba(12, 26, 43, .06);
+  --shadow: 0 1px 2px rgba(12, 26, 43, .05), 0 6px 16px -8px rgba(12, 26, 43, .12);
+  --shadow-2: 0 1px 2px rgba(12, 26, 43, .06), 0 12px 28px -12px rgba(12, 26, 43, .2), 0 30px 60px -30px rgba(13, 138, 140, .25);
+  --glass: rgba(255, 255, 255, .82);
+  --c1: #0d8a8c; --c2: #e08a12; --c3: #4f5bd5; --c4: #d6456b; --c5: #2f9e44; --c6: #2b8ac6; --c7: #8b5cf6; --c8: #c2410c;
+}
+:root[data-theme="dark"] {
+  --bg: #08101b; --panel: #0e1826; --panel-2: #122033; --panel-3: #16263b;
+  --ink: #e7eef6; --ink-2: #a9b7c9; --ink-3: #6c7d93;
+  --line: #1b2a3d; --line-2: #26384e;
+  --accent: #2dd4bf; --accent-2: #5eead4; --accent-soft: #0e2f33; --accent-ink: #06141c;
+  --gold: #fbbf24; --gold-soft: #33260b;
+  --ok: #4ade80; --ok-soft: #10301c; --bad: #f87171; --bad-soft: #3a1515; --warn: #fbbf24; --warn-soft: #33260b;
+  --grad: linear-gradient(135deg, #14b8a6 0%, #2dd4bf 50%, #60c9f0 100%);
+  --glow: rgba(45, 212, 191, .10); --glow-2: rgba(96, 201, 240, .07); --contour: rgba(231, 238, 246, .045);
+  --shadow: 0 1px 2px rgba(0, 0, 0, .35), 0 8px 18px -10px rgba(0, 0, 0, .6);
+  --shadow-2: 0 1px 2px rgba(0, 0, 0, .4), 0 14px 30px -14px rgba(0, 0, 0, .7), 0 30px 60px -30px rgba(45, 212, 191, .18);
+  --glass: rgba(14, 24, 38, .82);
+  --c1: #2dd4bf; --c2: #fbbf24; --c3: #818cf8; --c4: #fb7185; --c5: #4ade80; --c6: #60c9f0; --c7: #c084fc; --c8: #fb923c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body { font: 14.5px/1.55 var(--sans); color: var(--ink); background: var(--bg); -webkit-font-smoothing: antialiased; overflow: hidden;
+  background-image: radial-gradient(1000px 560px at 100% -10%, var(--glow), transparent 60%), radial-gradient(800px 520px at -10% 110%, var(--glow-2), transparent 60%); }
+button, input, textarea, select { font: inherit; color: inherit; }
+a { color: var(--accent); text-underline-offset: 3px; }
+::selection { background: var(--accent-soft); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3, h4 { font-family: var(--display); letter-spacing: -.02em; margin: 0; }
+.mono { font-family: var(--mono); }
+.eyebrow { font: 600 10.5px/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--ink-3); }
+::-webkit-scrollbar { width: 10px; height: 10px; } ::-webkit-scrollbar-thumb { background: var(--line-2); border-radius: 99px; border: 3px solid transparent; background-clip: content-box; }
+@keyframes rise { from { opacity: 0; transform: translateY(8px); filter: blur(3px); } }
+@keyframes fade { from { opacity: 0; } }
+@keyframes pop { from { opacity: 0; transform: scale(.94); } }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+@keyframes grow-x { from { transform: scaleX(0); } }
+@keyframes grow-y { from { transform: scaleY(0); } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes shimmer { from { background-position: 150% 0; } to { background-position: -150% 0; } }
+@keyframes pulse { 50% { opacity: .35; } }
+
+/* ---------- shell ---------- */
+.app { display: grid; grid-template-columns: 248px minmax(0, 1fr); height: 100vh; height: 100dvh; }
+.side { display: flex; flex-direction: column; min-height: 0; border-right: 1px solid var(--line); background: var(--glass);
+  backdrop-filter: blur(16px) saturate(1.2); -webkit-backdrop-filter: blur(16px) saturate(1.2); position: relative; z-index: 5; }
+.brand { display: flex; align-items: center; gap: 11px; padding: 20px 20px 18px; cursor: default; }
+.compass { width: 34px; height: 34px; flex: none; }
+.compass .ring { fill: var(--panel); stroke: var(--line-2); stroke-width: 1.5; }
+.compass .tick { stroke: var(--ink-3); stroke-width: 1.4; stroke-linecap: round; }
+.compass .needle { transform-origin: 20px 20px; animation: settle 1.6s var(--ease) both; }
+.compass .n { fill: var(--accent); } .compass .s { fill: var(--gold); }
+@keyframes settle { 0% { transform: rotate(-140deg); } 60% { transform: rotate(18deg); } 80% { transform: rotate(-6deg); } 100% { transform: rotate(0); } }
+.busy .compass .needle { animation: seek 1.1s ease-in-out infinite alternate; }
+@keyframes seek { from { transform: rotate(-35deg); } to { transform: rotate(35deg); } }
+.brand b { display: block; font: 700 21px/1 var(--display); letter-spacing: -.03em; }
+.brand small { display: block; font: 500 11.5px var(--sans); color: var(--ink-3); margin-top: 4px; }
+nav.menu { position: relative; display: flex; flex-direction: column; gap: 1px; padding: 6px 10px; }
+nav.menu button { position: relative; z-index: 1; display: flex; align-items: center; gap: 11px; height: 38px; padding: 0 12px; border: 0; border-radius: 9px; background: none;
+  cursor: pointer; color: var(--ink-2); font-weight: 520; text-align: left; transition: color .2s; }
+nav.menu button svg { width: 17px; height: 17px; flex: none; transition: color .2s, transform .3s var(--ease); }
+nav.menu button:hover { color: var(--ink); } nav.menu button:hover svg { transform: translateX(1px); }
+nav.menu button[aria-current="true"] { color: var(--ink); font-weight: 600; }
+nav.menu button[aria-current="true"] svg { color: var(--accent); }
+nav.menu .n { margin-left: auto; font: 11px var(--mono); color: var(--ink-3); }
+.nav-pill { position: absolute; left: 10px; right: 10px; top: 0; height: 38px; border-radius: 9px; background: var(--panel); border: 1px solid var(--line);
+  box-shadow: var(--shadow); transition: transform .45s var(--ease); pointer-events: none; }
+.nav-pill::before { content: ""; position: absolute; left: -1px; top: 9px; bottom: 9px; width: 3px; border-radius: 0 3px 3px 0; background: var(--grad); }
+.side-sp { flex: 1; }
+.ds-card { margin: 0 12px 10px; padding: 12px 13px; border: 1px solid var(--line); border-radius: 12px; background: var(--panel); cursor: pointer; text-align: left; width: calc(100% - 24px);
+  transition: border-color .2s, box-shadow .3s, transform .3s var(--ease); }
+.ds-card:hover { border-color: var(--line-2); box-shadow: var(--shadow); transform: translateY(-1px); }
+.ds-card .eyebrow { display: flex; align-items: center; gap: 6px; }
+.ds-card b { display: block; font-weight: 650; font-size: 13.5px; margin: 6px 0 2px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ds-card small { color: var(--ink-3); font: 11.5px var(--mono); }
+.side-foot { display: flex; align-items: center; gap: 8px; padding: 10px 12px 14px; border-top: 1px solid var(--line); }
+.conn { flex: 1; min-width: 0; display: flex; align-items: center; gap: 8px; padding: 6px 8px; border: 0; border-radius: 8px; background: none; cursor: pointer; text-align: left; }
+.conn:hover { background: var(--panel-2); }
+.conn span { font-size: 12px; color: var(--ink-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.led { width: 8px; height: 8px; border-radius: 50%; background: var(--ink-3); flex: none; }
+.led.on { background: var(--ok); box-shadow: 0 0 0 3px var(--ok-soft); } .led.off { background: var(--gold); box-shadow: 0 0 0 3px var(--gold-soft); }
+.sq { width: 30px; height: 30px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); display: grid; place-items: center; cursor: pointer;
+  color: var(--ink-2); font: 600 11px var(--mono); transition: border-color .2s, color .2s; flex: none; }
+.sq:hover { border-color: var(--ink-3); color: var(--ink); } .sq svg { width: 15px; height: 15px; }
+
+.main { position: relative; min-width: 0; min-height: 0; display: flex; flex-direction: column; container: main / inline-size; }
+.main::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 1;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600' fill='none' stroke='%23000' stroke-width='1'%3E%3Cpath d='M-20 120c80-60 160 40 240-10s150-90 230-20 120 30 170 0'/%3E%3Cpath d='M-20 160c90-50 170 40 250-5s140-80 220-15 130 35 170 5'/%3E%3Cpath d='M-20 205c95-40 175 35 255 0s135-70 215-10 135 40 170 10'/%3E%3Cpath d='M-20 255c100-30 180 30 260 5s130-60 210-5 140 45 170 15'/%3E%3Cpath d='M-20 310c105-20 185 25 265 10s125-50 205 0 145 50 170 20'/%3E%3Cpath d='M320 420c40-40 110-30 130 10s-20 80-70 80-100-50-60-90z'/%3E%3Cpath d='M345 430c30-25 80-20 92 8s-15 55-50 55-70-35-42-63z'/%3E%3Cpath d='M368 440c18-14 48-12 56 6s-9 33-30 33-42-21-26-39z'/%3E%3C/svg%3E") right -120px top -140px / 760px no-repeat;
+  -webkit-mask: linear-gradient(#000, transparent 70%); mask: linear-gradient(#000, transparent 70%); filter: opacity(.06); }
+:root[data-theme="dark"] .main::before { filter: invert(1) opacity(.07); }
+.mobile-bar { display: none; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--line); background: var(--glass); backdrop-filter: blur(14px); position: relative; z-index: 3; }
+.view { display: none; position: relative; flex: 1; min-height: 0; flex-direction: column; }
+.view.active { display: flex; animation: view-in .5s var(--ease); }
+@keyframes view-in { from { opacity: 0; transform: translateY(8px); filter: blur(4px); } }
+.head { position: relative; z-index: 2; display: flex; align-items: flex-end; gap: 16px; padding: 26px 36px 16px; flex-wrap: wrap; transition: box-shadow .3s, background .3s; }
+.view.scrolled .head { background: var(--glass); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--line), 0 14px 24px -22px rgba(12, 26, 43, .5); }
+.head h1 { font-size: 26px; font-weight: 700; line-height: 1.15; animation: rise .55s var(--ease) both; }
+.head p { margin: 5px 0 0; color: var(--ink-2); font-size: 13.5px; animation: rise .55s var(--ease) .05s both; }
+.head .tools { margin-left: auto; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.body { flex: 1; min-height: 0; overflow-y: auto; padding: 8px 36px 40px; }
+.wrap { max-width: 1040px; margin: 0 auto; }
+
+/* ---------- controls ---------- */
+.btn { display: inline-flex; align-items: center; gap: 7px; height: 34px; padding: 0 14px; border-radius: 9px; border: 1px solid var(--line-2); background: var(--panel);
+  cursor: pointer; font-size: 13px; font-weight: 600; white-space: nowrap; transition: border-color .2s, background .2s, color .2s, transform .15s, box-shadow .2s; }
+.btn:hover { border-color: var(--ink-3); box-shadow: var(--shadow); } .btn:active { transform: translateY(1px); }
+.btn svg { width: 15px; height: 15px; }
+.btn.primary { border: 0; color: #fff; background: var(--grad); box-shadow: 0 6px 16px -8px var(--accent); }
+:root[data-theme="dark"] .btn.primary { color: var(--accent-ink); }
+.btn.primary:hover { filter: brightness(1.06); box-shadow: 0 8px 22px -8px var(--accent); }
+.btn.ghost { border-color: transparent; background: none; color: var(--ink-2); } .btn.ghost:hover { background: var(--panel-2); color: var(--ink); box-shadow: none; }
+.btn.sm { height: 28px; padding: 0 10px; font-size: 12px; border-radius: 7px; }
+.btn.danger:hover { border-color: var(--bad); color: var(--bad); }
+.ib { width: 30px; height: 30px; border: 0; border-radius: 8px; background: none; display: grid; place-items: center; cursor: pointer; color: var(--ink-3); transition: background .2s, color .2s, transform .15s; }
+.ib:hover { background: var(--panel-3); color: var(--ink); } .ib:active { transform: scale(.9); } .ib.on { color: var(--accent); }
+.ib svg { width: 16px; height: 16px; }
+kbd { font: 600 10px var(--mono); padding: 2px 5px; border-radius: 4px; border: 1px solid var(--line-2); border-bottom-width: 2px; color: var(--ink-3); background: var(--panel); white-space: nowrap; }
+.chip { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 9px; border-radius: 99px; font: 600 11px var(--mono); border: 1px solid var(--line); background: var(--panel-2); color: var(--ink-2); white-space: nowrap; }
+.chip.rules { color: var(--accent); background: var(--accent-soft); border-color: transparent; }
+.chip.llm { color: var(--c3); background: color-mix(in srgb, var(--c3) 13%, transparent); border-color: transparent; }
+.chip.sql { color: var(--gold); background: var(--gold-soft); border-color: transparent; }
+.chip.bad { color: var(--bad); background: var(--bad-soft); border-color: transparent; }
+.chip svg { width: 12px; height: 12px; }
+.card { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+.seg { display: inline-flex; padding: 3px; border-radius: 9px; background: var(--panel-3); border: 1px solid var(--line); position: relative; }
+.seg button { position: relative; z-index: 1; height: 26px; padding: 0 11px; border: 0; background: none; border-radius: 7px; font: 600 12px var(--sans); color: var(--ink-3); cursor: pointer; transition: color .2s; }
+.seg button.on { color: var(--ink); }
+.seg .thumb { position: absolute; top: 3px; height: 26px; border-radius: 7px; background: var(--panel); box-shadow: var(--shadow); transition: left .35s var(--ease), width .35s var(--ease); }
+.muted { color: var(--ink-3); }
+.empty { padding: 40px 0; text-align: center; color: var(--ink-3); }
+.skel { background: linear-gradient(90deg, var(--panel-3) 25%, var(--line) 50%, var(--panel-3) 75%); background-size: 300% 100%; animation: shimmer 1.4s linear infinite; border-radius: 8px; }
+
+/* ---------- composer ---------- */
+.composer { position: sticky; top: 0; z-index: 4; padding: 4px 36px 20px; margin: 0 -36px; background: linear-gradient(var(--bg) 78%, transparent); }
+@media (max-width: 900px) { .composer { padding: 4px 14px 16px; margin: 0 -14px; } }
+.cbox { position: relative; border-radius: 16px; background: var(--panel); border: 1px solid var(--line-2); box-shadow: var(--shadow-2); transition: border-color .25s, box-shadow .25s; }
+.cbox::before { content: ""; position: absolute; inset: -1px; border-radius: 17px; padding: 1.5px; background: var(--grad); opacity: 0; transition: opacity .3s; pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor; mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0); }
+.cbox:focus-within::before { opacity: 1; }
+.cbox:focus-within { border-color: transparent; box-shadow: var(--shadow-2), 0 0 0 5px var(--accent-soft); }
+.cin { display: flex; align-items: flex-start; gap: 12px; padding: 14px 16px 6px; }
+.cin > svg { width: 20px; height: 20px; color: var(--accent); margin-top: 3px; flex: none; }
+.cin textarea { flex: 1; border: 0; outline: 0; resize: none; background: none; font-size: 16.5px; line-height: 1.5; min-height: 28px; max-height: 220px; }
+.cin textarea::placeholder { color: var(--ink-3); }
+.cin textarea.code { font: 13.5px/1.6 var(--mono); }
+.crow { display: flex; align-items: center; gap: 8px; padding: 6px 10px 10px 14px; flex-wrap: wrap; }
+.crow .sp { flex: 1; }
+.run { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 16px; border: 0; border-radius: 10px; background: var(--ink); color: var(--bg); font-weight: 650; font-size: 13.5px;
+  cursor: pointer; position: relative; overflow: hidden; transition: transform .15s; }
+.run::before { content: ""; position: absolute; inset: 0; background: var(--grad); opacity: 0; transition: opacity .3s; }
+.run:hover::before { opacity: 1; } .run > * { position: relative; } .run:active { transform: scale(.98); }
+.run:hover { color: #fff; } :root[data-theme="dark"] .run:hover { color: var(--accent-ink); }
+.run:disabled { opacity: .45; cursor: default; } .run:disabled::before { opacity: 0; }
+.run svg { width: 15px; height: 15px; transition: transform .3s var(--ease); } .run:hover svg { transform: translateX(2px); }
+.toggle-sql { display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 10px; border-radius: 7px; border: 1px solid var(--line); background: none; cursor: pointer; font: 600 11.5px var(--mono); color: var(--ink-3); transition: all .2s; }
+.toggle-sql.on { color: var(--gold); border-color: var(--gold); background: var(--gold-soft); }
+.toggle-sql svg { width: 13px; height: 13px; }
+
+/* ---------- hero ---------- */
+.hero { padding: 6vh 0 10px; text-align: left; }
+.hero > * { animation: rise .7s var(--ease) both; } .hero > :nth-child(2) { animation-delay: .06s; } .hero > :nth-child(3) { animation-delay: .12s; } .hero > :nth-child(4) { animation-delay: .18s; }
+.hero h2 { font-size: clamp(30px, 4.4vw, 46px); line-height: 1.06; font-weight: 750; letter-spacing: -.035em; margin: 14px 0 12px; max-width: 760px; }
+.hero h2 em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero p { color: var(--ink-2); font-size: 15.5px; max-width: 640px; margin: 0; }
+.facts { display: flex; gap: 10px; flex-wrap: wrap; margin: 22px 0 6px; }
+.fact { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); box-shadow: var(--shadow); }
+.fact svg { width: 18px; height: 18px; color: var(--accent); }
+.fact b { display: block; font: 700 15px var(--display); } .fact small { color: var(--ink-3); font-size: 11.5px; }
+.ex-groups { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 12px; margin-top: 26px; }
+.ex-g { padding: 14px; animation: rise .6s var(--ease) both; }
+.ex-g .eyebrow { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
+.ex-g .eyebrow i { width: 7px; height: 7px; border-radius: 2px; background: var(--c); }
+.ex { display: flex; align-items: center; gap: 8px; width: 100%; padding: 8px 9px; border: 0; border-radius: 8px; background: none; cursor: pointer; text-align: left; font-size: 13.5px; color: var(--ink);
+  transition: background .2s, padding .3s var(--ease); }
+.ex:hover { background: var(--panel-2); padding-left: 13px; }
+.ex svg { width: 13px; height: 13px; margin-left: auto; color: var(--ink-3); opacity: 0; transition: opacity .2s, transform .3s var(--ease); flex: none; }
+.ex:hover svg { opacity: 1; transform: translateX(2px); color: var(--accent); }
+
+/* ---------- cells ---------- */
+.cells { display: flex; flex-direction: column; gap: 18px; }
+.cell { overflow: hidden; animation: cell-in .6s var(--ease) both; }
+@keyframes cell-in { from { opacity: 0; transform: translateY(14px) scale(.99); } }
+.cell-h { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px 12px; }
+.cell-h .q { flex: 1; min-width: 0; }
+.cell-h .q h3 { font-size: 18.5px; font-weight: 650; line-height: 1.35; letter-spacing: -.015em; }
+.cell-h .q h3 u { text-decoration: wavy underline var(--bad); text-underline-offset: 4px; text-decoration-thickness: 1.5px; }
+.cell-h .meta { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: 8px; }
+.cell-h .acts { display: flex; gap: 2px; flex: none; }
+.plan { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 20px 14px; }
+.step { display: inline-flex; align-items: center; height: 28px; border-radius: 8px; border: 1px solid var(--line); background: var(--panel-2); overflow: hidden; font-size: 12.5px;
+  animation: pop .45s var(--ease) both; transition: border-color .2s, transform .25s var(--ease); }
+.step:hover { border-color: var(--line-2); transform: translateY(-1px); }
+.step i { font: 600 9.5px var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 0 8px; height: 100%; display: grid; place-items: center; color: var(--k); background: color-mix(in srgb, var(--k) 12%, transparent); }
+.step span { padding: 0 10px; font-weight: 560; white-space: nowrap; max-width: 380px; overflow: hidden; text-overflow: ellipsis; }
+.summary { padding: 2px 20px 16px; display: grid; gap: 6px; }
+.summary p { margin: 0; font-size: 14.5px; color: var(--ink-2); display: flex; gap: 10px; animation: rise .5s var(--ease) both; }
+.summary p::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--grad); flex: none; margin-top: 8px; }
+.summary b { color: var(--ink); font-weight: 650; }
+.expl { margin: 0 20px 14px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--c3) 8%, transparent); color: var(--ink-2); font-size: 13.5px; display: flex; gap: 8px; }
+.expl svg { width: 15px; height: 15px; color: var(--c3); flex: none; margin-top: 2px; }
+.tabs { display: flex; align-items: center; gap: 2px; padding: 0 14px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--panel-2); position: relative; }
+.tabs button { position: relative; height: 40px; padding: 0 12px; border: 0; background: none; cursor: pointer; font-weight: 600; font-size: 12.5px; color: var(--ink-3); display: inline-flex; align-items: center; gap: 6px; transition: color .2s; }
+.tabs button svg { width: 14px; height: 14px; }
+.tabs button.on { color: var(--ink); }
+.tabs .ink { position: absolute; bottom: -1px; height: 2px; background: var(--grad); border-radius: 2px; transition: left .35s var(--ease), width .35s var(--ease); }
+.tabs .sp { flex: 1; } .tabs small { font: 11px var(--mono); color: var(--ink-3); padding-right: 6px; }
+.pane { display: none; } .pane.on { display: block; animation: fade .35s var(--ease); }
+.pane.chart { padding: 16px 20px 18px; }
+.foot { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 12px 20px 16px; border-top: 1px solid var(--line); }
+.foot .eyebrow { margin-right: 4px; }
+.fu { display: inline-flex; align-items: center; gap: 6px; min-height: 30px; padding: 4px 12px; border: 1px solid var(--line-2); border-radius: 99px; background: var(--panel); cursor: pointer;
+  font-size: 12.5px; color: var(--ink-2); text-align: left; transition: border-color .2s, color .2s, transform .25s var(--ease), box-shadow .25s; }
+.fu:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow); }
+.fu svg { width: 12px; height: 12px; }
+.err { margin: 0 20px 14px; padding: 14px 16px; border-radius: 12px; background: var(--warn-soft); display: flex; gap: 12px; }
+.err.hard { background: var(--bad-soft); }
+.err svg { width: 18px; height: 18px; color: var(--warn); flex: none; margin-top: 2px; } .err.hard svg { color: var(--bad); }
+.err b { display: block; font-size: 14px; } .err p { margin: 2px 0 0; color: var(--ink-2); font-size: 13.5px; }
+.err .row { display: flex; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
+.warn-line { margin: 0 20px 12px; font-size: 12.5px; color: var(--warn); display: flex; gap: 6px; align-items: center; }
+.warn-line svg { width: 14px; height: 14px; }
+details.fix { margin: 0 20px 14px; border: 1px dashed var(--line-2); border-radius: 10px; padding: 8px 12px; font-size: 13px; }
+details.fix summary { cursor: pointer; color: var(--ink-2); font-weight: 600; }
+details.fix pre { margin: 8px 0 4px; }
+details.fix .e { color: var(--bad); font-size: 12.5px; }
+.thinking { padding: 6px 20px 20px; }
+.tsteps { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 14px; }
+.tstep { display: inline-flex; align-items: center; gap: 7px; height: 28px; padding: 0 11px; border-radius: 8px; border: 1px solid var(--line); font-size: 12.5px; color: var(--ink-3); transition: all .3s; }
+.tstep i { width: 7px; height: 7px; border-radius: 50%; background: var(--line-2); transition: background .3s; }
+.tstep.run { color: var(--ink); border-color: var(--accent); } .tstep.run i { background: var(--accent); animation: pulse 1s infinite; }
+.tstep.done { color: var(--ink-2); } .tstep.done i { background: var(--ok); }
+.thinking .skel { height: 12px; margin: 9px 0; }
+
+/* ---------- table ---------- */
+.tbl-wrap { max-height: 420px; overflow: auto; }
+table.grid { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 13px; }
+.grid th { position: sticky; top: 0; z-index: 1; background: var(--panel-2); text-align: left; font: 600 11px var(--mono); letter-spacing: .04em; color: var(--ink-3); padding: 9px 14px;
+  border-bottom: 1px solid var(--line); cursor: pointer; white-space: nowrap; user-select: none; }
+.grid th:hover { color: var(--ink); } .grid th .ar { opacity: .6; margin-left: 4px; }
+.grid td { padding: 8px 14px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+.grid tr:hover td { background: var(--panel-2); }
+.grid td.n, .grid th.n { text-align: right; font-variant-numeric: tabular-nums; }
+.grid td.n { font-family: var(--mono); font-size: 12.5px; }
+.grid td .bar-bg { display: inline-block; vertical-align: middle; width: 54px; height: 5px; border-radius: 3px; background: var(--panel-3); margin-left: 10px; overflow: hidden; }
+.grid td .bar-bg i { display: block; height: 100%; background: var(--grad); border-radius: 3px; }
+.grid .rn { color: var(--ink-3); font: 11px var(--mono); width: 34px; }
+
+/* ---------- sql ---------- */
+pre.sql { margin: 0; padding: 16px 20px; font: 12.5px/1.75 var(--mono); overflow-x: auto; color: var(--ink); background: var(--panel-2); white-space: pre; }
+pre.sql .k { color: var(--accent); font-weight: 600; } pre.sql .f { color: var(--c3); } pre.sql .s { color: var(--gold); } pre.sql .q { color: var(--c4); } pre.sql .d { color: var(--c5); } pre.sql .c { color: var(--ink-3); }
+.sql-bar { display: flex; gap: 8px; padding: 10px 20px; border-top: 1px solid var(--line); align-items: center; flex-wrap: wrap; }
+.sql-bar small { color: var(--ink-3); font-size: 12px; display: flex; gap: 6px; align-items: center; }
+.sql-bar small svg { width: 13px; height: 13px; color: var(--ok); }
+
+/* ---------- charts ---------- */
+.kpi-row { display: flex; gap: 14px; flex-wrap: wrap; }
+.kpi { flex: 1; min-width: 200px; padding: 18px 20px; border-radius: 14px; background: linear-gradient(160deg, var(--accent-soft), transparent 70%); border: 1px solid var(--line); }
+.kpi .eyebrow { display: block; }
+.kpi b { display: block; font: 750 40px/1.05 var(--display); letter-spacing: -.035em; margin-top: 10px; font-variant-numeric: tabular-nums; }
+.kpi small { display: block; color: var(--ink-3); margin-top: 6px; font: 12px var(--mono); }
+.hbars { display: grid; gap: 7px; }
+.hb { display: grid; grid-template-columns: minmax(110px, 220px) 1fr auto; gap: 12px; align-items: center; font-size: 13px; }
+.hb .l { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--ink-2); }
+.hb .t { height: 22px; border-radius: 6px; background: var(--panel-3); overflow: hidden; position: relative; }
+.hb .t i { position: absolute; inset: 0 auto 0 0; border-radius: 6px; background: var(--grad); transform-origin: left; animation: grow-x .9s var(--ease) both; }
+.hb.hl .l { color: var(--ink); font-weight: 650; } .hb.hl .t i { background: linear-gradient(90deg, var(--gold), color-mix(in srgb, var(--gold) 60%, #fff)); }
+.hb .v { font: 600 12.5px var(--mono); font-variant-numeric: tabular-nums; min-width: 92px; text-align: right; }
+.hb:hover .t i { filter: brightness(1.08); }
+svg.plot { width: 100%; height: auto; display: block; overflow: visible; }
+.plot .gl { stroke: var(--line); stroke-width: 1; }
+.plot .ax { fill: var(--ink-3); font: 10.5px var(--mono); }
+.plot .ln { fill: none; stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.4s var(--ease) .1s forwards; }
+.plot .ar { opacity: 0; animation: fade-to .8s ease .9s forwards; }
+@keyframes fade-to { to { opacity: 1; } }
+.plot .pt { fill: var(--panel); stroke-width: 2; opacity: 0; animation: fade-to .3s ease forwards; }
+.plot .hot { fill: transparent; cursor: crosshair; }
+.plot .cross { stroke: var(--ink-3); stroke-dasharray: 3 3; opacity: 0; transition: opacity .15s; }
+.plot .vbar { transform-origin: bottom; transform-box: fill-box; animation: grow-y .8s var(--ease) both; }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 10px; font-size: 12.5px; color: var(--ink-2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; } .legend i { width: 10px; height: 10px; border-radius: 3px; }
+.tip { position: fixed; z-index: 90; pointer-events: none; padding: 8px 10px; border-radius: 9px; background: var(--ink); color: var(--bg); font-size: 12px; box-shadow: var(--shadow-2); opacity: 0;
+  transition: opacity .15s; white-space: nowrap; }
+.tip b { display: block; font: 600 11px var(--mono); opacity: .7; margin-bottom: 2px; }
+.donut { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+.donut svg { width: 170px; height: 170px; transform: rotate(-90deg); flex: none; }
+.donut circle { fill: none; stroke-width: 5.2; }
+.donut .sg { animation: seg 1.1s var(--ease) both; }
+@keyframes seg { from { stroke-dasharray: 0 100; } }
+.donut .lg { display: grid; gap: 8px; flex: 1; min-width: 220px; }
+.donut .lg div { display: grid; grid-template-columns: 12px 1fr auto 56px; gap: 10px; align-items: center; font-size: 13px; animation: rise .5s var(--ease) both; }
+.donut .lg i { width: 10px; height: 10px; border-radius: 3px; } .donut .lg b { font: 600 12.5px var(--mono); } .donut .lg small { color: var(--ink-3); text-align: right; font: 12px var(--mono); }
+.donut .lg div.hl span { font-weight: 700; }
+
+/* ---------- dashboards ---------- */
+.board { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 16px; }
+.tile { padding: 16px 18px; animation: cell-in .55s var(--ease) both; transition: transform .35s var(--ease), box-shadow .35s; }
+.tile:hover { transform: translateY(-3px); box-shadow: var(--shadow-2); }
+.tile .th { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 12px; }
+.tile .th h4 { flex: 1; font-size: 14.5px; font-weight: 650; line-height: 1.35; }
+.tile .th small { display: block; color: var(--ink-3); font: 11px var(--mono); margin-top: 3px; font-weight: 400; }
+.tile .kpi { min-width: 0; } .tile .kpi b { font-size: 32px; }
+.tile .hb { grid-template-columns: minmax(80px, 140px) 1fr auto; } .tile .hb .v { min-width: 70px; }
+
+/* ---------- schema ---------- */
+.er { position: relative; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 46px 40px; padding: 10px 0 20px; }
+.er svg.links { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; z-index: 0; }
+.er svg.links path { fill: none; stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 5 5; opacity: .55; animation: flow 1.2s linear infinite; }
+@keyframes flow { to { stroke-dashoffset: -20; } }
+.er svg.links circle { fill: var(--accent); }
+.tcard { position: relative; z-index: 1; overflow: hidden; cursor: pointer; animation: cell-in .55s var(--ease) both; transition: transform .35s var(--ease), box-shadow .35s, border-color .2s; }
+.tcard:hover, .tcard.on { transform: translateY(-3px); box-shadow: var(--shadow-2); border-color: var(--accent); }
+.tcard .tt { display: flex; align-items: center; gap: 8px; padding: 12px 14px; border-bottom: 1px solid var(--line); background: linear-gradient(120deg, var(--accent-soft), transparent 70%); }
+.tcard .tt svg { width: 16px; height: 16px; color: var(--accent); }
+.tcard .tt b { font: 650 14px var(--mono); flex: 1; } .tcard .tt small { font: 11px var(--mono); color: var(--ink-3); }
+.tcol { display: flex; align-items: center; gap: 8px; padding: 6px 14px; font: 12.5px var(--mono); border-bottom: 1px solid var(--line); }
+.tcol:last-child { border-bottom: 0; }
+.tcol svg { width: 12px; height: 12px; flex: none; } .tcol .pk { color: var(--gold); } .tcol .fk { color: var(--accent); }
+.tcol span { flex: 1; } .tcol small { color: var(--ink-3); font-size: 10.5px; }
+.tcol.hl { background: var(--accent-soft); }
+.layer { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 10px; }
+@container main (max-width: 900px) { .layer { grid-template-columns: 1fr; } }
+.lcard { padding: 16px 18px; }
+.lcard h3 { font-size: 16px; display: flex; align-items: center; gap: 8px; } .lcard h3 svg { width: 16px; height: 16px; color: var(--accent); }
+.lcard > p { margin: 4px 0 12px; color: var(--ink-3); font-size: 12.5px; }
+.def { padding: 10px 0; border-top: 1px solid var(--line); }
+.def b { font-size: 13.5px; } .def p { margin: 2px 0 6px; color: var(--ink-2); font-size: 12.5px; }
+.def code { display: block; font: 11.5px/1.5 var(--mono); color: var(--accent); background: var(--panel-2); padding: 6px 8px; border-radius: 6px; white-space: pre-wrap; word-break: break-word; }
+.vals { display: flex; flex-wrap: wrap; gap: 4px; }
+.vals span { font-size: 11.5px; padding: 2px 7px; border-radius: 5px; background: var(--panel-3); color: var(--ink-2); }
+.sample { margin-top: 22px; overflow: hidden; }
+.sample .sh { display: flex; align-items: center; gap: 10px; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.sample .sh h3 { font: 650 14px var(--mono); }
+.sample .sh > svg { width: 16px; height: 16px; color: var(--accent); flex: none; }
+
+/* ---------- datasets / history / settings ---------- */
+.dsg { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
+.dsx { padding: 16px; display: flex; flex-direction: column; gap: 8px; animation: cell-in .5s var(--ease) both; transition: transform .35s var(--ease), box-shadow .35s, border-color .2s; }
+.dsx:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); }
+.dsx.on { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow); }
+.dsx .top { display: flex; align-items: center; gap: 10px; }
+.dsx .ico { width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex: none; }
+.dsx .ico svg { width: 19px; height: 19px; }
+.dsx b { font-weight: 650; display: block; } .dsx small { color: var(--ink-3); font: 11.5px var(--mono); }
+.dsx .row { display: flex; gap: 6px; margin-top: auto; padding-top: 6px; }
+.drop { margin-top: 18px; border: 1.5px dashed var(--line-2); border-radius: 14px; padding: 30px; text-align: center; cursor: pointer; background: var(--panel); transition: border-color .25s, background .25s, transform .3s var(--ease); }
+.drop:hover, .drop.over { border-color: var(--accent); background: var(--accent-soft); transform: translateY(-2px); }
+.drop svg { width: 28px; height: 28px; color: var(--accent); transition: transform .35s var(--ease); } .drop:hover svg { transform: translateY(-3px); }
+.drop b { display: block; font-size: 16px; margin-top: 8px; } .drop small { color: var(--ink-3); }
+.notes { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-top: 16px; }
+.note { padding: 12px 14px; border-radius: 12px; background: var(--panel-2); border: 1px solid var(--line); font-size: 12.5px; color: var(--ink-2); }
+.note b { display: block; color: var(--ink); font-size: 13px; margin-bottom: 2px; }
+.hist td.q { white-space: normal; min-width: 260px; cursor: pointer; } .hist td.q:hover { color: var(--accent); }
+.st { display: inline-flex; width: 18px; height: 18px; border-radius: 50%; place-items: center; }
+.st.ok { background: var(--ok-soft); color: var(--ok); } .st.no { background: var(--bad-soft); color: var(--bad); } .st svg { width: 11px; height: 11px; }
+.hstats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+@container main (max-width: 800px) { .hstats { grid-template-columns: 1fr 1fr; } }
+.hs { padding: 14px 16px; } .hs .eyebrow { display: block; } .hs b { display: block; font: 700 26px var(--display); margin-top: 8px; letter-spacing: -.03em; }
+.set { display: grid; grid-template-columns: 230px 1fr; gap: 28px; padding: 22px 0; border-bottom: 1px solid var(--line); }
+@container main (max-width: 800px) { .set { grid-template-columns: 1fr; gap: 12px; } }
+.set h3 { font-size: 15.5px; } .set > div > p { margin: 4px 0 0; color: var(--ink-3); font-size: 13px; }
+.kv { display: grid; grid-template-columns: 150px 1fr; gap: 8px 14px; font-size: 13.5px; } .kv span { color: var(--ink-3); } .kv code { font: 12.5px var(--mono); }
+pre.term { margin: 12px 0 0; padding: 14px 16px; border-radius: 10px; background: #0b1524; color: #d6e2f0; font: 12.5px/1.75 var(--mono); overflow-x: auto; }
+pre.term .c { color: #6c829c; }
+.how { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+.how div { padding: 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--panel); }
+.how i { font: 700 11px var(--mono); color: var(--accent); } .how b { display: block; margin: 4px 0 2px; } .how p { margin: 0; color: var(--ink-2); font-size: 12.5px; }
+
+/* ---------- overlays ---------- */
+.modal { position: fixed; inset: 0; z-index: 70; display: none; place-items: center; padding: 20px; background: rgba(8, 16, 27, .45); backdrop-filter: blur(4px); }
+.modal.open { display: grid; animation: fade .25s; }
+.dialog { width: min(600px, 100%); padding: 30px; position: relative; animation: pop .45s var(--ease); box-shadow: var(--shadow-2); }
+.dialog .x { position: absolute; top: 14px; right: 14px; }
+.dialog h2 { font-size: 28px; font-weight: 750; letter-spacing: -.03em; margin: 12px 0 8px; } .dialog h2 em { font-style: normal; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.dialog > p { color: var(--ink-2); margin: 0 0 18px; }
+.wsteps { display: grid; gap: 10px; margin-bottom: 22px; }
+.wsteps > div { display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start; animation: rise .5s var(--ease) both; }
+.wsteps i { width: 34px; height: 34px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; font: 700 13px var(--mono); }
+.wsteps b { display: block; font-size: 14px; } .wsteps span { color: var(--ink-2); font-size: 13px; }
+.dialog .row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.dialog .row label { margin-right: auto; display: flex; gap: 6px; align-items: center; font-size: 13px; color: var(--ink-2); cursor: pointer; }
+.editor { width: min(860px, 100%); }
+.editor textarea { width: 100%; min-height: 240px; border: 1px solid var(--line-2); border-radius: 10px; padding: 14px; background: var(--panel-2); font: 13px/1.65 var(--mono); outline: 0; resize: vertical; }
+.editor textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+.toast { position: fixed; bottom: 22px; left: 50%; z-index: 95; transform: translate(-50%, 20px); opacity: 0; pointer-events: none; transition: all .35s var(--ease);
+  padding: 10px 16px; border-radius: 10px; background: var(--ink); color: var(--bg); font-size: 13px; box-shadow: var(--shadow-2); display: flex; gap: 8px; align-items: center; }
+.toast.show { transform: translate(-50%, 0); opacity: 1; } .toast svg { width: 15px; height: 15px; color: var(--accent-2); }
+.dropzone { position: fixed; inset: 0; z-index: 92; display: grid; place-items: center; background: rgba(8, 16, 27, .4); backdrop-filter: blur(6px); opacity: 0; pointer-events: none; transition: opacity .25s; }
+.dropzone.on { opacity: 1; }
+.dropzone div { padding: 44px 64px; border: 2px dashed var(--accent); border-radius: 18px; background: var(--panel); text-align: center; box-shadow: var(--shadow-2); }
+.dropzone svg { width: 36px; height: 36px; color: var(--accent); } .dropzone b { display: block; font-size: 22px; margin-top: 8px; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 900px) {
+  .app { grid-template-columns: 1fr; }
+  .side { position: fixed; inset: 0 auto 0 0; width: 270px; transform: translateX(-102%); transition: transform .35s var(--ease); box-shadow: var(--shadow-2); }
+  .app.menu .side { transform: none; }
+  .mobile-bar { display: flex; }
+  .head { padding: 16px 16px 10px; } .head h1 { font-size: 22px; }
+  .body { padding: 6px 14px 30px; }
+  .cell-h { padding: 14px 14px 10px; flex-wrap: wrap; } .plan, .summary { padding-left: 14px; padding-right: 14px; }
+  .hb { grid-template-columns: minmax(80px, 120px) 1fr auto; } .hb .v { min-width: 70px; }
+  .crow .hint { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .plot .ln { stroke-dashoffset: 0; } .plot .ar, .plot .pt { opacity: 1; }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-explore" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></symbol>
+  <symbol id="i-board" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="9" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="5" rx="1.5"/><rect x="3.5" y="15.5" width="7" height="5" rx="1.5"/><rect x="13.5" y="11.5" width="7" height="9" rx="1.5"/></symbol>
+  <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3.5 9 4.5-9 4.5-9-4.5 9-4.5Z"/><path d="m3 12.5 9 4.5 9-4.5M3 16.5 12 21l9-4.5"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6l-1 6 3 3v2H7v-2l3-3-1-6Z"/><path d="M12 15v6"/></symbol>
+  <symbol id="i-pinf" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4h6l-1 6 3 3v2H7v-2l3-3-1-6Z"/><path d="M12 15v6" fill="none"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8"/></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 19h14"/></symbol>
+  <symbol id="i-retry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a8 8 0 1 0 2.3-5.6L4 8.7"/><path d="M4 4v4.7h4.7"/></symbol>
+  <symbol id="i-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9 7V5h6v2M6 7l1 13h10l1-13"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16.5h.01"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3.5c.6 4.2 2.3 5.9 6.5 6.5-4.2.6-5.9 2.3-6.5 6.5-.6-4.2-2.3-5.9-6.5-6.5 4.2-.6 5.9-2.3 6.5-6.5Z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M3.5 14.5h17M9.5 9.5v10"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="m5 15 4.5-5 3.5 3 6-7"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="8" cy="12" r="3.5"/><path d="M11.5 12H20m-3 0v3"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V5m0 0-4 4m4-4 4 4M5 19h14"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-edit" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4Z"/><path d="m13.5 6.5 4 4"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 3.5 5 6.5v5c0 4.5 3 7.8 7 9 4-1.2 7-4.5 7-9v-5l-7-3Z"/><path d="m9 12 2 2 4-4" stroke-linecap="round"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V17h5v-1.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3Z"/></symbol>
+  <symbol id="i-rows" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h10"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M13 3 5 13.5h6L10 21l8-10.5h-6L13 3Z"/></symbol>
+</defs></svg>
+
+<div class="app" id="app">
+  <aside class="side">
+    <div class="brand">
+      <svg class="compass" viewBox="0 0 40 40" aria-hidden="true"><circle class="ring" cx="20" cy="20" r="18"/><path class="tick" d="M20 4.5v3M20 32.5v3M4.5 20h3M32.5 20h3"/>
+        <g class="needle"><path class="n" d="M20 8.5 23.6 20h-7.2L20 8.5Z"/><path class="s" d="M20 31.5 16.4 20h7.2L20 31.5Z"/><circle cx="20" cy="20" r="2" fill="var(--panel)" stroke="var(--ink)" stroke-width="1.2"/></g></svg>
+      <div><b>Kâşif</b><small data-t="tagline"></small></div>
+    </div>
+    <nav class="menu" id="menu"><span class="nav-pill" id="navPill"></span>
+      <button data-v="explore"><svg><use href="#i-explore"/></svg><span data-t="nav.explore"></span><kbd style="margin-left:auto">/</kbd></button>
+      <button data-v="boards"><svg><use href="#i-board"/></svg><span data-t="nav.boards"></span><span class="n" id="nPins"></span></button>
+      <button data-v="schema"><svg><use href="#i-db"/></svg><span data-t="nav.schema"></span></button>
+      <button data-v="history"><svg><use href="#i-clock"/></svg><span data-t="nav.history"></span></button>
+      <button data-v="datasets"><svg><use href="#i-layers"/></svg><span data-t="nav.datasets"></span></button>
+      <button data-v="settings"><svg><use href="#i-gear"/></svg><span data-t="nav.settings"></span></button>
+    </nav>
+    <div class="side-sp"></div>
+    <button class="ds-card" id="dsCard"><span class="eyebrow"><svg style="width:12px;height:12px"><use href="#i-db"/></svg><span data-t="ds.active"></span></span><b id="dsName">…</b><small id="dsMeta"></small></button>
+    <div class="side-foot">
+      <button class="conn" id="conn"><span class="led" id="led"></span><span id="connT"></span></button>
+      <button class="sq" id="langBtn">EN</button>
+      <button class="sq" id="themeBtn" aria-label="Theme"><svg><use href="#i-moon"/></svg></button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <div class="mobile-bar"><button class="ib" id="menuBtn" aria-label="Menu"><svg><use href="#i-menu"/></svg></button><b style="font:700 18px var(--display)">Kâşif</b></div>
+
+    <section class="view" id="v-explore">
+      <div class="head"><div><h1 data-t="ex.title"></h1><p data-t="ex.sub"></p></div>
+        <div class="tools"><button class="btn ghost sm" id="clearCells"><svg><use href="#i-trash"/></svg><span data-t="ex.clear"></span></button></div></div>
+      <div class="body" id="exBody"><div class="wrap">
+        <div class="composer"><div class="cbox">
+          <div class="cin"><svg id="cIcon"><use href="#i-spark"/></svg><textarea id="q" rows="1" data-tp="ex.ph"></textarea></div>
+          <div class="crow">
+            <div class="seg" id="modeSeg"><span class="thumb"></span><button data-m="auto" data-t="mode.auto"></button><button data-m="rules" data-t="mode.rules"></button><button data-m="llm" data-t="mode.llm"></button></div>
+            <button class="toggle-sql" id="sqlToggle"><svg><use href="#i-code"/></svg>SQL</button>
+            <span class="sp"></span><span class="hint muted" style="font-size:12px" data-th="ex.hint"></span>
+            <button class="run" id="run"><span data-t="ex.run"></span><svg><use href="#i-arrow"/></svg></button>
+          </div>
+        </div></div>
+        <div id="hero"></div>
+        <div class="cells" id="cells"></div>
+      </div></div>
+    </section>
+
+    <section class="view" id="v-boards">
+      <div class="head"><div><h1 data-t="bd.title"></h1><p data-t="bd.sub"></p></div>
+        <div class="tools"><button class="btn sm" id="bdRefresh"><svg><use href="#i-retry"/></svg><span data-t="bd.refresh"></span></button></div></div>
+      <div class="body"><div class="wrap" style="max-width:1280px"><div class="board" id="board"></div></div></div>
+    </section>
+
+    <section class="view" id="v-schema">
+      <div class="head"><div><h1 data-t="sc.title"></h1><p data-t="sc.sub"></p></div></div>
+      <div class="body"><div class="wrap" id="schemaBox"></div></div>
+    </section>
+
+    <section class="view" id="v-history">
+      <div class="head"><div><h1 data-t="hi.title"></h1><p data-t="hi.sub"></p></div>
+        <div class="tools"><button class="btn ghost sm danger" id="hiClear"><svg><use href="#i-trash"/></svg><span data-t="hi.clear"></span></button></div></div>
+      <div class="body"><div class="wrap" id="histBox"></div></div>
+    </section>
+
+    <section class="view" id="v-datasets">
+      <div class="head"><div><h1 data-t="ds.title"></h1><p data-t="ds.sub"></p></div></div>
+      <div class="body"><div class="wrap">
+        <div class="dsg" id="dsList"></div>
+        <div class="drop" id="drop" tabindex="0" role="button"><svg><use href="#i-upload"/></svg><b data-t="ds.drop"></b><small data-t="ds.dropHint"></small>
+          <input type="file" id="file" accept=".csv,.tsv,.txt,.sqlite,.sqlite3,.db" hidden></div>
+        <div class="notes" id="dsNotes"></div>
+      </div></div>
+    </section>
+
+    <section class="view" id="v-settings">
+      <div class="head"><div><h1 data-t="st.title"></h1><p data-t="st.sub"></p></div></div>
+      <div class="body"><div class="wrap" id="setBox" style="max-width:940px"></div></div>
+    </section>
+  </main>
+</div>
+
+<div class="modal" id="welcome"><div class="dialog card">
+  <button class="ib x" data-close aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <span class="eyebrow" data-t="w.k"></span><h2 data-th="w.title"></h2><p data-t="w.sub"></p>
+  <div class="wsteps" id="wSteps"></div>
+  <div class="row"><label><input type="checkbox" id="wHide"><span data-t="w.hide"></span></label><button class="btn" id="wData" data-t="w.data"></button><button class="btn primary" id="wGo" data-t="w.go"></button></div>
+</div></div>
+<div class="modal" id="editor"><div class="dialog card editor">
+  <button class="ib x" data-close aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <span class="eyebrow" data-t="ed.k"></span><h2 style="font-size:22px" data-t="ed.title"></h2><p data-t="ed.sub"></p>
+  <textarea id="edSql" spellcheck="false"></textarea>
+  <div class="row" style="margin-top:14px"><label><svg style="width:14px;height:14px;color:var(--ok)"><use href="#i-shield"/></svg><span data-t="ed.safe"></span></label><button class="btn" data-close data-t="ed.cancel"></button><button class="btn primary" id="edRun"><svg><use href="#i-bolt"/></svg><span data-t="ed.run"></span></button></div>
+</div></div>
+<div class="dropzone" id="dropzone"><div><svg><use href="#i-upload"/></svg><b data-t="ds.dropAny"></b><small class="muted" data-t="ds.dropHint"></small></div></div>
+<div class="tip" id="tip"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+"use strict";
+const I18N = {
+  tr: {
+    tagline: "verine Türkçe sor", "nav.explore": "Keşfet", "nav.boards": "Panolar", "nav.schema": "Şema", "nav.history": "Geçmiş", "nav.datasets": "Veri setleri", "nav.settings": "Ayarlar",
+    "ds.active": "Etkin veri seti", "ex.title": "Keşfet", "ex.sub": "Verine Türkçe bir soru sor; Kâşif nasıl anladığını, çalıştırdığı SQL'i ve sonucu birlikte gösterir.",
+    "ex.ph": "Örn. Geçen çeyrekte bölgelere göre ciro", "ex.phSql": "SELECT ... (salt-okunur, denetlenir)", "ex.hint": "<kbd>Enter</kbd> çalıştır · <kbd>/</kbd> odaklan", "ex.hintSql": "<kbd>Ctrl</kbd>+<kbd>Enter</kbd> çalıştır",
+    "ex.run": "Keşfet", "ex.clear": "Hücreleri temizle", "mode.auto": "Otomatik", "mode.rules": "Kural motoru", "mode.llm": "LLM",
+    "hero.k": "Kâşif", "hero.h": "Verine <em>Türkçe</em> sor. Cevabın nasıl bulunduğunu gör.",
+    "hero.p": "Kâşif sorunu ölçü, boyut, dönem ve filtrelere ayırır, güvenli bir SQL sorgusuna çevirir, salt-okunur çalıştırır ve sonucu grafik, tablo ve özetle sunar. LLM gerekmez; bağlıysa serbest soruları da yanıtlar.",
+    "g.summary": "Özet", "g.rank": "Sıralama", "g.trend": "Trend", "g.compare": "Karşılaştırma",
+    "fact.tables": "tablo", "fact.rows": "satır", "fact.metrics": "tanımlı ölçü", "fact.mode": "çalışma modu",
+    "think.parse": "Soru çözümleniyor", "think.sql": "SQL üretiliyor", "think.llm": "Model SQL yazıyor", "think.guard": "Güvenlik denetimi", "think.run": "Çalıştırılıyor",
+    "k.metric": "Ölçü", "tab.chart": "Grafik", "tab.table": "Tablo", "tab.sql": "SQL",
+    "rows": "{n} satır", "truncated": "ilk {n} satır", "ms": "{n} ms", "via.rules": "Kural motoru", "via.llm": "LLM", "via.sql": "Elle SQL",
+    "fu": "Devam et", "pin": "Panoya sabitle", "unpin": "Panodan kaldır", "copy": "SQL'i kopyala", "csv": "CSV indir", "rerun": "Yeniden çalıştır", "del": "Hücreyi kaldır", "edit": "Düzenle ve çalıştır",
+    "pinned": "Panoya sabitlendi", "unpinned": "Panodan kaldırıldı", "copied": "SQL kopyalandı", "force": "Anladığım kadarıyla çalıştır", "try": "Şunları deneyin",
+    "err.nu": "Soruyu tam anlayamadım", "err.exec": "Sorgu çalıştırılamadı", "err.llm": "LLM kullanılamıyor",
+    "fix.t": "Model ilk denemede hata yaptı ve düzeltti", "safe": "Salt-okunur bağlantı · denetlendi · {ms} ms",
+    "bd.title": "Panolar", "bd.sub": "Sabitlediğin sorgular her açılışta güncel veriyle yeniden çalışır.", "bd.refresh": "Yenile",
+    "bd.empty": "Henüz sabitlenmiş bir sorgu yok. Bir cevabın üstündeki raptiye simgesiyle buraya ekleyebilirsin.", "bd.other": "{n} pano başka veri setine ait.",
+    "sc.title": "Şema", "sc.sub": "Tablolar, ilişkiler ve kural motorunun kullandığı anlam katmanı.", "sc.rel": "İlişkiler", "sc.layer": "Anlam katmanı",
+    "sc.metrics": "Ölçüler", "sc.metricsD": "Sorudaki iş terimlerinin SQL karşılıkları. Kural motoru yalnızca bu tanımları kullanır.", "sc.dims": "Boyutlar", "sc.dimsD": "Gruplama ve filtre için kullanılabilen alanlar; değerler sorudan otomatik tanınır.",
+    "sc.sample": "Örnek satırlar", "sc.click": "Örnek satırları görmek için bir tabloya tıkla.", "sc.rule": "Genel kural", "sc.noLayer": "Bu veri seti için anlam katmanı yok; serbest sorular LLM ile yanıtlanır.", "sc.values": "{n} değer",
+    "hi.title": "Geçmiş", "hi.sub": "Sorulan her soru, hangi yöntemle cevaplandığı ve süresi.", "hi.clear": "Geçmişi temizle", "hi.total": "Sorgu", "hi.success": "Başarı", "hi.avg": "Ort. süre", "hi.split": "Kural / LLM / SQL",
+    "hi.empty": "Henüz sorgu yok.", "hi.q": "Soru", "hi.mode": "Yöntem", "hi.rows": "Satır", "hi.ms": "Süre", "hi.when": "Zaman",
+    "ds.title": "Veri setleri", "ds.sub": "Demo veritabanı ya da kendi CSV / SQLite dosyan. Dosyalar bilgisayarından çıkmaz.", "ds.drop": "CSV ya da SQLite dosyası bırak", "ds.dropAny": "Veri setini bırak",
+    "ds.dropHint": "CSV (virgül, noktalı virgül, sekme) · SQLite (.sqlite, .db) · en fazla 50 MB", "ds.use": "Kullan", "ds.using": "Kullanılıyor", "ds.del": "Sil", "ds.confirm": "{name} silinsin mi?",
+    "ds.added": "{name} yüklendi ve etkinleştirildi", "ds.switched": "{name} etkin", "ds.deleted": "Veri seti silindi", "ds.uploading": "{name} yükleniyor…",
+    "n1": "Türkçe biçimler", "n1d": "1.234,56 gibi sayılar ve 31.12.2025 gibi tarihler otomatik tanınır; Excel'in Türkçe kodlaması desteklenir.",
+    "n2": "Otomatik anlam katmanı", "n2d": "Sayısal sütunlar ölçü, az sayıda değeri olan metin sütunları boyut olur. Böylece kural motoru yüklediğin veride de çalışır.",
+    "n3": "Salt-okunur", "n3d": "Dosyan kopyalanır ve yalnızca okunur; hiçbir sorgu veriyi değiştiremez.",
+    "st.title": "Ayarlar", "st.sub": "Görünüm, çalışma modu, LLM bağlantısı ve sistem hakkında.", "st.look": "Görünüm", "st.lookD": "Tema ve arayüz dili.",
+    "st.light": "Açık", "st.dark": "Koyu", "st.system": "Sistem", "st.mode": "Varsayılan mod", "st.modeD": "Otomatik: kural motoru emin olduğunda onu, değilse LLM'i kullanır.",
+    "st.conn": "LLM bağlantısı", "st.connD": "İsteğe bağlı. Serbest ve karmaşık sorular için.", "st.status": "Durum", "st.host": "Sunucu", "st.model": "Model", "st.on": "bağlı", "st.off": "bağlı değil",
+    "st.howto": "Ollama'yı kur (ollama.com), şu komutu çalıştır ve Kâşif'i yeniden başlat:", "st.limits": "Güvenlik sınırları", "st.limitsD": "Her sorgu denetlenir ve sınırlarla çalışır.",
+    "st.maxRows": "En fazla satır", "st.timeout": "Süre sınırı", "st.how": "Nasıl çalışır", "st.howD": "Sorudan sonuca dört adım.",
+    "h1": "Ayrıştır", "h1d": "Soru; ölçü, boyut, dönem, filtre ve sıralamaya ayrılır. Tanınmayan sözcük varsa tahmin yürütülmez.",
+    "h2": "SQL üret", "h2d": "Anlam katmanındaki tanımlarla SQL yazılır. Gerekirse LLM yazar ve hatasını kendi düzeltir.",
+    "h3": "Denetle", "h3d": "Tek SELECT, bilinen tablo ve sütunlar, yasaklı fonksiyon yok, LIMIT zorunlu.", "h4": "Çalıştır ve özetle", "h4d": "Salt-okunur bağlantı, süre sınırı; özet doğrudan sonuçtan hesaplanır.",
+    "st.eval": "Ölçüm (kural motoru): 37 soruluk geliştirme setinde yürütme doğruluğu %100. Ayrı tutulan 16 soruluk test setinde ilk ölçüm %75 (12/16) idi; bulunan eksikler giderildi. Cevabı veride olmayan 8 sorunun 8'i reddedildi.",
+    "conn.on": "LLM: {m}", "conn.off": "LLM bağlı değil",
+    "w.k": "Hoş geldin", "w.title": "Verine <em>Türkçe</em> sor.", "w.sub": "Kâşif, sorunu SQL'e çevirip çalıştıran ve bunu nasıl yaptığını açıkça gösteren bir analiz asistanı.",
+    "w1": "Sor", "w1d": "\"Geçen çeyrekte bölgelere göre ciro\" gibi gündelik Türkçeyle.", "w2": "Nasıl anladığını gör", "w2d": "Ölçü, dönem, filtre ve kurallar adım adım; SQL her zaman görünür.",
+    "w3": "Güvende kal", "w3d": "Sorgular salt-okunur ve denetimli; anlamadığı soruda tahmin yürütmez, sorar.", "w.hide": "Bir daha gösterme", "w.data": "Kendi verim", "w.go": "Demo veriyle başla",
+    "ed.k": "SQL düzenleyici", "ed.title": "Sorguyu düzenle ve çalıştır", "ed.sub": "Yalnızca SELECT sorguları çalışır; tablo ve sütunlar denetlenir, sonuç 1000 satırla sınırlıdır.",
+    "ed.safe": "Salt-okunur ve denetimli", "ed.cancel": "Vazgeç", "ed.run": "Çalıştır",
+    err: "Bir hata oluştu", now: "şimdi", ago_m: "{n} dk önce", ago_h: "{n} sa önce", ago_d: "{n} gün önce", other: "diğer",
+  },
+  en: {
+    tagline: "ask your data", "nav.explore": "Explore", "nav.boards": "Boards", "nav.schema": "Schema", "nav.history": "History", "nav.datasets": "Datasets", "nav.settings": "Settings",
+    "ds.active": "Active dataset", "ex.title": "Explore", "ex.sub": "Ask your data a question; Kâşif shows how it understood it, the SQL it ran and the result.",
+    "ex.ph": "e.g. Revenue by region last quarter", "ex.phSql": "SELECT ... (read-only, validated)", "ex.hint": "<kbd>Enter</kbd> run · <kbd>/</kbd> focus", "ex.hintSql": "<kbd>Ctrl</kbd>+<kbd>Enter</kbd> run",
+    "ex.run": "Explore", "ex.clear": "Clear cells", "mode.auto": "Auto", "mode.rules": "Rule engine", "mode.llm": "LLM",
+    "hero.k": "Kâşif", "hero.h": "Ask your data in <em>plain words</em>. See how the answer was found.",
+    "hero.p": "Kâşif breaks your question into measures, dimensions, periods and filters, turns it into safe SQL, runs it read-only and returns a chart, a table and a summary. No LLM needed; with one connected it also handles free-form questions. (The demo data is Turkish.)",
+    "g.summary": "Totals", "g.rank": "Rankings", "g.trend": "Trends", "g.compare": "Comparisons",
+    "fact.tables": "tables", "fact.rows": "rows", "fact.metrics": "defined measures", "fact.mode": "mode",
+    "think.parse": "Parsing the question", "think.sql": "Building SQL", "think.llm": "Model writing SQL", "think.guard": "Safety check", "think.run": "Running",
+    "k.metric": "Measure", "tab.chart": "Chart", "tab.table": "Table", "tab.sql": "SQL",
+    "rows": "{n} rows", "truncated": "first {n} rows", "ms": "{n} ms", "via.rules": "Rule engine", "via.llm": "LLM", "via.sql": "Manual SQL",
+    "fu": "Keep going", "pin": "Pin to board", "unpin": "Unpin", "copy": "Copy SQL", "csv": "Download CSV", "rerun": "Run again", "del": "Remove cell", "edit": "Edit and run",
+    "pinned": "Pinned to board", "unpinned": "Unpinned", "copied": "SQL copied", "force": "Run what you understood", "try": "Try these",
+    "err.nu": "I couldn't fully understand this", "err.exec": "The query could not run", "err.llm": "LLM unavailable",
+    "fix.t": "The model's first query failed and it fixed it", "safe": "Read-only connection · validated · {ms} ms",
+    "bd.title": "Boards", "bd.sub": "Pinned queries re-run with fresh data every time you open them.", "bd.refresh": "Refresh",
+    "bd.empty": "Nothing pinned yet. Use the pin icon on an answer to add it here.", "bd.other": "{n} pins belong to another dataset.",
+    "sc.title": "Schema", "sc.sub": "Tables, relationships and the semantic layer the rule engine uses.", "sc.rel": "Relationships", "sc.layer": "Semantic layer",
+    "sc.metrics": "Measures", "sc.metricsD": "SQL definitions of business terms. The rule engine only uses these.", "sc.dims": "Dimensions", "sc.dimsD": "Fields for grouping and filtering; values are recognised in questions automatically.",
+    "sc.sample": "Sample rows", "sc.click": "Click a table to see sample rows.", "sc.rule": "Global rule", "sc.noLayer": "No semantic layer for this dataset; free-form questions use the LLM.", "sc.values": "{n} values",
+    "hi.title": "History", "hi.sub": "Every question, how it was answered and how long it took.", "hi.clear": "Clear history", "hi.total": "Queries", "hi.success": "Success", "hi.avg": "Avg. time", "hi.split": "Rules / LLM / SQL",
+    "hi.empty": "No queries yet.", "hi.q": "Question", "hi.mode": "Method", "hi.rows": "Rows", "hi.ms": "Time", "hi.when": "When",
+    "ds.title": "Datasets", "ds.sub": "The demo database or your own CSV / SQLite file. Files never leave your computer.", "ds.drop": "Drop a CSV or SQLite file", "ds.dropAny": "Drop your dataset",
+    "ds.dropHint": "CSV (comma, semicolon, tab) · SQLite (.sqlite, .db) · up to 50 MB", "ds.use": "Use", "ds.using": "In use", "ds.del": "Delete", "ds.confirm": "Delete {name}?",
+    "ds.added": "{name} uploaded and activated", "ds.switched": "{name} active", "ds.deleted": "Dataset deleted", "ds.uploading": "Uploading {name}…",
+    "n1": "Turkish formats", "n1d": "Numbers like 1.234,56 and dates like 31.12.2025 are recognised; Excel's Turkish encoding is supported.",
+    "n2": "Automatic semantic layer", "n2d": "Numeric columns become measures, low-cardinality text columns become dimensions, so the rule engine works on your data too.",
+    "n3": "Read-only", "n3d": "Your file is copied and only ever read; no query can modify it.",
+    "st.title": "Settings", "st.sub": "Appearance, mode, LLM connection and how the system works.", "st.look": "Appearance", "st.lookD": "Theme and language.",
+    "st.light": "Light", "st.dark": "Dark", "st.system": "System", "st.mode": "Default mode", "st.modeD": "Auto uses the rule engine when it is sure and the LLM otherwise.",
+    "st.conn": "LLM connection", "st.connD": "Optional. For free-form and complex questions.", "st.status": "Status", "st.host": "Server", "st.model": "Model", "st.on": "connected", "st.off": "not connected",
+    "st.howto": "Install Ollama (ollama.com), run this and restart Kâşif:", "st.limits": "Safety limits", "st.limitsD": "Every query is validated and runs with limits.",
+    "st.maxRows": "Max rows", "st.timeout": "Time limit", "st.how": "How it works", "st.howD": "Four steps from question to answer.",
+    "h1": "Parse", "h1d": "The question is split into measure, dimension, period, filter and order. Unknown words mean no guessing.",
+    "h2": "Build SQL", "h2d": "SQL is written from semantic-layer definitions. If needed the LLM writes it and fixes its own errors.",
+    "h3": "Validate", "h3d": "One SELECT, known tables and columns, no dangerous functions, LIMIT enforced.", "h4": "Run and summarise", "h4d": "Read-only connection with a time limit; the summary is computed from the result.",
+    "st.eval": "Measured (rule engine): 100% execution accuracy on the 37-question dev set. On a separate 16-question held-out set the first run scored 75% (12/16); the gaps found were then fixed. 8 of 8 questions not answerable from the data were declined.",
+    "conn.on": "LLM: {m}", "conn.off": "No LLM connected",
+    "w.k": "Welcome", "w.title": "Ask your data in <em>plain words</em>.", "w.sub": "Kâşif turns your question into SQL, runs it, and shows exactly how it got there.",
+    "w1": "Ask", "w1d": "In everyday language, like \"revenue by region last quarter\".", "w2": "See how it understood", "w2d": "Measure, period, filters and rules step by step; the SQL is always visible.",
+    "w3": "Stay safe", "w3d": "Queries are read-only and validated; when unsure it asks instead of guessing.", "w.hide": "Don't show again", "w.data": "My own data", "w.go": "Start with demo data",
+    "ed.k": "SQL editor", "ed.title": "Edit and run the query", "ed.sub": "Only SELECT queries run; tables and columns are validated and results are capped at 1000 rows.",
+    "ed.safe": "Read-only and validated", "ed.cancel": "Cancel", "ed.run": "Run",
+    err: "Something went wrong", now: "now", ago_m: "{n} min ago", ago_h: "{n} h ago", ago_d: "{n} d ago", other: "other",
+  },
+};
+
+/* ---------------------------------------------------------------- utilities */
+const store = {
+  get(k, d) { try { const v = localStorage.getItem("kasif." + k); return v === null ? d : JSON.parse(v); } catch { return d; } },
+  set(k, v) { try { localStorage.setItem("kasif." + k, JSON.stringify(v)); } catch { /* quota or disabled */ } },
+};
+let lang = store.get("lang", (navigator.language || "tr").toLowerCase().startsWith("tr") ? "tr" : "en");
+const t = (k, v = {}) => (I18N[lang][k] ?? I18N.tr[k] ?? k).replace(/\{(\w+)\}/g, (_, x) => v[x] ?? "");
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const ic = (id) => `<svg><use href="#i-${id}"/></svg>`;
+const uid = () => Math.random().toString(36).slice(2, 10);
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const reduced = () => matchMedia("(prefers-reduced-motion: reduce)").matches;
+const loc = () => (lang === "tr" ? "tr-TR" : "en-US");
+const bold = (s) => esc(s).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>");
+async function api(path, opts = {}) {
+  const res = await fetch(path, opts);
+  if (res.status === 204) return null;
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(typeof data.detail === "string" ? data.detail : res.statusText);
+  return data;
+}
+const post = (path, body) => api(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+let toastT;
+function toast(msg, icon = "check") { const el = $("#toast"); el.innerHTML = ic(icon) + esc(msg); el.classList.add("show"); clearTimeout(toastT); toastT = setTimeout(() => el.classList.remove("show"), 2400); }
+function ago(ts) {
+  const m = Math.round((Date.now() / 1000 - ts) / 60);
+  if (m < 1) return t("now"); if (m < 60) return t("ago_m", { n: m });
+  const h = Math.round(m / 60); return h < 24 ? t("ago_h", { n: h }) : t("ago_d", { n: Math.round(h / 24) });
+}
+function num(v, d = 0) { return Number(v).toLocaleString(loc(), { minimumFractionDigits: d, maximumFractionDigits: d }); }
+function fmtVal(v, fmt, compact = false) {
+  if (v === null || v === undefined) return "—";
+  if (typeof v !== "number") return String(v);
+  if (fmt === "pct") return lang === "tr" ? `%${num(v, 1)}` : `${num(v, 1)}%`;
+  const a = Math.abs(v);
+  const cmp = (x) => (a >= 1e9 ? num(x / 1e9, 2) + (lang === "tr" ? " mr" : "B") : a >= 1e6 ? num(x / 1e6, 2) + (lang === "tr" ? " mn" : "M") : a >= 1e4 ? num(x / 1e3, 1) + (lang === "tr" ? " bin" : "K") : num(x, Number.isInteger(x) ? 0 : 2));
+  if (fmt === "money") return (compact ? cmp(v) : num(v, a >= 1000 ? 0 : 2)) + " TL";
+  if (compact) return cmp(v);
+  return num(v, Number.isInteger(v) ? 0 : 2);
+}
+
+/* ---------------------------------------------------------------- state */
+let status = null, schema = null, view = "explore", busy = false, sqlMode = false;
+let cells = store.get("cells", []);
+let pins = store.get("pins", []);
+let settings = Object.assign({ mode: "auto", theme: "system" }, store.get("settings", {}));
+const saveCells = () => store.set("cells", cells.slice(0, 30).map((c) => ({ ...c, a: c.a && { ...c.a, rows: (c.a.rows || []).slice(0, 300) } })));
+const savePins = () => store.set("pins", pins);
+const saveSettings = () => store.set("settings", settings);
+
+/* ---------------------------------------------------------------- theme / i18n */
+function applyTheme() {
+  const th = settings.theme === "system" ? (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light") : settings.theme;
+  document.documentElement.dataset.theme = th;
+  $("#themeBtn").innerHTML = ic(th === "dark" ? "sun" : "moon");
+}
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", applyTheme);
+$("#themeBtn").onclick = () => { settings.theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark"; saveSettings(); applyTheme(); if (view === "settings") renderSettings(); };
+$("#langBtn").onclick = () => { lang = lang === "tr" ? "en" : "tr"; store.set("lang", lang); applyI18n(); };
+function applyI18n() {
+  document.documentElement.lang = lang;
+  $$("[data-t]").forEach((el) => (el.textContent = t(el.dataset.t)));
+  $$("[data-th]").forEach((el) => (el.innerHTML = t(el.dataset.th)));
+  $$("[data-tp]").forEach((el) => (el.placeholder = t(el.dataset.tp)));
+  $("#langBtn").textContent = lang === "tr" ? "EN" : "TR";
+  applySqlMode(); renderConn(); renderHero(); renderCells(); renderWelcome(); segThumb($("#modeSeg"));
+  if (view !== "explore") show(view, true);
+  requestAnimationFrame(movePill);
+}
+
+/* ---------------------------------------------------------------- navigation */
+const VIEWS = ["explore", "boards", "schema", "history", "datasets", "settings"];
+function movePill() { const b = $(`#menu button[data-v="${view}"]`); if (b) $("#navPill").style.transform = `translateY(${b.offsetTop}px)`; }
+function show(v, keep) {
+  view = v;
+  $$("#menu button").forEach((b) => b.setAttribute("aria-current", String(b.dataset.v === v)));
+  $$(".view").forEach((s) => s.classList.toggle("active", s.id === "v-" + v));
+  $("#app").classList.remove("menu"); movePill();
+  if (v === "boards") renderBoard();
+  if (v === "schema") renderSchema();
+  if (v === "history") renderHistory();
+  if (v === "datasets") renderDatasets();
+  if (v === "settings") renderSettings();
+  if (v === "explore" && !keep) setTimeout(() => $("#q").focus(), 60);
+}
+$$("#menu button").forEach((b) => (b.onclick = () => show(b.dataset.v)));
+$("#menuBtn").onclick = () => $("#app").classList.toggle("menu");
+$("#dsCard").onclick = () => show("datasets");
+$("#conn").onclick = () => show("settings");
+document.addEventListener("scroll", (e) => { const b = e.target; if (b.classList?.contains("body")) b.closest(".view")?.classList.toggle("scrolled", b.scrollTop > 6); }, true);
+addEventListener("resize", () => { movePill(); if (view === "schema") drawLinks(); });
+
+/* ---------------------------------------------------------------- status */
+async function loadStatus() {
+  try { status = await api("/status"); } catch { status = null; }
+  renderConn();
+}
+function renderConn() {
+  if (!status) return;
+  const on = status.llm.reachable;
+  $("#led").className = "led " + (on ? "on" : "off");
+  $("#connT").textContent = on ? t("conn.on", { m: status.llm.model }) : t("conn.off");
+  $("#dsName").textContent = status.dataset.name;
+  $("#dsMeta").textContent = `${status.dataset.tables} ${t("fact.tables")} · ${num(status.dataset.rows)} ${t("fact.rows")}`;
+  $("#nPins").textContent = pins.filter((p) => p.ds === status.dataset.id).length || "";
+}
+
+/* ---------------------------------------------------------------- composer */
+const qEl = $("#q");
+const autosize = () => { qEl.style.height = "auto"; qEl.style.height = Math.min(qEl.scrollHeight, 220) + "px"; };
+qEl.addEventListener("input", autosize);
+qEl.addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (sqlMode ? e.ctrlKey || e.metaKey : !e.shiftKey)) { e.preventDefault(); submit(); }
+});
+$("#run").onclick = () => submit();
+function segThumb(seg) {
+  const on = $("button.on", seg) || $("button", seg); const th = $(".thumb", seg);
+  if (on && th) { th.style.left = on.offsetLeft + "px"; th.style.width = on.offsetWidth + "px"; }
+}
+function renderMode() { $$("#modeSeg button").forEach((b) => b.classList.toggle("on", b.dataset.m === settings.mode)); segThumb($("#modeSeg")); }
+$$("#modeSeg button").forEach((b) => (b.onclick = () => { settings.mode = b.dataset.m; saveSettings(); renderMode(); }));
+function applySqlMode() {
+  $("#sqlToggle").classList.toggle("on", sqlMode);
+  qEl.classList.toggle("code", sqlMode);
+  qEl.placeholder = t(sqlMode ? "ex.phSql" : "ex.ph");
+  $(".crow .hint").innerHTML = t(sqlMode ? "ex.hintSql" : "ex.hint");
+  $("#modeSeg").style.display = sqlMode ? "none" : "";
+  $("#cIcon").innerHTML = `<use href="#i-${sqlMode ? "code" : "spark"}"/>`;
+}
+$("#sqlToggle").onclick = () => { sqlMode = !sqlMode; applySqlMode(); qEl.focus(); };
+
+function submit(text, mode) {
+  const v = (text ?? qEl.value).trim();
+  if (!v || busy) return;
+  qEl.value = ""; autosize();
+  if (sqlMode && text === undefined) return runSql(v);
+  return ask(v, mode || settings.mode);
+}
+async function ask(question, mode) {
+  if (view !== "explore") show("explore", true);
+  const cell = { id: uid(), ts: Date.now(), q: question, a: null, tab: "chart", fresh: true };
+  cells.unshift(cell); busy = true; $("#run").disabled = true; document.body.classList.add("busy");
+  renderHero(); renderCells();
+  const llm = mode === "llm" || (mode === "auto" && status?.llm?.reachable && !status?.rules);
+  const steps = thinking(cell.id, llm);
+  let a;
+  try { a = await post("/ask", { question, mode, lang }); } catch (e) { a = { ok: false, error: e.message, question }; }
+  if (a.mode === "llm" && !llm) steps.relabel(1, t("think.llm"));
+  await steps.finish();
+  cell.a = a; cell.tab = a.chart?.type === "table" ? "table" : "chart";
+  done();
+}
+async function runSql(sql, title) {
+  if (view !== "explore") show("explore", true);
+  const cell = { id: uid(), ts: Date.now(), q: title || sql.replace(/\s+/g, " ").slice(0, 140), a: null, tab: "chart", fresh: true, sql: true };
+  cells.unshift(cell); busy = true; $("#run").disabled = true; document.body.classList.add("busy");
+  renderHero(); renderCells();
+  const steps = thinking(cell.id, false, true);
+  let a;
+  try { a = await post("/sql", { sql, lang, question: title || null }); } catch (e) { a = { ok: false, error: e.message, question: sql }; }
+  await steps.finish();
+  cell.a = a; cell.tab = a.ok && a.chart?.type !== "table" ? "chart" : a.ok ? "table" : "sql";
+  done();
+}
+function done() { busy = false; $("#run").disabled = false; document.body.classList.remove("busy"); saveCells(); renderCells(); loadStatus(); }
+
+function thinking(id, llm, sqlOnly) {
+  const names = sqlOnly ? ["guard", "run"] : ["parse", llm ? "llm" : "sql", "guard", "run"];
+  const labels = names.map((n) => t("think." + n));
+  let stage = 0;
+  const paint = () => {
+    const box = $(`#c-${id} .thinking`); if (!box) return;
+    $(".tsteps", box).innerHTML = labels.map((l, i) => `<span class="tstep ${i < stage ? "done" : i === stage ? "run" : ""}"><i></i>${esc(l)}</span>`).join("");
+  };
+  paint();
+  const timer = setInterval(() => { if (stage < names.length - 1) { stage++; paint(); } }, llm ? 900 : 260);
+  return {
+    relabel(i, l) { labels[i] = l; paint(); },
+    async finish() { clearInterval(timer); while (stage < names.length) { stage++; paint(); await sleep(120); } },
+  };
+}
+
+/* ---------------------------------------------------------------- hero */
+const GROUPS = { tr: [["g.summary", "var(--c1)", [0, 7]], ["g.rank", "var(--c2)", [1, 5]], ["g.trend", "var(--c3)", [2, 9]], ["g.compare", "var(--c4)", [3, 4, 6, 8]]],
+  en: [["g.summary", "var(--c1)", [0]], ["g.rank", "var(--c2)", [1, 5]], ["g.trend", "var(--c3)", [2]], ["g.compare", "var(--c4)", [3, 4]]] };
+let examples = [];
+async function loadExamples() { try { examples = await api(`/examples?lang=${lang}`); } catch { examples = []; } renderHero(); }
+function renderHero() {
+  const box = $("#hero");
+  if (cells.length) { box.innerHTML = ""; return; }
+  const ds = status?.dataset;
+  const demo = ds?.id === "demo";
+  const groups = demo ? GROUPS[lang] : [["g.summary", "var(--c1)", examples.map((_, i) => i)]];
+  const facts = ds ? `<div class="facts">
+      <div class="fact">${ic("db")}<div><b>${num(ds.tables)}</b><small>${t("fact.tables")}</small></div></div>
+      <div class="fact">${ic("rows")}<div><b>${num(ds.rows)}</b><small>${t("fact.rows")}</small></div></div>
+      <div class="fact">${ic("bolt")}<div><b>${status.llm.reachable ? "LLM + " + t("mode.rules") : t("mode.rules")}</b><small>${t("fact.mode")}</small></div></div></div>` : "";
+  box.innerHTML = `<div class="hero"><span class="eyebrow">${esc(ds ? ds.name : t("hero.k"))}</span><h2>${t("hero.h")}</h2><p>${t("hero.p")}</p>${facts}</div>
+    <div class="ex-groups">${groups.map(([k, c, idx], gi) => {
+      const qs = idx.map((i) => examples[i]).filter(Boolean);
+      return qs.length ? `<div class="card ex-g" style="--c:${c};animation-delay:${200 + gi * 70}ms"><span class="eyebrow"><i></i>${t(k)}</span>${qs.map((q) => `<button class="ex" data-q="${esc(q)}">${esc(q)}${ic("arrow")}</button>`).join("")}</div>` : "";
+    }).join("")}</div>`;
+  $$(".ex", box).forEach((b) => (b.onclick = () => ask(b.dataset.q, settings.mode)));
+}
+
+/* ---------------------------------------------------------------- cells */
+const KIND = { metric: "var(--c1)", grain: "var(--c3)", dim: "var(--c6)", time: "var(--c2)", filter: "var(--c4)", order: "var(--c7)", limit: "var(--c7)", share: "var(--c5)", rule: "var(--ink-3)",
+  llm: "var(--c3)", tables: "var(--c6)", fix: "var(--c2)", guard: "var(--c5)" };
+function renderCells() {
+  const box = $("#cells");
+  box.innerHTML = cells.map(cellHtml).join("");
+  cells.forEach((c) => { wireCell(c); delete c.fresh; });
+}
+function cellHtml(c) {
+  const a = c.a;
+  const pinned = a?.sql && pins.some((p) => p.sql === a.sql && p.ds === status?.dataset?.id);
+  const via = a ? `<span class="chip ${a.mode === "llm" ? "llm" : a.mode === "sql" ? "sql" : "rules"}">${ic(a.mode === "llm" ? "spark" : a.mode === "sql" ? "code" : "bolt")}${t("via." + (a.mode || "rules"))}</span>` : "";
+  const meta = a?.ok ? `${via}<span class="chip">${a.truncated ? t("truncated", { n: num(a.row_count) }) : t("rows", { n: num(a.row_count) })}</span><span class="chip">${t("ms", { n: a.elapsed_ms })}</span>${a.dataset ? `<span class="muted" style="font-size:12px">${esc(a.dataset)}</span>` : ""}` : a ? `${via}<span class="chip bad">${ic("alert")}${errLabel(a.error_code)}</span>` : "";
+  let qhtml = esc(c.q);
+  (a?.unknown || []).forEach((w) => { qhtml = qhtml.replace(new RegExp(`(${w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\S*)`, "iu"), "<u>$1</u>"); });
+  const acts = a?.ok ? `<button class="ib ${pinned ? "on" : ""}" data-act="pin" title="${t(pinned ? "unpin" : "pin")}">${ic(pinned ? "pinf" : "pin")}</button>
+      <button class="ib" data-act="csv" title="${t("csv")}">${ic("dl")}</button><button class="ib" data-act="edit" title="${t("edit")}">${ic("edit")}</button>
+      <button class="ib" data-act="rerun" title="${t("rerun")}">${ic("retry")}</button>` : "";
+  const head = `<div class="cell-h"><div class="q"><h3>${c.sql && a?.mode === "sql" ? `<span class="mono" style="font-size:14px">${qhtml}</span>` : qhtml}</h3><div class="meta">${meta}</div></div>
+    <div class="acts">${acts}<button class="ib" data-act="del" title="${t("del")}">${ic("x")}</button></div></div>`;
+  if (!a) return `<article class="card cell" id="c-${c.id}">${head}<div class="thinking"><div class="tsteps"></div><div class="skel" style="width:92%"></div><div class="skel" style="width:76%"></div><div class="skel" style="width:58%"></div></div></article>`;
+  const plan = (a.plan || []).length ? `<div class="plan">${a.plan.map((p, i) => `<span class="step" style="--k:${KIND[p.kind] || "var(--ink-3)"};animation-delay:${c.fresh ? 80 + i * 70 : 0}ms" title="${esc(p.detail || "")}"><i>${esc(p.label)}</i><span>${esc(p.text)}</span></span>`).join("")}</div>` : "";
+  if (!a.ok) {
+    const nu = a.error_code === "not_understood";
+    return `<article class="card cell" id="c-${c.id}">${head}${plan}
+      <div class="err ${nu ? "" : "hard"}">${ic("alert")}<div><b>${t(nu ? "err.nu" : a.error_code === "llm_unavailable" ? "err.llm" : "err.exec")}</b><p>${esc(a.error || t("err"))}</p>
+        <div class="row">${a.can_force ? `<button class="btn sm primary" data-act="force">${ic("bolt")}${t("force")}</button>` : ""}${a.sql ? `<button class="btn sm" data-act="edit">${ic("edit")}${t("edit")}</button>` : ""}</div></div></div>
+      ${(a.attempts || []).length ? fixHtml(a) : ""}
+      ${a.sql ? `<pre class="sql">${hl(a.sql)}</pre>` : ""}
+      ${(a.suggestions || []).length ? `<div class="foot"><span class="eyebrow">${t("try")}</span>${a.suggestions.map((s) => `<button class="fu" data-q="${esc(s)}">${esc(s)}${ic("arrow")}</button>`).join("")}</div>` : ""}</article>`;
+  }
+  const summary = (a.summary || []).length ? `<div class="summary">${a.summary.map((s, i) => `<p style="animation-delay:${c.fresh ? 200 + i * 90 : 0}ms"><span>${bold(s)}</span></p>`).join("")}</div>` : "";
+  const warn = (a.warnings || []).map((w) => `<div class="warn-line">${ic("alert")}${esc(w)}</div>`).join("");
+  const expl = a.explanation ? `<div class="expl">${ic("spark")}<span>${esc(a.explanation)}</span></div>` : "";
+  const hasChart = a.chart && a.chart.type && a.chart.type !== "table";
+  const tab = hasChart ? c.tab : c.tab === "chart" ? "table" : c.tab;
+  const tabs = `<div class="tabs">${hasChart ? `<button data-tab="chart" class="${tab === "chart" ? "on" : ""}">${ic("chart")}${t("tab.chart")}</button>` : ""}
+      <button data-tab="table" class="${tab === "table" ? "on" : ""}">${ic("table")}${t("tab.table")}</button><button data-tab="sql" class="${tab === "sql" ? "on" : ""}">${ic("code")}${t("tab.sql")}</button>
+      <span class="ink"></span><span class="sp"></span><small>${(a.tables || []).join(" · ")}</small></div>`;
+  const fu = (a.followups || []).length ? `<div class="foot"><span class="eyebrow">${t("fu")}</span>${a.followups.map((s) => `<button class="fu" data-q="${esc(s)}">${esc(s)}${ic("arrow")}</button>`).join("")}</div>` : "";
+  return `<article class="card cell" id="c-${c.id}">${head}${plan}${summary}${warn}${expl}${(a.attempts || []).length ? fixHtml(a) : ""}${tabs}
+    ${hasChart ? `<div class="pane chart ${tab === "chart" ? "on" : ""}" data-pane="chart">${tab === "chart" ? chartHtml(a, c.fresh) : ""}</div>` : ""}
+    <div class="pane ${tab === "table" ? "on" : ""}" data-pane="table">${tableHtml(a)}</div>
+    <div class="pane ${tab === "sql" ? "on" : ""}" data-pane="sql"><pre class="sql">${hl(a.sql || "")}</pre>
+      <div class="sql-bar"><small>${ic("shield")}${t("safe", { ms: a.query_ms ?? 0 })}</small><span style="flex:1"></span><button class="btn sm" data-act="copy">${ic("copy")}${t("copy")}</button><button class="btn sm" data-act="edit">${ic("edit")}${t("edit")}</button></div></div>
+    ${fu}</article>`;
+}
+function errLabel(code) {
+  const tr = lang === "tr";
+  if (code === "not_understood") return tr ? "belirsiz" : "unclear";
+  if (code === "llm_unavailable" || code === "llm") return tr ? "LLM yok" : "no LLM";
+  if (["write", "multi", "func", "db"].includes(code)) return tr ? "güvenlik engeli" : "blocked";
+  return tr ? "hata" : "error";
+}
+function fixHtml(a) {
+  return `<details class="fix"><summary>${t("fix.t")}</summary>${a.attempts.map((x) => `<pre class="sql" style="border-radius:8px">${hl(x.sql)}</pre><div class="e">${esc(x.error)}</div>`).join("")}</details>`;
+}
+function wireCell(c) {
+  const el = $(`#c-${c.id}`); if (!el || !c.a) return;
+  const ink = $(".tabs .ink", el);
+  const placeInk = () => { const on = $(".tabs button.on", el); if (on && ink) { ink.style.left = on.offsetLeft + "px"; ink.style.width = on.offsetWidth + "px"; } };
+  requestAnimationFrame(placeInk);
+  $$(".tabs button", el).forEach((b) => (b.onclick = () => {
+    c.tab = b.dataset.tab; saveCells();
+    $$(".tabs button", el).forEach((x) => x.classList.toggle("on", x === b));
+    $$(".pane", el).forEach((p) => p.classList.toggle("on", p.dataset.pane === c.tab));
+    const pane = $('[data-pane="chart"]', el);
+    if (c.tab === "chart" && pane && !pane.innerHTML.trim()) { pane.innerHTML = chartHtml(c.a, true); wireChart(pane); }
+    placeInk();
+  }));
+  wireChart(el); wireTable(el, c);
+  el.onclick = async (e) => {
+    const q = e.target.closest("[data-q]"); if (q) return ask(q.dataset.q, settings.mode);
+    const act = e.target.closest("[data-act]")?.dataset.act; if (!act) return;
+    const a = c.a;
+    if (act === "del") { cells = cells.filter((x) => x !== c); saveCells(); renderCells(); renderHero(); }
+    if (act === "rerun") { cells = cells.filter((x) => x !== c); a.mode === "sql" ? runSql(a.sql, c.sql ? null : c.q) : ask(c.q, settings.mode); }
+    if (act === "force") { cells = cells.filter((x) => x !== c); ask(c.q, "rules"); }
+    if (act === "copy") navigator.clipboard?.writeText(a.sql).then(() => toast(t("copied"), "copy")).catch(() => {});
+    if (act === "edit") openEditor(a.sql || "", c.q);
+    if (act === "csv") downloadCsv(c);
+    if (act === "pin") togglePin(c);
+  };
+}
+function togglePin(c) {
+  const a = c.a, ds = status?.dataset?.id;
+  const i = pins.findIndex((p) => p.sql === a.sql && p.ds === ds);
+  if (i >= 0) { pins.splice(i, 1); toast(t("unpinned"), "pin"); }
+  else { pins.unshift({ id: uid(), title: c.q, sql: a.sql, ds, created: Date.now() }); toast(t("pinned"), "pinf"); }
+  savePins(); renderCells(); renderConn();
+}
+function downloadCsv(c) {
+  const a = c.a, sep = lang === "tr" ? ";" : ",";
+  const cell = (v) => { const s = v === null || v === undefined ? "" : typeof v === "number" && lang === "tr" ? String(v).replace(".", ",") : String(v); return /[";\n,]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; };
+  const csv = "﻿" + [a.columns.map((x) => cell(x.name)).join(sep), ...a.rows.map((r) => r.map(cell).join(sep))].join("\r\n");
+  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  Object.assign(document.createElement("a"), { href: url, download: (c.q.replace(/[^\p{L}\p{N} -]+/gu, "").trim().slice(0, 60) || "kasif") + ".csv" }).click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+
+/* ---------------------------------------------------------------- SQL highlight */
+const KW = /^(SELECT|FROM|WHERE|AND|OR|NOT|IN|IS|NULL|AS|ON|JOIN|LEFT|RIGHT|INNER|OUTER|CROSS|GROUP|BY|ORDER|HAVING|LIMIT|OFFSET|ASC|DESC|DISTINCT|WITH|UNION|ALL|CASE|WHEN|THEN|ELSE|END|BETWEEN|LIKE|OVER|PARTITION|CAST|INTEGER|REAL|TEXT|EXISTS|RECURSIVE)$/i;
+function hl(sql) {
+  return String(sql).replace(/(--[^\n]*)|('(?:[^']|'')*')|("(?:[^"]|"")*")|(\b\d+(?:\.\d+)?\b)|([A-Za-z_][A-Za-z0-9_]*)(\s*\()?/g, (m, com, str, qid, n, w, par) => {
+    if (com) return `<span class="c">${esc(com)}</span>`;
+    if (str) return `<span class="s">${esc(str)}</span>`;
+    if (qid) return `<span class="q">${esc(qid)}</span>`;
+    if (n) return `<span class="d">${n}</span>`;
+    if (w && par) return KW.test(w) ? `<span class="k">${w.toUpperCase()}</span>${par}` : `<span class="f">${esc(w)}</span>${par}`;
+    if (w && KW.test(w)) return `<span class="k">${w.toUpperCase()}</span>`;
+    return esc(m);
+  });
+}
+
+/* ---------------------------------------------------------------- table */
+function tableHtml(a, sort) {
+  const cols = a.columns || [], rows = [...(a.rows || [])];
+  if (sort) rows.sort((x, y) => { const p = x[sort.i], q = y[sort.i]; const r = typeof p === "number" && typeof q === "number" ? p - q : String(p ?? "").localeCompare(String(q ?? ""), loc()); return sort.dir * r; });
+  const isNum = cols.map((c, i) => c.role === "metric" || c.role === "share" || rows.every((r) => r[i] === null || typeof r[i] === "number"));
+  const maxes = cols.map((c, i) => (c.role === "metric" ? Math.max(...rows.map((r) => (typeof r[i] === "number" ? Math.abs(r[i]) : 0)), 0) : 0));
+  const firstMetric = cols.findIndex((c) => c.role === "metric");
+  return `<div class="tbl-wrap"><table class="grid"><thead><tr><th class="rn">#</th>${cols.map((c, i) => `<th data-i="${i}" class="${isNum[i] ? "n" : ""}">${esc(c.name)}<span class="ar">${sort?.i === i ? (sort.dir > 0 ? "↑" : "↓") : ""}</span></th>`).join("")}</tr></thead>
+    <tbody>${rows.slice(0, 500).map((r, ri) => `<tr><td class="rn">${ri + 1}</td>${r.map((v, i) => `<td class="${isNum[i] ? "n" : ""}">${esc(fmtVal(v, cols[i]?.fmt))}${i === firstMetric && maxes[i] && rows.length > 1 ? `<span class="bar-bg"><i style="width:${(Math.abs(v || 0) / maxes[i]) * 100}%"></i></span>` : ""}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
+}
+function wireTable(el, c) {
+  $$('[data-pane="table"] th[data-i]', el).forEach((th) => (th.onclick = () => {
+    const i = +th.dataset.i; c.sort = c.sort?.i === i ? { i, dir: -c.sort.dir } : { i, dir: -1 };
+    $('[data-pane="table"]', el).innerHTML = tableHtml(c.a, c.sort); wireTable(el, c);
+  }));
+}
+
+/* ---------------------------------------------------------------- charts */
+const PAL = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)", "var(--c6)", "var(--c7)", "var(--c8)"];
+function chartHtml(a, fresh, compact) {
+  const ch = a.chart || {}, cols = a.columns, rows = a.rows;
+  if (!rows?.length) return "";
+  if (ch.type === "kpi") return `<div class="kpi-row">${ch.y.map((i) => `<div class="kpi"><span class="eyebrow">${esc(cols[i].name)}</span><b data-to="${rows[0][i]}" data-f="${cols[i].fmt}">${esc(fmtVal(rows[0][i], cols[i].fmt))}</b><small>${esc(a.question && !compact ? "" : "")}</small></div>`).join("")}</div>`;
+  if (ch.type === "bar" && cols[ch.x].role !== "time") return hbars(a, compact);
+  if (ch.type === "bar") return vbars(a);
+  if (ch.type === "line") return lineChart(a, compact);
+  if (ch.type === "multiline") return multiLine(a, compact);
+  if (ch.type === "donut") return donut(a);
+  return "";
+}
+function hbars(a, compact) {
+  const ch = a.chart, x = ch.x, y = ch.y[0], col = a.columns[y];
+  const rows = a.rows.slice(0, compact ? 8 : 30);
+  const max = Math.max(...rows.map((r) => Math.abs(r[y] || 0)), 1);
+  const hi = new Set((a.plan || []).filter((p) => p.kind === "filter").length ? [] : []);
+  return `<div class="hbars">${rows.map((r, i) => `<div class="hb ${hi.has(r[x]) ? "hl" : ""}" data-tl="${esc(r[x])}" data-tv="${esc(fmtVal(r[y], col.fmt))}"><span class="l" title="${esc(r[x])}">${esc(r[x])}</span>
+    <span class="t"><i style="width:${(Math.abs(r[y] || 0) / max) * 100}%;animation-delay:${i * 45}ms"></i></span><span class="v">${esc(fmtVal(r[y], col.fmt, true))}</span></div>`).join("")}</div>`;
+}
+function niceMax(v) { if (v <= 0) return 1; const p = Math.pow(10, Math.floor(Math.log10(v))); const n = v / p; return (n <= 1 ? 1 : n <= 2 ? 2 : n <= 2.5 ? 2.5 : n <= 5 ? 5 : 10) * p; }
+function frame(maxV, fmt, W, H, L, B) {
+  const ticks = 4; let g = "";
+  for (let k = 0; k <= ticks; k++) {
+    const v = (maxV / ticks) * k, yy = H - B - ((H - B - 10) * k) / ticks;
+    g += `<line class="gl" x1="${L}" x2="${W - 8}" y1="${yy}" y2="${yy}"/><text class="ax" x="${L - 8}" y="${yy + 3.5}" text-anchor="end">${esc(fmtVal(v, fmt, true).replace(" TL", "").replace(/[,.]0+(?=\s|$)/, ""))}</text>`;
+  }
+  return g;
+}
+function lineChart(a, compact) {
+  const ch = a.chart, x = ch.x, y = ch.y[0], col = a.columns[y];
+  const pts = a.rows.map((r) => [String(r[x]), r[y] || 0]);
+  const W = 760, H = compact ? 200 : 270, L = 62, B = 26, n = pts.length;
+  const maxV = niceMax(Math.max(...pts.map((p) => p[1]), 0));
+  const X = (i) => L + ((W - L - 18) * i) / Math.max(n - 1, 1), Y = (v) => H - B - ((H - B - 10) * v) / maxV;
+  const d = pts.map((p, i) => `${i ? "L" : "M"}${X(i).toFixed(1)},${Y(p[1]).toFixed(1)}`).join(" ");
+  const every = Math.ceil(n / (compact ? 5 : 9));
+  const gid = "g" + uid();
+  return `<svg class="plot" viewBox="0 0 ${W} ${H}"><defs><linearGradient id="${gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--c1);stop-opacity:.28"/><stop offset="1" style="stop-color:var(--c1);stop-opacity:0"/></linearGradient></defs>
+    ${frame(maxV, col.fmt, W, H, L, B)}
+    <path class="ar" d="${d} L${X(n - 1).toFixed(1)},${H - B} L${L},${H - B} Z" fill="url(#${gid})"/>
+    <path class="ln" pathLength="1" d="${d}" style="stroke:var(--c1)"/>
+    ${pts.map((p, i) => `<circle class="pt" cx="${X(i)}" cy="${Y(p[1])}" r="3.4" style="stroke:var(--c1);animation-delay:${600 + i * 25}ms"/>`).join("")}
+    ${pts.map((p, i) => (i % every === 0 || i === n - 1 ? `<text class="ax" x="${X(i)}" y="${H - 8}" text-anchor="middle">${esc(p[0])}</text>` : "")).join("")}
+    ${pts.map((p, i) => `<rect class="hot" x="${X(i) - (W - L) / n / 2}" y="0" width="${(W - L) / n}" height="${H - B}" data-tl="${esc(p[0])}" data-tv="${esc(fmtVal(p[1], col.fmt))}"/>`).join("")}</svg>`;
+}
+function vbars(a) {
+  const ch = a.chart, x = ch.x, y = ch.y[0], col = a.columns[y];
+  const pts = a.rows.map((r) => [String(r[x]), r[y] || 0]);
+  const W = 760, H = 250, L = 62, B = 26, n = pts.length, maxV = niceMax(Math.max(...pts.map((p) => p[1]), 0));
+  const slot = (W - L - 18) / n, bw = Math.min(80, slot * 0.55);
+  return `<svg class="plot" viewBox="0 0 ${W} ${H}">${frame(maxV, col.fmt, W, H, L, B)}
+    ${pts.map((p, i) => { const h = ((H - B - 10) * p[1]) / maxV, xx = L + slot * i + (slot - bw) / 2;
+      return `<rect class="vbar" x="${xx}" y="${H - B - h}" width="${bw}" height="${h}" rx="6" style="fill:var(--c${(i % 2) + 1});animation-delay:${i * 90}ms" data-tl="${esc(p[0])}" data-tv="${esc(fmtVal(p[1], col.fmt))}"/>
+        <text class="ax" x="${xx + bw / 2}" y="${H - B - h - 7}" text-anchor="middle" style="fill:var(--ink);font-weight:600">${esc(fmtVal(p[1], col.fmt, true))}</text>
+        <text class="ax" x="${xx + bw / 2}" y="${H - 8}" text-anchor="middle">${esc(p[0])}</text>`; }).join("")}</svg>`;
+}
+function multiLine(a, compact) {
+  const ch = a.chart, x = ch.x, s = ch.series, y = ch.y[0], col = a.columns[y];
+  const periods = [...new Set(a.rows.map((r) => String(r[x])))].sort();
+  const totals = {}; a.rows.forEach((r) => (totals[r[s]] = (totals[r[s]] || 0) + (r[y] || 0)));
+  const series = Object.keys(totals).sort((p, q) => totals[q] - totals[p]);
+  const val = {}; a.rows.forEach((r) => (val[r[s] + "|" + r[x]] = r[y] || 0));
+  const W = 760, H = compact ? 210 : 280, L = 62, B = 26, n = periods.length;
+  const maxV = niceMax(Math.max(...a.rows.map((r) => r[y] || 0), 0));
+  const X = (i) => L + ((W - L - 18) * i) / Math.max(n - 1, 1), Y = (v) => H - B - ((H - B - 10) * v) / maxV;
+  const every = Math.ceil(n / (compact ? 5 : 9));
+  const lines = series.map((sr, k) => `<path class="ln" pathLength="1" d="${periods.map((p, i) => `${i ? "L" : "M"}${X(i).toFixed(1)},${Y(val[sr + "|" + p] || 0).toFixed(1)}`).join(" ")}" style="stroke:${PAL[k % 8]};animation-delay:${k * 150}ms"/>`).join("");
+  const hot = periods.map((p, i) => `<rect class="hot" x="${X(i) - (W - L) / n / 2}" y="0" width="${(W - L) / n}" height="${H - B}" data-tl="${esc(p)}" data-tv="${esc(series.slice(0, 5).map((sr) => `${sr}: ${fmtVal(val[sr + "|" + p] || 0, col.fmt, true)}`).join(" · "))}"/>`).join("");
+  return `<svg class="plot" viewBox="0 0 ${W} ${H}">${frame(maxV, col.fmt, W, H, L, B)}${lines}
+    ${periods.map((p, i) => (i % every === 0 || i === n - 1 ? `<text class="ax" x="${X(i)}" y="${H - 8}" text-anchor="middle">${esc(p)}</text>` : "")).join("")}${hot}</svg>
+    <div class="legend">${series.map((sr, k) => `<span><i style="background:${PAL[k % 8]}"></i>${esc(sr)}</span>`).join("")}</div>`;
+}
+function donut(a) {
+  const ch = a.chart, x = ch.x, y = ch.y[0], sh = ch.share, col = a.columns[y];
+  const hiVals = new Set((a.summary || []).filter((s) => /pay|share|accounts/i.test(s)).map((s) => (s.match(/\*\*(.+?)\*\*/) || [])[1]));
+  let acc = 0;
+  const segs = a.rows.map((r, i) => { const len = r[sh] || 0, gap = len > 0 && len < 100 ? 0.9 : 0; const el = `<circle class="sg" cx="21" cy="21" r="15.9155" pathLength="100" style="stroke:${PAL[i % 8]};animation-delay:${i * 130}ms" stroke-dasharray="${Math.max(0.1, len - gap).toFixed(2)} ${(100 - len + gap).toFixed(2)}" stroke-dashoffset="${(-acc).toFixed(2)}" data-tl="${esc(r[x])}" data-tv="${esc(fmtVal(r[y], col.fmt))} · ${esc(fmtVal(len, "pct"))}"/>`; acc += len; return el; }).join("");
+  return `<div class="donut"><svg viewBox="0 0 42 42"><circle cx="21" cy="21" r="15.9155" style="stroke:var(--panel-3)"/>${segs}</svg>
+    <div class="lg">${a.rows.map((r, i) => `<div class="${hiVals.has(String(r[x])) ? "hl" : ""}" style="animation-delay:${200 + i * 70}ms"><i style="background:${PAL[i % 8]}"></i><span>${esc(r[x])}</span><b>${esc(fmtVal(r[y], col.fmt, true))}</b><small>${esc(fmtVal(r[sh], "pct"))}</small></div>`).join("")}</div></div>`;
+}
+function countUp(el) {
+  const to = parseFloat(el.dataset.to), f = el.dataset.f; if (Number.isNaN(to) || reduced()) return;
+  const t0 = performance.now(), isInt = Number.isInteger(to);
+  const step = (now) => { const p = Math.min(1, (now - t0) / 1000), e = 1 - Math.pow(1 - p, 3); const v = to * e; el.textContent = fmtVal(isInt ? Math.round(v) : v, f); if (p < 1) requestAnimationFrame(step); else el.textContent = fmtVal(to, f); };
+  requestAnimationFrame(step);
+}
+function wireChart(root) {
+  $$(".kpi b[data-to]", root).forEach((b) => { if (!b.dataset.done) { b.dataset.done = 1; countUp(b); } });
+}
+const tip = $("#tip");
+document.addEventListener("pointermove", (e) => {
+  const h = e.target.closest?.("[data-tl]");
+  if (!h) { tip.style.opacity = 0; return; }
+  tip.innerHTML = `<b>${esc(h.dataset.tl)}</b>${esc(h.dataset.tv)}`;
+  tip.style.opacity = 1;
+  const w = tip.offsetWidth; tip.style.left = Math.min(innerWidth - w - 10, e.clientX + 14) + "px"; tip.style.top = e.clientY - 46 + "px";
+}, { passive: true });
+
+/* ---------------------------------------------------------------- editor */
+let edTitle = null;
+function openEditor(sql, title) { edTitle = title || null; $("#edSql").value = sql; $("#editor").classList.add("open"); setTimeout(() => $("#edSql").focus(), 50); }
+$("#edRun").onclick = () => { const s = $("#edSql").value.trim(); if (!s) return; $("#editor").classList.remove("open"); runSql(s); };
+$("#edSql").addEventListener("keydown", (e) => { if (e.key === "Enter" && (e.ctrlKey || e.metaKey)) { e.preventDefault(); $("#edRun").click(); } });
+$$(".modal").forEach((m) => (m.onclick = (e) => { if (e.target === m || e.target.closest("[data-close]")) { m.classList.remove("open"); if (m.id === "welcome") closeWelcome(); } }));
+$("#clearCells").onclick = () => { cells = []; saveCells(); renderCells(); renderHero(); };
+
+/* ---------------------------------------------------------------- boards */
+async function renderBoard() {
+  const box = $("#board"), ds = status?.dataset?.id;
+  const mine = pins.filter((p) => p.ds === ds), other = pins.length - mine.length;
+  if (!mine.length) { box.innerHTML = `<div class="empty" style="grid-column:1/-1">${t("bd.empty")}${other ? "<br>" + t("bd.other", { n: other }) : ""}</div>`; return; }
+  box.innerHTML = mine.map((p, i) => `<div class="card tile" id="p-${p.id}" style="animation-delay:${i * 60}ms"><div class="th"><h4>${esc(p.title)}<small>${new Date(p.created).toLocaleDateString(loc())}</small></h4>
+    <button class="ib" data-run="${p.id}" title="${t("rerun")}">${ic("explore")}</button><button class="ib" data-unpin="${p.id}" title="${t("unpin")}">${ic("x")}</button></div>
+    <div class="tb"><div class="skel" style="height:140px"></div></div></div>`).join("") + (other ? `<div class="muted" style="grid-column:1/-1;font-size:12.5px">${t("bd.other", { n: other })}</div>` : "");
+  $$("[data-unpin]", box).forEach((b) => (b.onclick = () => { pins = pins.filter((p) => p.id !== b.dataset.unpin); savePins(); renderConn(); renderBoard(); }));
+  $$("[data-run]", box).forEach((b) => (b.onclick = () => { const p = pins.find((x) => x.id === b.dataset.run); show("explore"); runSql(p.sql, p.title); }));
+  await Promise.all(mine.map(async (p) => {
+    let a; try { a = await post("/sql", { sql: p.sql, lang, question: p.title }); } catch (e) { a = { ok: false, error: e.message }; }
+    const tb = $(`#p-${p.id} .tb`); if (!tb) return;
+    if (!a.ok) { tb.innerHTML = `<div class="err hard" style="margin:0">${ic("alert")}<div><p>${esc(a.error)}</p></div></div>`; return; }
+    tb.innerHTML = (a.chart?.type && a.chart.type !== "table" ? chartHtml(a, true, true) : tableHtml({ ...a, rows: a.rows.slice(0, 8) })) +
+      (a.summary?.[0] ? `<p style="margin:12px 0 0;font-size:12.5px;color:var(--ink-2)">${bold(a.summary[0])}</p>` : "");
+    wireChart(tb);
+  }));
+}
+$("#bdRefresh").onclick = renderBoard;
+
+/* ---------------------------------------------------------------- schema */
+async function renderSchema() {
+  const box = $("#schemaBox");
+  if (!schema || schema.dataset.id !== status?.dataset?.id || schema.lang !== lang) {
+    box.innerHTML = `<div class="er">${[1, 2, 3, 4].map(() => `<div class="skel" style="height:220px;border-radius:14px"></div>`).join("")}</div>`;
+    try { schema = await api(`/schema?lang=${lang}`); schema.lang = lang; } catch { box.innerHTML = `<div class="empty">${t("err")}</div>`; return; }
+  }
+  const L = schema.layer;
+  const tables = [...schema.tables].sort((p, q) => q.columns.filter((c) => c.fk).length - p.columns.filter((c) => c.fk).length || q.rows - p.rows);
+  box.innerHTML = `<span class="eyebrow">${t("sc.rel")}</span><div class="er" id="er"><svg class="links" id="links"></svg>${tables.map((tb, i) => `<div class="card tcard" data-t="${esc(tb.name)}" style="animation-delay:${i * 70}ms">
+      <div class="tt">${ic("table")}<b>${esc(tb.name)}</b><small>${num(tb.rows)}</small></div>
+      ${tb.columns.map((c) => `<div class="tcol" data-c="${esc(tb.name)}.${esc(c.name)}" ${c.fk ? `data-fk="${esc(c.fk.table)}.${esc(c.fk.column)}"` : ""}>${c.pk ? `<svg class="pk"><use href="#i-key"/></svg>` : c.fk ? `<svg class="fk"><use href="#i-link"/></svg>` : `<svg></svg>`}<span>${esc(c.name)}</span><small>${esc(c.type)}</small></div>`).join("")}</div>`).join("")}</div>
+    <div class="card sample" id="sample"><div class="sh">${ic("rows")}<h3>${t("sc.sample")}</h3></div><div class="empty" style="padding:22px">${t("sc.click")}</div></div>
+    <span class="eyebrow" style="display:block;margin-top:28px">${t("sc.layer")}</span>
+    ${L ? `<div class="layer"><div class="card lcard"><h3>${ic("bolt")}${t("sc.metrics")}</h3><p>${t("sc.metricsD")}</p>
+        ${L.metrics.map((m) => `<div class="def"><b>${esc(lang === "tr" ? m.label : m.label_en)}</b><p>${esc(m.description)}</p><code>${esc(m.expr)}</code></div>`).join("")}
+        ${L.filter ? `<div class="def"><b>${t("sc.rule")}</b><p>${esc(L.filter)}</p></div>` : ""}</div>
+      <div class="card lcard"><h3>${ic("layers")}${t("sc.dims")}</h3><p>${t("sc.dimsD")}</p>
+        ${L.dimensions.map((d) => `<div class="def"><b>${esc(lang === "tr" ? d.label : d.label_en)}</b> <span class="muted mono" style="font-size:11.5px">${esc(d.expr)} · ${t("sc.values", { n: d.value_count })}</span><div class="vals" style="margin-top:6px">${d.values.slice(0, 10).map((v) => `<span>${esc(v)}</span>`).join("")}${d.value_count > 10 ? `<span>+${d.value_count - 10}</span>` : ""}</div></div>`).join("")}</div></div>`
+      : `<div class="card lcard" style="margin-top:10px"><p style="margin:0">${t("sc.noLayer")}</p></div>`}`;
+  $$(".tcard", box).forEach((c) => (c.onclick = () => showSample(c.dataset.t)));
+  $$(".tcol[data-fk]", box).forEach((r) => {
+    r.onmouseenter = () => { r.classList.add("hl"); $(`.tcol[data-c="${r.dataset.fk}"]`)?.classList.add("hl"); };
+    r.onmouseleave = () => $$(".tcol.hl", box).forEach((x) => x.classList.remove("hl"));
+  });
+  requestAnimationFrame(() => requestAnimationFrame(drawLinks));
+  setTimeout(drawLinks, 700);
+}
+function drawLinks() {
+  const er = $("#er"), svg = $("#links"); if (!er || !svg) return;
+  const base = er.getBoundingClientRect(); let d = "";
+  $$(".tcol[data-fk]", er).forEach((r) => {
+    const tgt = $(`.tcol[data-c="${r.dataset.fk}"]`, er); if (!tgt) return;
+    const a = r.getBoundingClientRect(), b = tgt.getBoundingClientRect();
+    const y1 = a.top + a.height / 2 - base.top, y2 = b.top + b.height / 2 - base.top;
+    let x1, x2, c1, c2;
+    if (Math.abs(a.left - b.left) < 60) { // aynı sütun: soldan kavis
+      x1 = a.left - base.left; x2 = b.left - base.left; c1 = x1 - 46; c2 = x2 - 46;
+    } else if (b.left > a.left) {
+      x1 = a.right - base.left; x2 = b.left - base.left; const dx = Math.max(30, (x2 - x1) / 2); c1 = x1 + dx; c2 = x2 - dx;
+    } else {
+      x1 = a.left - base.left; x2 = b.right - base.left; const dx = Math.max(30, (x1 - x2) / 2); c1 = x1 - dx; c2 = x2 + dx;
+    }
+    d += `<path d="M${x1},${y1} C${c1},${y1} ${c2},${y2} ${x2},${y2}"/><circle cx="${x1}" cy="${y1}" r="3"/><circle cx="${x2}" cy="${y2}" r="3"/>`;
+  });
+  svg.innerHTML = d;
+}
+function showSample(name) {
+  const tb = schema.tables.find((x) => x.name === name); if (!tb) return;
+  $$(".tcard").forEach((c) => c.classList.toggle("on", c.dataset.t === name));
+  const a = { columns: tb.columns.map((c) => ({ name: c.name, role: /INT|REAL|NUM/i.test(c.type) && !c.pk && !c.fk ? "metric" : "dim", fmt: "text" })), rows: tb.sample };
+  $("#sample").innerHTML = `<div class="sh">${ic("rows")}<h3>${esc(name)}</h3><span class="chip">${num(tb.rows)} ${t("fact.rows")}</span><span style="flex:1"></span>
+    <button class="btn sm" id="sampleQ">${ic("code")}SELECT * FROM ${esc(name)}</button></div>${tableHtml(a)}`;
+  $("#sampleQ").onclick = () => { show("explore"); runSql(`SELECT * FROM ${name} LIMIT 100`); };
+}
+
+/* ---------------------------------------------------------------- history */
+async function renderHistory() {
+  const box = $("#histBox");
+  let h = [];
+  try { [h] = await Promise.all([api("/history?limit=300"), loadStatus()]); } catch { box.innerHTML = `<div class="empty">${t("err")}</div>`; return; }
+  const s = status?.history || {};
+  const stats = [["hi.total", num(s.n || 0)], ["hi.success", s.n ? (lang === "tr" ? `%${Math.round((100 * s.ok) / s.n)}` : `${Math.round((100 * s.ok) / s.n)}%`) : "—"], ["hi.avg", s.n ? `${num(Math.round(s.ms))} ms` : "—"], ["hi.split", `${s.rules || 0} / ${s.llm || 0} / ${s.sql || 0}`]];
+  box.innerHTML = `<div class="hstats">${stats.map(([k, v], i) => `<div class="card hs" style="animation:rise .5s var(--ease) ${i * 60}ms both"><span class="eyebrow">${t(k)}</span><b>${v}</b></div>`).join("")}</div>` +
+    (h.length ? `<div class="card" style="overflow:hidden"><div class="tbl-wrap" style="max-height:none"><table class="grid hist"><thead><tr><th></th><th>${t("hi.q")}</th><th>${t("hi.mode")}</th><th class="n">${t("hi.rows")}</th><th class="n">${t("hi.ms")}</th><th>${t("hi.when")}</th></tr></thead><tbody>
+      ${h.map((r) => `<tr><td><span class="st ${r.ok ? "ok" : "no"}">${ic(r.ok ? "check" : "x")}</span></td><td class="q" data-q="${esc(r.question)}" data-mode="${r.mode}" data-sql="${esc(r.sql || "")}" title="${esc(r.error || "")}">${esc(r.question)}</td>
+        <td><span class="chip ${r.mode === "llm" ? "llm" : r.mode === "sql" ? "sql" : "rules"}">${t("via." + r.mode)}</span></td><td class="n">${num(r.rows)}</td><td class="n">${num(r.ms)}</td><td class="muted">${ago(r.ts)}</td></tr>`).join("")}</tbody></table></div></div>`
+      : `<div class="empty">${t("hi.empty")}</div>`);
+  $$("td.q", box).forEach((td) => (td.onclick = () => { show("explore"); td.dataset.mode === "sql" ? runSql(td.dataset.sql) : ask(td.dataset.q, settings.mode); }));
+}
+$("#hiClear").onclick = async () => { await api("/history", { method: "DELETE" }); renderHistory(); };
+
+/* ---------------------------------------------------------------- datasets */
+async function renderDatasets() {
+  const box = $("#dsList");
+  let list = [];
+  try { list = await api("/datasets"); } catch { box.innerHTML = `<div class="empty">${t("err")}</div>`; return; }
+  box.innerHTML = list.map((d, i) => `<div class="card dsx ${d.active ? "on" : ""}" style="animation-delay:${i * 60}ms"><div class="top"><span class="ico">${ic(d.kind === "demo" ? "spark" : d.kind === "csv" ? "table" : "db")}</span>
+    <div style="min-width:0"><b>${esc(d.name)}</b><small>${d.kind.toUpperCase()} · ${d.tables} ${t("fact.tables")} · ${num(d.rows)} ${t("fact.rows")}</small></div></div>
+    ${d.note ? `<small style="font-family:var(--sans)">${esc(d.note)}</small>` : ""}
+    <div class="row">${d.active ? `<span class="chip rules">${ic("check")}${t("ds.using")}</span>` : `<button class="btn sm primary" data-use="${d.id}">${t("ds.use")}</button>`}
+      ${d.kind !== "demo" ? `<button class="btn sm ghost danger" data-del="${d.id}" data-name="${esc(d.name)}">${ic("trash")}${t("ds.del")}</button>` : ""}</div></div>`).join("");
+  $$("[data-use]", box).forEach((b) => (b.onclick = async () => { const d = await api(`/datasets/${b.dataset.use}/activate`, { method: "POST" }); await switched(d.name); renderDatasets(); }));
+  $$("[data-del]", box).forEach((b) => (b.onclick = async () => { if (!confirm(t("ds.confirm", { name: b.dataset.name }))) return; await api(`/datasets/${b.dataset.del}`, { method: "DELETE" }); toast(t("ds.deleted"), "trash"); await switched(); renderDatasets(); }));
+  $("#dsNotes").innerHTML = [1, 2, 3].map((n) => `<div class="note"><b>${t("n" + n)}</b>${t("n" + n + "d")}</div>`).join("");
+}
+async function switched(name) { schema = null; await loadStatus(); await loadExamples(); if (name) toast(t("ds.switched", { name }), "layers"); }
+async function upload(file) {
+  toast(t("ds.uploading", { name: file.name }), "upload");
+  const fd = new FormData(); fd.append("file", file);
+  try { const d = await api("/datasets", { method: "POST", body: fd }); await switched(); toast(t("ds.added", { name: d.name }), "check"); }
+  catch (e) { toast(e.message, "alert"); }
+  if (view === "datasets") renderDatasets(); else show("datasets");
+}
+const drop = $("#drop"), file = $("#file");
+drop.onclick = () => file.click();
+drop.onkeydown = (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); file.click(); } };
+file.onchange = () => { if (file.files[0]) upload(file.files[0]); file.value = ""; };
+let dragN = 0;
+const hasFiles = (e) => [...(e.dataTransfer?.types || [])].includes("Files");
+const hideDrop = () => { dragN = 0; $("#dropzone").classList.remove("on"); drop.classList.remove("over"); };
+addEventListener("dragenter", (e) => { if (!hasFiles(e)) return; e.preventDefault(); dragN++; $("#dropzone").classList.add("on"); });
+addEventListener("dragover", (e) => { if (hasFiles(e)) e.preventDefault(); });
+addEventListener("dragleave", (e) => { if (!e.relatedTarget || --dragN <= 0) hideDrop(); });
+addEventListener("drop", (e) => { hideDrop(); if (!hasFiles(e)) return; e.preventDefault(); const f = e.dataTransfer.files[0]; if (f) upload(f); });
+
+/* ---------------------------------------------------------------- settings */
+function seg(name, items, cur) {
+  return `<div class="seg" data-seg="${name}"><span class="thumb"></span>${items.map(([v, l]) => `<button data-v="${v}" class="${cur === v ? "on" : ""}">${l}</button>`).join("")}</div>`;
+}
+function renderSettings() {
+  const s = status?.llm;
+  $("#setBox").innerHTML = `
+    <div class="set"><div><h3>${t("st.look")}</h3><p>${t("st.lookD")}</p></div><div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center">
+      ${seg("theme", [["light", t("st.light")], ["dark", t("st.dark")], ["system", t("st.system")]], settings.theme)} ${seg("lang", [["tr", "Türkçe"], ["en", "English"]], lang)}</div></div>
+    <div class="set"><div><h3>${t("st.mode")}</h3><p>${t("st.modeD")}</p></div><div>${seg("mode", [["auto", t("mode.auto")], ["rules", t("mode.rules")], ["llm", t("mode.llm")]], settings.mode)}</div></div>
+    <div class="set"><div><h3>${t("st.conn")}</h3><p>${t("st.connD")}</p></div><div>${s ? `<div class="kv"><span>${t("st.status")}</span><div><span class="chip ${s.reachable ? "rules" : "sql"}">${s.reachable ? t("st.on") : t("st.off")}</span></div>
+      <span>${t("st.host")}</span><code>${esc(s.host)}</code><span>${t("st.model")}</span><code>${esc(s.model)}</code></div>
+      ${s.reachable ? "" : `<p style="margin:14px 0 0;color:var(--ink-2);font-size:13.5px">${t("st.howto")}</p><pre class="term"><span class="c"># ~4,7 GB · SQL için eğitilmiş model</span>\nollama pull ${esc(s.model)}</pre>`}` : "…"}</div></div>
+    <div class="set"><div><h3>${t("st.limits")}</h3><p>${t("st.limitsD")}</p></div><div class="kv"><span>${t("st.maxRows")}</span><code>${num(status?.limits?.max_rows || 1000)}</code><span>${t("st.timeout")}</span><code>${status?.limits?.timeout_s ?? 5} s</code>
+      <span>SQL</span><code>SELECT · WITH · UNION</code></div></div>
+    <div class="set"><div><h3>${t("st.how")}</h3><p>${t("st.howD")}</p></div><div><div class="how">${[1, 2, 3, 4].map((n) => `<div><i>0${n}</i><b>${t("h" + n)}</b><p>${t("h" + n + "d")}</p></div>`).join("")}</div>
+      <p style="margin:14px 0 0;color:var(--ink-2);font-size:13.5px">${t("st.eval")}</p>
+      <p style="margin:10px 0 0;font-size:12.5px" class="muted">Kâşif v${status?.version || ""} · <a href="/docs">API</a> · <a href="https://github.com/numanak-b221210105/kasif" target="_blank" rel="noopener">GitHub</a> · MIT</p></div></div>`;
+  $$("#setBox .seg").forEach((sg) => {
+    segThumb(sg);
+    $$("button", sg).forEach((b) => (b.onclick = () => {
+      const k = sg.dataset.seg, v = b.dataset.v;
+      if (k === "theme") { settings.theme = v; saveSettings(); applyTheme(); }
+      if (k === "mode") { settings.mode = v; saveSettings(); renderMode(); }
+      if (k === "lang") { lang = v; store.set("lang", lang); applyI18n(); loadExamples(); return; }
+      $$("button", sg).forEach((x) => x.classList.toggle("on", x === b)); segThumb(sg);
+    }));
+  });
+}
+
+/* ---------------------------------------------------------------- welcome & keys */
+function renderWelcome() { $("#wSteps").innerHTML = [1, 2, 3].map((n) => `<div style="animation-delay:${n * 80}ms"><i>0${n}</i><div><b>${t("w" + n)}</b><span>${t("w" + n + "d")}</span></div></div>`).join(""); }
+function closeWelcome() { $("#welcome").classList.remove("open"); if ($("#wHide").checked) store.set("welcomed", true); }
+$("#wGo").onclick = () => { closeWelcome(); show("explore"); };
+$("#wData").onclick = () => { closeWelcome(); show("datasets"); };
+document.addEventListener("keydown", (e) => {
+  const typing = /INPUT|TEXTAREA|SELECT/.test(document.activeElement?.tagName || "");
+  if (e.key === "Escape") { $$(".modal.open").forEach((m) => m.classList.remove("open")); hideDrop(); $("#app").classList.remove("menu"); return; }
+  if (e.altKey && /^Digit[1-6]$/.test(e.code)) { e.preventDefault(); show(VIEWS[+e.code.slice(5) - 1]); return; }
+  if (typing || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (e.key === "/") { e.preventDefault(); show("explore"); qEl.focus(); }
+});
+
+/* ---------------------------------------------------------------- boot */
+cells = cells.filter((c) => c.a);
+applyTheme(); renderMode(); applyI18n(); show("explore");
+loadStatus().then(() => { loadExamples(); renderCells(); });
+document.fonts?.ready.then(() => { movePill(); segThumb($("#modeSeg")); });
+if (!store.get("welcomed", false)) setTimeout(() => $("#welcome").classList.add("open"), 350);
+</script>
+</body>
+</html>
