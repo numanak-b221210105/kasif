@@ -1,0 +1,9 @@
+* text=auto
+*.sh text eol=lf
+*.bat text eol=crlf
+*.pdf binary
+*.png binary
+*.jpg binary
+# GitHub dil istatistiğinde projeyi Python olarak göster
+src/kasif/static/** linguist-vendored
+samples/*.csv -text
