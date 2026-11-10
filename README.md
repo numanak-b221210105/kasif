@@ -34,20 +34,24 @@ It works **without an LLM**. A rule engine built on a *semantic layer* handles e
 
 ## Design
 
-The interface is a macOS-style desktop app in the browser, built around one idea: **an analyst should see what the machine understood before trusting the number.**
+The interface is an expedition atlas in layers rather than one crowded screen. A floating *liquid glass* dock moves between them, and the topographic map behind zooms in as you go deeper. It is built around one idea: **an analyst should see what the machine understood before trusting the number.**
 
-| | |
+| Layer | |
 |---|---|
-| **Spotlight (`⌘K` / `Ctrl+K`)** | Ask from anywhere. As you type, the `/parse` endpoint returns character spans and each word is underlined live: measure blue, breakdown teal, period orange, filter pink, ranking purple, unknown **red wavy**. The same coloring stays on the answer's title. |
-| **Inspector** | A side panel for the selected answer: the question, a *How I understood it* timeline (measure → breakdown → period → filters → rules, or model → tables → fix for LLM answers), a **security checklist** that ticks every guard check that actually passed (single statement, SELECT only, no writes, known tables, known columns, LIMIT, read-only connection, time limit), timings and the SQL. |
-| **Source list sidebar** | Explore, Boards, History, Schema, Datasets, and every table with its row count; the active dataset and LLM status sit at the bottom. |
-| **Widgets** | Pinned answers become desktop-style widgets that re-run their SQL with fresh data every time a board opens. |
-| **Settings sheet** | A System-Settings-style sheet: General (theme, language), Model (endpoint, test connection), Security (limits) and About. |
-| **Desktop** | Menubar with clock, a wallpaper that follows light / dark mode, notification banners. On narrow screens the sidebar and Inspector become floating panels. |
+| **Atlas** | The open map: a compass rose, the question bar, suggested routes, a *map legend* (dataset, LLM status, tables) and the last stops to pick up where you left off. |
+| **Explore (Journey)** | Every question becomes a numbered stop on a dashed route on the left. One answer is shown at a time, large, with previous / next. The **Logbook** on the right holds the question, a *Route: how I understood it* trail (measure → breakdown → period → filters → rules, or model → tables → fix for LLM answers), a **security checklist** that ticks every guard check that actually passed (single statement, SELECT only, no writes, known tables, known columns, LIMIT, read-only connection, time limit), timings and the SQL. On narrow screens it becomes a drawer. |
+| **Boards · Datasets · History** | Full-width glass pages. Pinned answers are widgets that re-run their SQL with fresh data every time a board opens. |
+| **Schema (Terrain)** | The ER diagram is laid directly on the map: tables float as glass islands, foreign keys are drawn as routes. |
+| **Compass (`Ctrl+K` / `⌘K`)** | A command layer available everywhere. As you type, the `/parse` endpoint returns character spans and each word is underlined live: measure blue, breakdown teal, period orange, filter pink, ranking purple, unknown **red wavy**. The same coloring stays on the answer's title. |
+| **Map** | Contour lines generated with marching squares, a latitude/longitude grid and an animated route; a morning-chart light theme and a night-chart dark theme. While a query runs, the compass needle searches. |
 
-| Spotlight with live understanding | Answer + Inspector |
+| Atlas | Journey + Logbook |
 |---|---|
-| ![Spotlight](docs/spotlight2.jpg) | ![Inspector](docs/screenshot.jpg) |
+| ![Atlas](docs/atlas.jpg) | ![Journey](docs/screenshot.jpg) |
+
+| Compass with live understanding | Schema on the map |
+|---|---|
+| ![Compass](docs/spotlight2.jpg) | ![Schema](docs/schema.jpg) |
 
 ## Features
 
@@ -66,13 +70,13 @@ The interface is a macOS-style desktop app in the browser, built around one idea
 |---|---|
 | ![Boards](docs/boards.jpg) | ![CSV dataset](docs/csv.jpg) |
 
-| Schema and relationships | Settings |
+| History | Settings |
 |---|---|
-| ![Schema](docs/schema.jpg) | ![Settings](docs/settings.jpg) |
+| ![History](docs/history.jpg) | ![Settings](docs/settings.jpg) |
 
-| Dark mode | History |
+| Dark mode | Mobile |
 |---|---|
-| ![Dark](docs/dark.jpg) | ![History](docs/history.jpg) |
+| ![Dark](docs/dark.jpg) | <img src="docs/mobile.jpg" width="260"> |
 
 ## How it works
 
