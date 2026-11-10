@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>Kâşif</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%233b9bff'/%3E%3Cstop offset='1' stop-color='%234a3fd6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='4' y='4' width='120' height='120' rx='28' fill='url(%23g)'/%3E%3Cpath d='M64 26 74 64H54z' fill='%23ff7a3a'/%3E%3Cpath d='M64 102 54 64h20z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b8a9a'/%3E%3Cstop offset='1' stop-color='%230b2f4f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M64 6C38.6 6 18 26.3 18 51.4c0 33.5 39.4 66.4 43 69.3a4.6 4.6 0 0 0 6 0c3.6-2.9 43-35.8 43-69.3C110 26.3 89.4 6 64 6Z' fill='url%28%23g%29'/%3E%3Cellipse cx='64' cy='52' rx='31' ry='27' fill='none' stroke='%23fff' stroke-opacity='.3' stroke-width='4'/%3E%3Ccircle cx='64' cy='52' r='11' fill='%23f0a63a'/%3E%3C/svg%3E">
 <style>
 /* =====================================================================
    Kâşif — "veri atlası"
@@ -807,17 +807,100 @@ body[data-view="schema"] .map { transform: scale(1.05); }
   .hero-col h1 { font-size: 28px; } .pg { padding: 20px 16px; }
 }
 .twin .tt .d { display: none; } .twin .tt b { text-align: left; }
+
+/* ---------- işaret: eş yükselti eğrileri üzerinde zirve bayrağı ---------- */
+.rose { color: inherit; }
+.rose .r1, .rose .r2, .rose .r3 { stroke-dasharray: 1; stroke-dashoffset: 1; animation: draw 1.4s var(--ease) forwards; }
+.rose .r2 { animation-delay: .15s; } .rose .r3 { animation-delay: .3s; }
+.rose .flag { transform-origin: 64px 80px; animation: plant .9s var(--spring) .55s both; }
+@keyframes plant { from { transform: translateY(-14px) scaleY(.4); opacity: 0; } }
+.rose .cloth { transform-origin: 65px 37px; animation: wave 2.4s ease-in-out 1.4s infinite; }
+@keyframes wave { 50% { transform: skewY(-6deg) scaleX(.94); } }
+.busy .rose .rings path { animation: sonar 1.4s ease-out infinite; transform-origin: 64px 80px; stroke-dashoffset: 0; }
+.busy .rose .r2 { animation-delay: .2s; } .busy .rose .r3 { animation-delay: .4s; }
+@keyframes sonar { 0% { opacity: 1; } 50% { opacity: .3; transform: scale(1.06); } 100% { opacity: 1; } }
+.insp-empty .rose, .exp-empty .rose { opacity: 1; width: 76px; height: 76px; filter: drop-shadow(0 10px 20px rgba(11, 47, 79, .25)); }
+.onb-rose { width: 92px; height: 92px; filter: drop-shadow(0 12px 24px rgba(11, 47, 79, .3)); }
+
+/* ---------- Atlas: tek eksende hizalı düzen ---------- */
+.atlas { display: block; max-width: 920px; margin: 0 auto; padding: 5vh 0 40px; }
+.hero { position: relative; text-align: center; }
+.hero::before { content: ""; position: absolute; inset: -70px -160px -40px; z-index: -1; pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--paper-1) 88%, transparent) 40%, transparent); }
+.hero-mark { width: 84px; height: 84px; margin: 0 auto; filter: drop-shadow(0 14px 28px rgba(11, 47, 79, .35)); animation: pop .8s var(--spring) both; }
+.hero h1 { font-size: 42px; font-weight: 750; letter-spacing: -.035em; margin: 22px 0 10px; animation: rise .6s var(--spring) .1s both; }
+.hero > p { color: var(--label-2); font-size: 15px; line-height: 1.55; max-width: 540px; margin: 0 auto; animation: rise .6s var(--spring) .15s both; }
+.hero .bigsearch { width: 100%; margin-top: 30px; }
+.block { margin-top: 40px; animation: rise .6s var(--spring) .25s both; }
+.block > .kick { margin: 0 0 12px 4px; font-size: 10.5px; }
+.atlas .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.atlas .tile { min-height: 96px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; align-items: stretch; }
+.duo .glass-card { animation: none; padding: 18px; }
+.duo .lg-tb { grid-template-columns: 1fr 1fr; column-gap: 8px; }
+.duo .empty p { margin: 10px 4px 0; font-size: 12.5px; color: var(--label-3); }
+@media (max-width: 1180px) { .atlas { max-width: 760px; } }
+@media (max-width: 760px) {
+  .atlas { padding-top: 3vh; } .hero h1 { font-size: 28px; } .hero-mark { width: 64px; height: 64px; }
+  .atlas .tiles, .duo { grid-template-columns: 1fr; } .duo .lg-tb { grid-template-columns: 1fr; }
+}
+
+/* ---------- Atlas v2: hizalı ızgara ---------- */
+.atlas { display: block; max-width: 1120px; padding: 2vh 8px 40px; }
+.at-hero { text-align: center; max-width: 720px; margin: 0 auto; }
+.at-hero h1 { font-size: 42px; font-weight: 750; letter-spacing: -.035em; margin: 6px 0 10px; animation: rise .6s var(--spring) .1s both; }
+.at-hero > p { color: var(--label-2); font-size: 15px; line-height: 1.55; margin: 0 auto; max-width: 560px; animation: rise .6s var(--spring) .15s both; }
+.at-hero .bigsearch { width: 100%; margin-top: 26px; }
+.at-grid { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 24px; margin-top: 44px; align-items: start; }
+.at-h { height: 22px; display: flex; align-items: center; margin: 0 4px 10px; }
+.at-grid .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.at-grid .tile { min-height: 112px; }
+.legend-card { padding: 12px; animation: rise .6s var(--spring) .25s both; }
+.legend-card .lg-ds { margin-top: 0; } .lg-ds > span:nth-child(2) { flex: 1; min-width: 0; } .lg-ds > svg { width: 11px; height: 11px; color: var(--label-4); flex: none; }
+.lg-llm { margin: 10px 0 6px; padding: 0 6px; }
+.lg-sep { height: .5px; background: var(--sep-2); margin: 10px 6px 12px; }
+.legend-card .kick { padding: 0 6px; margin-bottom: 4px; }
+.legend-card .rc:first-of-type { margin-top: 0; }
+/* yeni işaret: "buradasın" iğnesi ve yayılan halkalar */
+.rose.hero { width: 120px; height: 120px; filter: drop-shadow(0 14px 22px rgba(11, 47, 79, .25)); overflow: visible; }
+.rose .pin { animation: drop .9s var(--spring) .1s both; transform-origin: 100px 150px; }
+@keyframes drop { from { transform: translateY(-26px); opacity: 0; } 60% { transform: translateY(3px); } }
+.rose .rings circle { stroke-width: 1.5; opacity: 0; transform-origin: 100px 150px; transform-box: view-box; animation: ring 3.6s ease-out infinite; color: var(--teal); }
+.rose .rings circle:nth-child(2) { animation-delay: 1.2s; } .rose .rings circle:nth-child(3) { animation-delay: 2.4s; }
+@keyframes ring { from { opacity: .7; transform: scale(.4, .14); } to { opacity: 0; transform: scale(2.3, .8); } }
+.busy .rose .rings circle { animation-duration: 1.2s; }
+.busy .rose .pin { animation: hop .7s ease-in-out infinite alternate; }
+@keyframes hop { to { transform: translateY(-8px); } }
+.insp-empty .rose, .exp-empty .rose { overflow: visible; }
+.dock .brand .mark { width: 30px; height: 30px; }
+/* tema ve dil düğmeleri */
+#langBtn b { font: 700 11.5px var(--mono); letter-spacing: .04em; }
+#themeBtn .moon { display: none; } :root[data-theme="dark"] #themeBtn .sun { display: none; } :root[data-theme="dark"] #themeBtn .moon { display: block; }
+@media (max-width: 1400px) { .dsc span:last-child { display: none; } .dsc { padding: 0 11px; } }
+@media (max-width: 1180px) { .at-grid { grid-template-columns: 1fr; } .at-grid .tiles { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
+@media (max-width: 760px) { .at-hero h1 { font-size: 28px; } #langBtn, .dock .brand { display: none; } }
+.at-grid { align-items: stretch; }
+.at-grid > aside { display: flex; flex-direction: column; } .at-grid .legend-card { flex: 1; }
+.recents { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.recents .rc { padding: 12px 14px; border-radius: 16px; animation: rise .5s var(--spring) .35s both; min-width: 0; }
+.recents .rc:hover { background: var(--glass-2); }
+@media (max-width: 1180px) { .recents { grid-template-columns: 1fr; } }
+.recents .rc { margin-top: 0 !important; }
+.legend-card { display: flex; flex-direction: column; }
+.lg-more { margin-top: auto; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 0; border-radius: 12px; background: var(--card); box-shadow: var(--card-sh); color: var(--blue); font-weight: 600; font-size: 12.5px; cursor: default; }
+.lg-more span { flex: 1; text-align: left; } .lg-more svg { width: 15px; height: 15px; }
+.lg-tb { margin-bottom: 12px; }
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <linearGradient id="gIcon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b8a9a"/><stop offset="1" stop-color="#0b2f4f"/></linearGradient>
   <linearGradient id="gNeedle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#e08a1e"/></linearGradient>
-  <symbol id="appicon" viewBox="0 0 128 128"><rect x="4" y="4" width="120" height="120" rx="34" fill="url(#gIcon)"/>
-    <g fill="none" stroke="#fff" stroke-opacity=".16" stroke-width="2"><path d="M18 92c14-10 26-6 38-14s18-26 36-26 22 8 26 12"/><path d="M14 74c12-6 22-4 32-12s16-22 30-22 26 6 34 14"/><path d="M24 108c14-6 30-4 44-12s24-18 46-14"/></g>
-    <circle cx="64" cy="64" r="36" fill="none" stroke="#fff" stroke-opacity=".45" stroke-width="2.5"/><circle cx="64" cy="64" r="28" fill="#fff" fill-opacity=".07"/>
-    <path d="M64 24v7M64 97v7M24 64h7M97 64h7" stroke="#fff" stroke-opacity=".75" stroke-width="3" stroke-linecap="round"/>
-    <g class="needle"><path d="M64 33 72 64H56Z" fill="url(#gNeedle)"/><path d="M64 95 56 64h16Z" fill="#fff" fill-opacity=".92"/><circle cx="64" cy="64" r="4.5" fill="#0b2f4f" stroke="#fff" stroke-width="1.5"/></g></symbol>
+  <symbol id="appicon" viewBox="0 0 128 128">
+    <path d="M64 6C38.6 6 18 26.3 18 51.4c0 33.5 39.4 66.4 43 69.3a4.6 4.6 0 0 0 6 0c3.6-2.9 43-35.8 43-69.3C110 26.3 89.4 6 64 6Z" fill="url(#gIcon)"/>
+    <path d="M64 6C38.6 6 18 26.3 18 51.4c0 3 .3 6 .9 8.9C24 36 42 20 64 20s40 16 45.1 40.3c.6-2.9.9-5.9.9-8.9C110 26.3 89.4 6 64 6Z" fill="#fff" opacity=".1"/>
+    <g fill="none" stroke="#fff" stroke-linecap="round"><path d="M38 52c3-14 13-22 26-22s24 9 26 22" stroke-opacity=".28" stroke-width="3"/><path d="M33 64c1.5-19 14-32 31-32" stroke-opacity="0" /><ellipse cx="64" cy="52" rx="19" ry="16" stroke-opacity=".38" stroke-width="3"/><ellipse cx="64" cy="52" rx="31" ry="27" stroke-opacity=".2" stroke-width="3"/></g>
+    <circle cx="64" cy="52" r="8.5" fill="url(#gNeedle)"/><circle cx="64" cy="52" r="3.2" fill="#fff"/></symbol>
   <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></symbol>
   <symbol id="i-widgets" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/></symbol>
   <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
@@ -881,6 +964,8 @@ body[data-view="schema"] .map { transform: scale(1.05); }
   </nav>
   <div class="dock-r">
     <button class="dsc" id="dsBtn"><span class="dot" id="dot"></span><span id="dsName">…</span></button>
+    <button class="tbtn" id="langBtn" data-tt="p.lang"><b id="langT">EN</b></button>
+    <button class="tbtn" id="themeBtn" data-tt="p.theme"><svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg></button>
     <button class="tbtn" id="searchBtn" data-tt="sp.ph"><svg><use href="#i-search"/></svg></button>
     <button class="tbtn" id="prefsBtn" data-tt="tt.prefs"><svg><use href="#i-gear"/></svg></button>
   </div>
@@ -936,7 +1021,7 @@ body[data-view="schema"] .map { transform: scale(1.05); }
 </div></div>
 
 <div class="scrim" id="onb"><div class="pane-win onb">
-  <svg class="rose onb-rose" viewBox="0 0 200 200"></svg>
+  <svg class="rose onb-rose" viewBox="0 0 128 128"></svg>
   <h2 data-th="w.title"></h2><div id="feats"></div>
   <div class="row"><button class="btn lg" id="wData" data-t="w.data"></button><button class="btn lg pri" id="wGo" data-t="w.go"></button></div>
 </div></div>
@@ -949,7 +1034,7 @@ body[data-view="schema"] .map { transform: scale(1.05); }
 "use strict";
 const I18N = {
   tr: {
-    "brand.sub": "Veri atlası", "nav.atlas": "Atlas", "stop.prev": "Önceki durak", "stop.next": "Sonraki durak", "stop.n": "Durak {i} / {n}", "rail.title": "Yolculuk", "rail.new": "Yeni soru", "rail.clear": "Yolculuğu temizle", "exp.empty": "Henüz bir durak yok. Pusulayı aç ve ilk sorunu sor.", "kick.boards": "Kamp", "kick.history": "Seyir kayıtları", "kick.schema": "Arazi", "kick.datasets": "Bölgeler", "at.legend": "Harita lejantı", "at.recent": "Kaldığın yerden devam et", "at.tables": "Tablolar", "at.all": "Tüm duraklar", "nav.explore": "Keşif", "nav.boards": "Panolar", "nav.history": "Geçmiş", "nav.schema": "Şema", "nav.datasets": "Veri setleri",
+    "brand.sub": "Veri atlası", "nav.atlas": "Atlas", "stop.prev": "Önceki durak", "stop.next": "Sonraki durak", "stop.n": "Durak {i} / {n}", "rail.title": "Yolculuk", "rail.new": "Yeni soru", "rail.clear": "Yolculuğu temizle", "exp.empty": "Henüz bir durak yok. Pusulayı aç ve ilk sorunu sor.", "kick.boards": "Kamp", "kick.history": "Seyir kayıtları", "kick.schema": "Arazi", "kick.datasets": "Bölgeler", "at.legend": "Harita lejantı", "at.recent": "Kaldığın yerden devam et", "at.tables": "Tablolar", "at.all": "Tüm duraklar", "at.openSchema": "Şemayı haritada aç", "nav.explore": "Keşif", "nav.boards": "Panolar", "nav.history": "Geçmiş", "nav.schema": "Şema", "nav.datasets": "Veri setleri",
     "sb.data": "Veri", "sb.tables": "Tablolar", "tt.sb": "Kenar çubuğu", "tt.prefs": "Ayarlar", "tt.insp": "Seyir defteri", "mode.auto": "Otomatik", "mode.rules": "Kural",
     "sp.ph": "Verine bir soru sor…", "sp.input": "Kâşif'e sor… ya da SELECT ile SQL yaz", "sp.f1": "<kbd>↑</kbd> <kbd>↓</kbd> seç · <kbd>↵</kbd> çalıştır · <kbd>esc</kbd> kapat", "sp.f2": "Mod: <b id=\"spMode\"></b> <kbd>⇥</kbd>",
     "sp.sugg": "Önerilen sorular", "sp.recent": "Son sorular", "sp.tables": "Tablolar", "sp.run": "Çalıştır", "sp.sql": "SQL sorgusu olarak çalıştırılacak", "sp.typing": "Yazdıkça nasıl anladığımı burada görürsün", "k.metric": "Ölçü", "k.dim": "Gruplama", "k.time": "Dönem", "k.filter": "Filtre", "k.order": "Sıralama", "k.limit": "Sınır", "k.grain": "Kırılım", "k.share": "Pay", "k.unknown": "Anlaşılmadı", 
@@ -988,7 +1073,7 @@ const I18N = {
     "llm.on": "LLM: {m}", "llm.off": "Kural motoru · LLM yok", err: "Bir hata oluştu", now: "şimdi", ago_m: "{n} dk önce", ago_h: "{n} sa önce", ago_d: "{n} gün önce",
   },
   en: {
-    "brand.sub": "Data atlas", "nav.atlas": "Atlas", "stop.prev": "Previous stop", "stop.next": "Next stop", "stop.n": "Stop {i} / {n}", "rail.title": "Journey", "rail.new": "New question", "rail.clear": "Clear journey", "exp.empty": "No stops yet. Open the compass and ask your first question.", "kick.boards": "Base camp", "kick.history": "Logs", "kick.schema": "Terrain", "kick.datasets": "Regions", "at.legend": "Map legend", "at.recent": "Pick up where you left off", "at.tables": "Tables", "at.all": "All stops", "nav.explore": "Explore", "nav.boards": "Boards", "nav.history": "History", "nav.schema": "Schema", "nav.datasets": "Datasets",
+    "brand.sub": "Data atlas", "nav.atlas": "Atlas", "stop.prev": "Previous stop", "stop.next": "Next stop", "stop.n": "Stop {i} / {n}", "rail.title": "Journey", "rail.new": "New question", "rail.clear": "Clear journey", "exp.empty": "No stops yet. Open the compass and ask your first question.", "kick.boards": "Base camp", "kick.history": "Logs", "kick.schema": "Terrain", "kick.datasets": "Regions", "at.legend": "Map legend", "at.recent": "Pick up where you left off", "at.tables": "Tables", "at.all": "All stops", "at.openSchema": "Open the schema map", "nav.explore": "Explore", "nav.boards": "Boards", "nav.history": "History", "nav.schema": "Schema", "nav.datasets": "Datasets",
     "sb.data": "Data", "sb.tables": "Tables", "tt.sb": "Sidebar", "tt.prefs": "Settings", "tt.insp": "Logbook", "mode.auto": "Auto", "mode.rules": "Rules",
     "sp.ph": "Ask your data…", "sp.input": "Ask Kâşif… or write SQL starting with SELECT", "sp.f1": "<kbd>↑</kbd> <kbd>↓</kbd> select · <kbd>↵</kbd> run · <kbd>esc</kbd> close", "sp.f2": "Mode: <b id=\"spMode\"></b> <kbd>⇥</kbd>",
     "sp.sugg": "Suggested", "sp.recent": "Recent", "sp.tables": "Tables", "sp.run": "Run", "sp.sql": "Will run as an SQL query", "sp.typing": "As you type, you'll see how I understand it here", "k.metric": "Measure", "k.dim": "Group by", "k.time": "Period", "k.filter": "Filter", "k.order": "Order", "k.limit": "Limit", "k.grain": "Breakdown", "k.share": "Share", "k.unknown": "Not understood", 
@@ -1093,6 +1178,7 @@ function applyI18n() {
   $$("[data-th]").forEach((el) => (el.innerHTML = t(el.dataset.th)));
   $$("[data-tt]").forEach((el) => (el.title = t(el.dataset.tt)));
   $("#sq").placeholder = t("sp.input");
+  $("#langT").textContent = lang === "tr" ? "EN" : "TR";
   renderChrome(); renderHome(); renderCells(); renderInspector(); renderOnb(); segThumb($("#modeSeg"));
   show(view);
 }
@@ -1112,7 +1198,9 @@ addEventListener("resize", () => { applyLayout(); navThumb(); if (view === "sche
 
 /* ---------------------------------------------------------------- pusula & topoğrafik harita */
 const KEY = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent) ? "⌘K" : "Ctrl K";
-const ROSE = `<g class="bezel"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".22"/><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-opacity=".14" stroke-dasharray="1.2 6.2" stroke-width="7"/> <g font-size="11" font-weight="700" fill="currentColor" fill-opacity=".55" text-anchor="middle" font-family="inherit"><text x="100" y="22">K</text><text x="100" y="186">G</text><text x="183" y="104">D</text><text x="17" y="104">B</text></g></g> <g class="star" fill="currentColor"><path d="M100 30 108 92 100 100 92 92Z" fill-opacity=".18"/><path d="M100 170 92 108 100 100 108 108Z" fill-opacity=".18"/><path d="M30 100 92 92 100 100 92 108Z" fill-opacity=".1"/><path d="M170 100 108 108 100 100 108 92Z" fill-opacity=".1"/></g> <g class="needle"><path d="M100 38 111 100H89Z" fill="url(#gNeedle)"/><path d="M100 162 89 100h22Z" fill="currentColor" fill-opacity=".55"/><circle cx="100" cy="100" r="6" style="fill:var(--glass-solid)" stroke="currentColor" stroke-opacity=".5" stroke-width="2"/></g>`;
+const ROSE = `<g class="rings" fill="none" stroke="currentColor"><circle cx="100" cy="150" r="30"/><circle cx="100" cy="150" r="30"/><circle cx="100" cy="150" r="30"/></g>
+  <ellipse cx="100" cy="150" rx="26" ry="7" fill="currentColor" opacity=".12"/>
+  <g class="pin"><use href="#appicon" x="52" y="34" width="96" height="96"/></g>`;
 function fillRoses() { $$("svg.rose:empty").forEach((s) => (s.innerHTML = ROSE)); $$("kbd").forEach((k) => { if (k.textContent === "Ctrl K") k.textContent = KEY; }); }
 // Arka plan: eş yükselti eğrileri (marching squares), enlem/boylam ağı ve akan bir keşif rotası
 function drawTopo() {
@@ -1137,10 +1225,10 @@ function drawTopo() {
   let grid = "", labels = "";
   for (let x = 100; x < W; x += 200) { grid += `M${x} 0V${H}`; labels += `<text x="${x + 6}" y="${H - 14}">${(26 + x / 200).toFixed(1)}°D</text>`; }
   for (let y = 100; y < H; y += 200) { grid += `M0 ${y}H${W}`; labels += `<text x="12" y="${y - 6}">${(42 - y / 200).toFixed(1)}°K</text>`; }
-  const route = "M120 900C300 820 340 640 520 600S760 470 900 420 1120 300 1260 250 1420 170 1500 110";
+  const route = "M40 930C240 880 380 960 600 920S940 840 1140 880 1400 960 1560 860";
   $("#wall").innerHTML = `<path class="gr" d="${grid}"/><path class="c" d="${minor.join("")}"/><path class="cm" d="${major.join("")}"/><g class="lb">${labels}</g>
-    <path class="route" id="route" d="${route}"/><circle class="wp" cx="120" cy="900" r="5"/><circle class="wp" cx="520" cy="600" r="4"/><circle class="wp" cx="900" cy="420" r="4"/><circle class="wp" cx="1260" cy="250" r="4"/>
-    <g class="dest" transform="translate(1500 110)"><circle r="16" class="ping"/><path d="M-6 -6 6 6M6 -6-6 6"/></g>
+    <path class="route" id="route" d="${route}"/><circle class="wp" cx="40" cy="930" r="5"/><circle class="wp" cx="600" cy="920" r="4"/><circle class="wp" cx="1140" cy="880" r="4"/>
+    <g class="dest" transform="translate(1560 860)"><circle r="16" class="ping"/><path d="M-6 -6 6 6M6 -6-6 6"/></g>
     <circle class="trav" r="5"><animateMotion dur="26s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion></circle>`;
 }
 
@@ -1162,6 +1250,8 @@ function show(v) {
 $$("#dock [data-v]").forEach((b) => (b.onclick = () => show(b.dataset.v)));
 $("#dsBtn").onclick = () => show("datasets");
 $("#prefsBtn").onclick = () => openPrefs("general");
+$("#themeBtn").onclick = () => { settings.theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark"; saveSettings(); applyTheme(); };
+$("#langBtn").onclick = () => { lang = lang === "tr" ? "en" : "tr"; store.set("lang", lang); loadSchema().then(applyI18n); applyI18n(); };
 function renderChrome() {
   $("#nCells").textContent = cells.length || "";
   if (!status) return;
@@ -1308,25 +1398,30 @@ const TILES = [["#34aadc", "#007aff", "bars"], ["#ff9f0a", "#ff5e3a", "sort"], [
 function renderHome() {
   const box = $("#home"); if (!box) return;
   const ds = status?.dataset, tables = schema?.tables || [];
-  const legend = `<div class="legend-card glass-card"><small class="kick">${t("at.legend")}</small>
-      <button class="lg-ds" id="atDs"><span class="ico">${ic("db")}</span><span><b>${esc(ds?.name || "…")}</b><small>${ds ? `${ds.tables} ${t("fact.tables")} · ${num(ds.rows)} ${t("fact.rows")}` : ""}</small></span></button>
-      <div class="lg-llm" id="atLlm"><span class="dot ${status?.llm?.reachable ? "on" : "off"}"></span>${status ? (status.llm.reachable ? t("llm.on", { m: status.llm.model }) : t("llm.off")) : ""}</div>
-      ${tables.length ? `<small class="kick" style="margin-top:12px">${t("at.tables")}</small><div class="lg-tb">${tables.map((tb) => `<button data-tbl="${esc(tb.name)}"><span>${esc(tb.name)}</span><em>${num(tb.rows)}</em></button>`).join("")}</div>` : ""}</div>`;
-  const recent = cells.filter((c) => c.a).slice(0, 4);
-  const resume = recent.length ? `<div class="recent-card glass-card"><small class="kick">${t("at.recent")}</small>${recent.map((c, i) => `<button class="rc" data-id="${c.id}"><span class="no">${String(cells.length - cells.indexOf(c)).padStart(2, "0")}</span><span>${esc(c.q)}</span>${ic("arrow")}</button>`).join("")}
-      <button class="rc all" data-all>${t("at.all")}${ic("arrow")}</button></div>` : "";
-  box.innerHTML = `<div class="atlas"><div class="hero-col"><svg class="rose hero" viewBox="0 0 200 200">${ROSE}</svg><h1>${t("home.h")}</h1><p>${t("home.p")}</p>
-    <button class="bigsearch" id="bigSearch"><svg><use href="#i-search"/></svg><span>${t("sp.ph")}</span><kbd>${KEY}</kbd></button>
-    ${examples.length ? `<div class="tiles-h">${t("home.tiles")}</div>
-    <div class="tiles">${examples.slice(0, 6).map((q, i) => { const [a, b, icn] = TILES[i % TILES.length]; return `<button class="tile" style="--a:${a};--b:${b};animation-delay:${250 + i * 50}ms" data-q="${esc(q)}"><i>${ic(icn)}</i><b>${esc(q)}</b><span class="go">${ic("arrow")}</span></button>`; }).join("")}</div>` : ""}</div>
-    <div class="side-col">${legend}${resume}</div></div>`;
+  const recent = cells.filter((c) => c.a).slice(0, 3);
+  const tiles = examples.slice(0, 6).map((q, i) => { const [a, b, icn] = TILES[i % TILES.length]; return `<button class="tile" style="--a:${a};--b:${b};animation-delay:${200 + i * 50}ms" data-q="${esc(q)}"><i>${ic(icn)}</i><b>${esc(q)}</b><span class="go">${ic("arrow")}</span></button>`; }).join("");
+  box.innerHTML = `<div class="atlas">
+    <header class="at-hero"><svg class="rose hero" viewBox="0 0 200 200">${ROSE}</svg>
+      <h1>${t("home.h")}</h1><p>${t("home.p")}</p>
+      <button class="bigsearch" id="bigSearch"><svg><use href="#i-search"/></svg><span>${t("sp.ph")}</span><kbd>${KEY}</kbd></button></header>
+    <div class="at-grid">
+      <section><div class="at-h"><span class="kick">${t("home.tiles")}</span></div><div class="tiles">${tiles}</div>
+        ${recent.length ? `<div class="at-h" style="margin-top:22px"><span class="kick">${t("at.recent")}</span></div><div class="recents">${recent.map((c) => `<button class="rc glass-card" data-id="${c.id}"><span class="no">${String(cells.length - cells.indexOf(c)).padStart(2, "0")}</span><span>${esc(c.q)}</span>${ic("arrow")}</button>`).join("")}</div>` : ""}</section>
+      <aside><div class="at-h"><span class="kick">${t("at.legend")}</span></div>
+        <div class="glass-card legend-card">
+          <button class="lg-ds" id="atDs"><span class="ico">${ic("db")}</span><span><b>${esc(ds?.name || "…")}</b><small>${ds ? `${ds.tables} ${t("fact.tables")} · ${num(ds.rows)} ${t("fact.rows")}` : ""}</small></span>${ic("chev")}</button>
+          <div class="lg-llm" id="atLlm"><span class="dot ${status?.llm?.reachable ? "on" : "off"}"></span>${status ? (status.llm.reachable ? t("llm.on", { m: status.llm.model }) : t("llm.off")) : ""}</div>
+          ${tables.length ? `<div class="lg-tb">${tables.map((tb) => `<button data-tbl="${esc(tb.name)}"><span>${esc(tb.name)}</span><em>${num(tb.rows)}</em></button>`).join("")}</div>` : ""}
+          <button class="lg-more" id="atSchema">${ic("map")}<span>${t("at.openSchema")}</span>${ic("arrow")}</button>
+        </div></aside>
+    </div></div>`;
   $("#bigSearch").onclick = () => openSpot();
   $$(".tile", box).forEach((b) => (b.onclick = () => submit(b.dataset.q)));
   $("#atDs").onclick = () => show("datasets");
   $("#atLlm").onclick = () => openPrefs("model");
+  $("#atSchema").onclick = () => show("schema");
   $$("[data-tbl]", box).forEach((b) => (b.onclick = () => { show("schema"); setTimeout(() => showSample(b.dataset.tbl), 120); }));
   $$(".rc[data-id]", box).forEach((b) => (b.onclick = () => { selected = b.dataset.id; show("explore"); renderInspector(); }));
-  $("[data-all]", box)?.addEventListener("click", () => show("explore"));
 }
 
 /* ---------------------------------------------------------------- hücreler */
@@ -1344,7 +1439,7 @@ function renderCells() {
   $("#stopNo").textContent = n ? t("stop.n", { i: n - idx, n }) : "";
   $("#prevStop").disabled = idx < 0 || idx >= n - 1; $("#nextStop").disabled = idx <= 0;
   const c = cells[idx];
-  if (!c) { $("#cells").innerHTML = `<div class="exp-empty"><svg class="rose" viewBox="0 0 200 200">${ROSE}</svg><p>${t("exp.empty")}</p><button class="btn pri lg" id="expAsk">${ic("search")}${t("rail.new")}</button></div>`; $("#expAsk").onclick = () => openSpot(); return; }
+  if (!c) { $("#cells").innerHTML = `<div class="exp-empty"><svg class="rose" viewBox="0 0 128 128">${ROSE}</svg><p>${t("exp.empty")}</p><button class="btn pri lg" id="expAsk">${ic("search")}${t("rail.new")}</button></div>`; $("#expAsk").onclick = () => openSpot(); return; }
   $("#cells").innerHTML = cellHtml(c); wireCell(c); delete c.fresh;
 }
 $("#prevStop").onclick = () => { const i = cells.findIndex((c) => c.id === selected); if (i < cells.length - 1) { selected = cells[i + 1].id; renderCells(); renderInspector(); } };
@@ -1430,7 +1525,7 @@ function downloadCsv(c) {
 /* ---------------------------------------------------------------- Denetçi */
 function renderInspector() {
   const box = $("#inspB"), c = cells.find((x) => x.id === selected) || null, a = c?.a;
-  if (!c) { box.innerHTML = `<div class="insp-empty"><svg class="rose" viewBox="0 0 200 200">${ROSE}</svg>${t("in.empty")}</div>`; return; }
+  if (!c) { box.innerHTML = `<div class="insp-empty"><svg class="rose" viewBox="0 0 128 128">${ROSE}</svg>${t("in.empty")}</div>`; return; }
   if (!a) { box.innerHTML = `<div style="padding:16px"><div class="iq">${esc(c.q)}</div><div class="skel" style="height:12px;margin-top:16px;width:80%"></div><div class="skel" style="height:12px;margin-top:8px;width:60%"></div></div>`; return; }
   const sec = (title, body, n = "", open = true) => `<details class="sec" ${open ? "open" : ""}><summary>${ic("chev")}${title}<span class="n">${n}</span></summary><div class="sec-b">${body}</div></details>`;
   const via = `<span class="tag ${a.mode === "llm" ? "llm" : a.mode === "sql" ? "sql" : "rules"}">${t("via." + (a.mode || "rules"))}</span>`;
