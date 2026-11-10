@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>Kâşif</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b8a9a'/%3E%3Cstop offset='1' stop-color='%230b2f4f'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M64 6C38.6 6 18 26.3 18 51.4c0 33.5 39.4 66.4 43 69.3a4.6 4.6 0 0 0 6 0c3.6-2.9 43-35.8 43-69.3C110 26.3 89.4 6 64 6Z' fill='url%28%23g%29'/%3E%3Cellipse cx='64' cy='52' rx='31' ry='27' fill='none' stroke='%23fff' stroke-opacity='.3' stroke-width='4'/%3E%3Ccircle cx='64' cy='52' r='11' fill='%23f0a63a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Cpath d='M95.1 32.9 L68.9 68.9 L64 64Z' fill='%238fc9d2'/%3E%3Cpath d='M95.1 32.9 L59.1 59.1 L64 64Z' fill='%234f93a3'/%3E%3Cpath d='M32.9 32.9 L68.9 59.1 L64 64Z' fill='%238fc9d2'/%3E%3Cpath d='M32.9 32.9 L59.1 68.9 L64 64Z' fill='%234f93a3'/%3E%3Cpath d='M32.9 95.1 L59.1 59.1 L64 64Z' fill='%238fc9d2'/%3E%3Cpath d='M32.9 95.1 L68.9 68.9 L64 64Z' fill='%234f93a3'/%3E%3Cpath d='M95.1 95.1 L59.1 68.9 L64 64Z' fill='%238fc9d2'/%3E%3Cpath d='M95.1 95.1 L68.9 59.1 L64 64Z' fill='%234f93a3'/%3E%3Cpath d='M64.0 4.0 L52.0 52.0 L64 64Z' fill='%23ffd88a'/%3E%3Cpath d='M64.0 4.0 L76.0 52.0 L64 64Z' fill='%23e08a1e'/%3E%3Cpath d='M124.0 64.0 L76.0 52.0 L64 64Z' fill='%232fa6b6'/%3E%3Cpath d='M124.0 64.0 L76.0 76.0 L64 64Z' fill='%230b3554'/%3E%3Cpath d='M64.0 124.0 L76.0 76.0 L64 64Z' fill='%232fa6b6'/%3E%3Cpath d='M64.0 124.0 L52.0 76.0 L64 64Z' fill='%230b3554'/%3E%3Cpath d='M4.0 64.0 L52.0 76.0 L64 64Z' fill='%232fa6b6'/%3E%3Cpath d='M4.0 64.0 L52.0 52.0 L64 64Z' fill='%230b3554'/%3E%3Ccircle cx='64' cy='64' r='5' fill='%23fff'/%3E%3Ccircle cx='64' cy='64' r='2.2' fill='%230b3554'/%3E%3C/svg%3E">
 <style>
 /* =====================================================================
    Kâşif — "veri atlası"
@@ -890,17 +890,38 @@ body[data-view="schema"] .map { transform: scale(1.05); }
 .lg-more { margin-top: auto; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 12px; border: 0; border-radius: 12px; background: var(--card); box-shadow: var(--card-sh); color: var(--blue); font-weight: 600; font-size: 12.5px; cursor: default; }
 .lg-more span { flex: 1; text-align: left; } .lg-more svg { width: 15px; height: 15px; }
 .lg-tb { margin-bottom: 12px; }
+
+/* ---------- Atlas tek ekrana sığar ---------- */
+#v-atlas { display: none; } #v-atlas.on { display: flex; }
+#home { margin: auto 0; width: 100%; }
+.atlas { padding: 0 8px 12px; }
+.rose.hero { width: clamp(70px, 13vh, 132px); height: clamp(70px, 13vh, 132px); color: var(--ocean); }
+:root[data-theme="dark"] .rose.hero { color: #bfe9f0; }
+.at-hero h1 { font-size: clamp(26px, 4.6vh, 42px); margin: clamp(4px, 1.2vh, 12px) 0 6px; }
+.at-hero > p { font-size: clamp(13px, 1.8vh, 15px); }
+.at-hero .bigsearch { margin-top: clamp(12px, 2.6vh, 26px); height: clamp(46px, 6vh, 56px); }
+.at-grid { margin-top: clamp(18px, 4vh, 44px); }
+.at-grid .tile { min-height: clamp(80px, 11vh, 112px); padding: 12px 14px; }
+.legend-card .rc { width: 100%; }
+.dock .brand .mark { width: 30px; height: 30px; filter: drop-shadow(0 3px 6px rgba(11, 53, 84, .3)); }
+.lg-tb { display: flex; flex-wrap: wrap; gap: 6px; margin: 2px 2px 12px; }
+.lg-tb button { height: 26px; padding: 0 9px; border-radius: 8px; background: var(--card); box-shadow: inset 0 0 0 .5px var(--sep-2); font-size: 11.5px; gap: 6px; }
+.lg-tb button::before { width: 6px; height: 6px; }
+.lg-tb span { flex: none; }
+.lg-llm { margin: 8px 0 8px; }
+.legend-card .lg-ds { padding: 7px; }
+.at-grid .tiles { gap: 10px; }
+.rose.hero { width: clamp(56px, 12vh, 132px); height: clamp(56px, 12vh, 132px); }
+.at-grid { margin-top: clamp(12px, 3.6vh, 44px); } .at-h { margin-bottom: 8px; }
+.at-grid .tile { min-height: clamp(72px, 10.5vh, 112px); }
+.atlas { padding-bottom: 2px; }
 </style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
   <linearGradient id="gIcon" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b8a9a"/><stop offset="1" stop-color="#0b2f4f"/></linearGradient>
   <linearGradient id="gNeedle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffd27a"/><stop offset="1" stop-color="#e08a1e"/></linearGradient>
-  <symbol id="appicon" viewBox="0 0 128 128">
-    <path d="M64 6C38.6 6 18 26.3 18 51.4c0 33.5 39.4 66.4 43 69.3a4.6 4.6 0 0 0 6 0c3.6-2.9 43-35.8 43-69.3C110 26.3 89.4 6 64 6Z" fill="url(#gIcon)"/>
-    <path d="M64 6C38.6 6 18 26.3 18 51.4c0 3 .3 6 .9 8.9C24 36 42 20 64 20s40 16 45.1 40.3c.6-2.9.9-5.9.9-8.9C110 26.3 89.4 6 64 6Z" fill="#fff" opacity=".1"/>
-    <g fill="none" stroke="#fff" stroke-linecap="round"><path d="M38 52c3-14 13-22 26-22s24 9 26 22" stroke-opacity=".28" stroke-width="3"/><path d="M33 64c1.5-19 14-32 31-32" stroke-opacity="0" /><ellipse cx="64" cy="52" rx="19" ry="16" stroke-opacity=".38" stroke-width="3"/><ellipse cx="64" cy="52" rx="31" ry="27" stroke-opacity=".2" stroke-width="3"/></g>
-    <circle cx="64" cy="52" r="8.5" fill="url(#gNeedle)"/><circle cx="64" cy="52" r="3.2" fill="#fff"/></symbol>
+  <symbol id="appicon" viewBox="0 0 128 128"><path d="M95.1 32.9 L68.9 68.9 L64 64Z" fill="#8fc9d2"/><path d="M95.1 32.9 L59.1 59.1 L64 64Z" fill="#4f93a3"/><path d="M32.9 32.9 L68.9 59.1 L64 64Z" fill="#8fc9d2"/><path d="M32.9 32.9 L59.1 68.9 L64 64Z" fill="#4f93a3"/><path d="M32.9 95.1 L59.1 59.1 L64 64Z" fill="#8fc9d2"/><path d="M32.9 95.1 L68.9 68.9 L64 64Z" fill="#4f93a3"/><path d="M95.1 95.1 L59.1 68.9 L64 64Z" fill="#8fc9d2"/><path d="M95.1 95.1 L68.9 59.1 L64 64Z" fill="#4f93a3"/><path d="M64.0 4.0 L52.0 52.0 L64 64Z" fill="#ffd88a"/><path d="M64.0 4.0 L76.0 52.0 L64 64Z" fill="#e08a1e"/><path d="M124.0 64.0 L76.0 52.0 L64 64Z" fill="#2fa6b6"/><path d="M124.0 64.0 L76.0 76.0 L64 64Z" fill="#0b3554"/><path d="M64.0 124.0 L76.0 76.0 L64 64Z" fill="#2fa6b6"/><path d="M64.0 124.0 L52.0 76.0 L64 64Z" fill="#0b3554"/><path d="M4.0 64.0 L52.0 76.0 L64 64Z" fill="#2fa6b6"/><path d="M4.0 64.0 L52.0 52.0 L64 64Z" fill="#0b3554"/><circle cx="64" cy="64" r="5" fill="#fff"/><circle cx="64" cy="64" r="2.2" fill="#0b3554"/></symbol>
   <symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8 4.8-2.2Z"/></symbol>
   <symbol id="i-widgets" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7" height="7" rx="2"/><rect x="13.5" y="3.5" width="7" height="7" rx="2"/><rect x="3.5" y="13.5" width="17" height="7" rx="2"/></symbol>
   <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><ellipse cx="12" cy="5.5" rx="7.5" ry="2.8"/><path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 12c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8"/></symbol>
@@ -1198,9 +1219,7 @@ addEventListener("resize", () => { applyLayout(); navThumb(); if (view === "sche
 
 /* ---------------------------------------------------------------- pusula & topoğrafik harita */
 const KEY = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent) ? "⌘K" : "Ctrl K";
-const ROSE = `<g class="rings" fill="none" stroke="currentColor"><circle cx="100" cy="150" r="30"/><circle cx="100" cy="150" r="30"/><circle cx="100" cy="150" r="30"/></g>
-  <ellipse cx="100" cy="150" rx="26" ry="7" fill="currentColor" opacity=".12"/>
-  <g class="pin"><use href="#appicon" x="52" y="34" width="96" height="96"/></g>`;
+const ROSE = `<g class="bezel"><circle cx="100" cy="100" r="92" fill="none" stroke="currentColor" stroke-opacity=".22"/><circle cx="100" cy="100" r="80" fill="none" stroke="currentColor" stroke-opacity=".14" stroke-dasharray="1.2 6.2" stroke-width="7"/> <g font-size="11" font-weight="700" fill="currentColor" fill-opacity=".55" text-anchor="middle" font-family="inherit"><text x="100" y="22">K</text><text x="100" y="186">G</text><text x="183" y="104">D</text><text x="17" y="104">B</text></g></g> <g class="star" fill="currentColor"><path d="M100 30 108 92 100 100 92 92Z" fill-opacity=".18"/><path d="M100 170 92 108 100 100 108 108Z" fill-opacity=".18"/><path d="M30 100 92 92 100 100 92 108Z" fill-opacity=".1"/><path d="M170 100 108 108 100 100 108 92Z" fill-opacity=".1"/></g> <g class="needle"><path d="M100 38 111 100H89Z" fill="url(#gNeedle)"/><path d="M100 162 89 100h22Z" fill="currentColor" fill-opacity=".55"/><circle cx="100" cy="100" r="6" style="fill:var(--glass-solid)" stroke="currentColor" stroke-opacity=".5" stroke-width="2"/></g>`;
 function fillRoses() { $$("svg.rose:empty").forEach((s) => (s.innerHTML = ROSE)); $$("kbd").forEach((k) => { if (k.textContent === "Ctrl K") k.textContent = KEY; }); }
 // Arka plan: eş yükselti eğrileri (marching squares), enlem/boylam ağı ve akan bir keşif rotası
 function drawTopo() {
@@ -1405,13 +1424,12 @@ function renderHome() {
       <h1>${t("home.h")}</h1><p>${t("home.p")}</p>
       <button class="bigsearch" id="bigSearch"><svg><use href="#i-search"/></svg><span>${t("sp.ph")}</span><kbd>${KEY}</kbd></button></header>
     <div class="at-grid">
-      <section><div class="at-h"><span class="kick">${t("home.tiles")}</span></div><div class="tiles">${tiles}</div>
-        ${recent.length ? `<div class="at-h" style="margin-top:22px"><span class="kick">${t("at.recent")}</span></div><div class="recents">${recent.map((c) => `<button class="rc glass-card" data-id="${c.id}"><span class="no">${String(cells.length - cells.indexOf(c)).padStart(2, "0")}</span><span>${esc(c.q)}</span>${ic("arrow")}</button>`).join("")}</div>` : ""}</section>
+      <section><div class="at-h"><span class="kick">${t("home.tiles")}</span></div><div class="tiles">${tiles}</div></section>
       <aside><div class="at-h"><span class="kick">${t("at.legend")}</span></div>
         <div class="glass-card legend-card">
           <button class="lg-ds" id="atDs"><span class="ico">${ic("db")}</span><span><b>${esc(ds?.name || "…")}</b><small>${ds ? `${ds.tables} ${t("fact.tables")} · ${num(ds.rows)} ${t("fact.rows")}` : ""}</small></span>${ic("chev")}</button>
           <div class="lg-llm" id="atLlm"><span class="dot ${status?.llm?.reachable ? "on" : "off"}"></span>${status ? (status.llm.reachable ? t("llm.on", { m: status.llm.model }) : t("llm.off")) : ""}</div>
-          ${tables.length ? `<div class="lg-tb">${tables.map((tb) => `<button data-tbl="${esc(tb.name)}"><span>${esc(tb.name)}</span><em>${num(tb.rows)}</em></button>`).join("")}</div>` : ""}
+          ${recent.length ? `<div class="lg-sep"></div><span class="kick">${t("at.recent")}</span>${recent.map((c) => `<button class="rc" data-id="${c.id}"><span class="no">${String(cells.length - cells.indexOf(c)).padStart(2, "0")}</span><span>${esc(c.q)}</span>${ic("arrow")}</button>`).join("")}` : tables.length ? `<div class="lg-tb">${tables.map((tb) => `<button data-tbl="${esc(tb.name)}"><span>${esc(tb.name)}</span><em>${num(tb.rows)}</em></button>`).join("")}</div>` : ""}
           <button class="lg-more" id="atSchema">${ic("map")}<span>${t("at.openSchema")}</span>${ic("arrow")}</button>
         </div></aside>
     </div></div>`;

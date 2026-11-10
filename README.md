@@ -38,12 +38,12 @@ The interface is an expedition atlas in layers rather than one crowded screen. A
 
 | Layer | |
 |---|---|
-| **Atlas** | The open map: a "you are here" pin, the question bar, suggested routes, a *map legend* (dataset, LLM status, tables), the last stops to pick up where you left off, and one-click theme and language switches. |
+| **Atlas** | The open map: a compass rose, the question bar, suggested routes, a *map legend* (dataset, LLM status, tables), the last stops to pick up where you left off, and one-click theme and language switches. |
 | **Explore (Journey)** | Every question becomes a numbered stop on a dashed route on the left. One answer is shown at a time, large, with previous / next. The **Logbook** on the right holds the question, a *Route: how I understood it* trail (measure → breakdown → period → filters → rules, or model → tables → fix for LLM answers), a **security checklist** that ticks every guard check that actually passed (single statement, SELECT only, no writes, known tables, known columns, LIMIT, read-only connection, time limit), timings and the SQL. On narrow screens it becomes a drawer. |
 | **Boards · Datasets · History** | Full-width glass pages. Pinned answers are widgets that re-run their SQL with fresh data every time a board opens. |
 | **Schema (Terrain)** | The ER diagram is laid directly on the map: tables float as glass islands, foreign keys are drawn as routes. |
 | **Compass (`Ctrl+K` / `⌘K`)** | A command layer available everywhere. As you type, the `/parse` endpoint returns character spans and each word is underlined live: measure blue, breakdown teal, period orange, filter pink, ranking purple, unknown **red wavy**. The same coloring stays on the answer's title. |
-| **Map** | Contour lines generated with marching squares, a latitude/longitude grid and an animated route; a morning-chart light theme and a night-chart dark theme. While a query runs, the pin hops and its rings pulse faster. |
+| **Map** | Contour lines generated with marching squares, a latitude/longitude grid and an animated route; a morning-chart light theme and a night-chart dark theme. While a query runs, the compass needle searches. |
 
 | Atlas | Journey + Logbook |
 |---|---|
