@@ -5,6 +5,8 @@ from __future__ import annotations
 import sqlite3
 import threading
 import time
+from collections.abc import Iterator
+from contextlib import contextmanager
 from pathlib import Path
 
 
@@ -21,10 +23,16 @@ class History:
                     rows INTEGER NOT NULL DEFAULT 0, ms INTEGER NOT NULL DEFAULT 0, error TEXT)"""
             )
 
-    def _con(self) -> sqlite3.Connection:
+    @contextmanager
+    def _con(self) -> Iterator[sqlite3.Connection]:
+        """Commits and always closes, so no file handle stays open (matters on Windows)."""
         c = sqlite3.connect(self.path)
         c.row_factory = sqlite3.Row
-        return c
+        try:
+            with c:
+                yield c
+        finally:
+            c.close()
 
     def log(
         self, dataset: str, question: str, mode: str, sql: str | None, ok: bool, rows: int, ms: int, error: str | None
