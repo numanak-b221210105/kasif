@@ -10,3 +10,7 @@ build/
 .ruff_cache/
 .DS_Store
 data/
+
+# web build
+site/
+.pyodide-cache/

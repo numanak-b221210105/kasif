@@ -1,0 +1,16 @@
+{
+  "name": "Kâşif — Ask your database in Turkish",
+  "short_name": "Kâşif",
+  "description": "Turkish questions to validated, read-only SQL, running fully in your browser.",
+  "package": "kasif",
+  "module": "kasif.api:app",
+  "index": "src/kasif/static/index.html",
+  "routes": ["/status", "/health", "/ask", "/parse", "/sql", "/schema", "/examples", "/datasets", "/history"],
+  "requirements": ["fastapi==0.163.1", "pydantic==2.14.3", "python-multipart==0.0.34", "sqlglot==30.31.0"],
+  "env": {"KASIF_DATA_DIR": "/home/pyodide/data", "KASIF_LLM_BASE_URL": "http://llm.unavailable-in-browser"},
+  "persist": "/home/pyodide/data",
+  "sounds": "app",
+  "sound_button_before": "#themeBtn",
+  "theme_color": "#0b3554",
+  "background_color": "#e8eff3"
+}

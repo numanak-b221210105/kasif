@@ -879,6 +879,7 @@ body[data-view="schema"] .map { transform: scale(1.05); }
 @media (max-width: 1400px) { .dsc span:last-child { display: none; } .dsc { padding: 0 11px; } }
 @media (max-width: 1180px) { .at-grid { grid-template-columns: 1fr; } .at-grid .tiles { grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); } }
 @media (max-width: 760px) { .at-hero h1 { font-size: 28px; } #langBtn, .dock .brand { display: none; } }
+@media (hover: none) and (pointer: coarse) { .spot-f > span:first-child, .spot-f kbd { display: none; } #sq, textarea, input { font-size: 16px; } }
 .at-grid { align-items: stretch; }
 .at-grid > aside { display: flex; flex-direction: column; } .at-grid .legend-card { flex: 1; }
 .recents { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
@@ -1400,6 +1401,7 @@ async function runSql(sql, title) {
   await steps.finish(); finish(cell, a);
 }
 function finish(cell, a) {
+  window.pybridge?.sound(a.ok ? "ok" : "err");
   cell.a = a; cell.tab = a.ok && a.chart?.type && a.chart.type !== "table" ? "chart" : a.ok ? "table" : "sql";
   busy = false; document.body.classList.remove("busy"); saveCells(); renderCells(); renderInspector(); renderChrome(); loadStatus();
 }

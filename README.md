@@ -12,6 +12,8 @@ It works **without an LLM**. A rule engine built on a *semantic layer* handles e
 
 > *Kâşif* is Turkish for "explorer".
 
+**▶ Try it: https://numanak-b221210105.github.io/kasif/** (phone and desktop, installable, your data stays on your device)
+
 ![Kâşif web UI](docs/screenshot.jpg)
 
 > 🇹🇷 **Türkçe özet:** Veritabanına Türkçe soru sorup cevap alan bir analiz asistanı. Soruyu ölçü, boyut, dönem ve filtrelere ayırır, güvenli bir SQL'e çevirir, salt-okunur çalıştırır ve sonucu grafik, tablo ve özetle sunar. Nasıl anladığını adım adım gösterir. Siz yazarken her kelimeyi neye dönüştürdüğünü renkli altı çizgilerle canlı gösterir. Anlamadığı soruda tahmin yürütmez, kullanıcıya sorar. LLM olmadan da çalışır; bağlıysa serbest soruları da yanıtlar ve hatalı SQL'ini kendisi düzeltir. Kendi CSV ya da SQLite dosyanızı yükleyebilirsiniz.
@@ -117,6 +119,21 @@ Dimension("bolge", "Bölge", "m.bolge", ["bölge", "region"], needs=("m",))
 | **Summary from data** | Numbers in the text are computed from the result, so the text can't contradict the table. |
 | **Same-period comparison** | "This year vs last year" in November compares Jan 1 – Nov 10 of both years, not a partial year against a full one. Unfinished months are left out of trend comparisons. |
 | **Provider-agnostic LLM** | Any OpenAI-compatible endpoint: local Ollama (default, `qwen2.5-coder:7b`), OpenAI, Groq and others. |
+
+## Web version (runs in your browser)
+
+The live demo has no server. The **same Python package** (`src/kasif`, FastAPI app, `sqlglot` guard and SQLite included) runs inside the browser with [Pyodide](https://pyodide.org), CPython compiled to WebAssembly:
+
+```
+page ── fetch("/ask") ──► Web Worker ──► Pyodide ──► kasif.api:app (ASGI) ──► SQLite on IndexedDB
+```
+
+- `web/pybridge.js` routes the page's API calls to a Web Worker; `web/py-worker.mjs` hands them to the FastAPI app as ordinary ASGI requests.
+- The demo database, uploaded CSV/SQLite files and the history live in the browser's IndexedDB, so they survive a reload. Nothing is uploaded.
+- The Python runtime and all wheels (`pydantic-core` built for WebAssembly) are served from the same site and cached by a service worker: after the first visit (~17 MB) it works offline and can be installed on a phone or desktop.
+- **Limit:** the rule engine and the SQL guard work fully; free-form LLM answers need a local install.
+
+Build it yourself: `python web/build.py`, then serve `site/` (for example `python -m http.server -d site`). GitHub Actions deploys it to Pages on every push.
 
 ## Quick start
 
