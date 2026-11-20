@@ -96,7 +96,8 @@ def page(index: Path) -> str:
         f'<meta name="apple-mobile-web-app-capable" content="yes">\n'
         f'<meta name="mobile-web-app-capable" content="yes">\n'
         f'<meta name="apple-mobile-web-app-title" content="{CFG["short_name"]}">\n'
-        f'<script src="pybridge.js" data-routes="{",".join(CFG["routes"])}" data-sounds="{CFG.get("sounds", "auto")}" data-sound-before="{CFG.get("sound_button_before", "")}"></script>\n'
+        f'<script src="appkit.js"></script>\n'
+        f'<script src="pybridge.js" data-app="{CFG["short_name"]}" data-accent="{CFG["theme_color"]}" data-routes="{",".join(CFG["routes"])}" data-sounds="{CFG.get("sounds", "auto")}" data-sound-before="{CFG.get("sound_button_before", "")}"></script>\n'
     )
     if not re.search(r'<meta[^>]+name="viewport"', html):
         head = '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n' + head
@@ -133,7 +134,7 @@ def main() -> None:
         src = ROOT / extra
         (OUT / extra).parent.mkdir(parents=True, exist_ok=True)
         shutil.copytree(src, OUT / extra) if src.is_dir() else shutil.copy2(src, OUT / extra)
-    for f in ["pybridge.js", "py-worker.mjs"]:
+    for f in ["appkit.js", "pybridge.js", "py-worker.mjs"]:
         shutil.copy2(WEB / f, OUT / f)
     shutil.copytree(WEB / "icons", OUT / "icons")
     digest = hashlib.sha256(b"".join((OUT / "wheels" / w).read_bytes()[:4096] for w in [*wheels, app]) + (OUT / "index.html").read_bytes()).hexdigest()[:10]

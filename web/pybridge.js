@@ -21,7 +21,7 @@ background:rgba(20,22,30,.92);color:#f4f1ea;font:500 13px/1.4 system-ui,-apple-s
 .pyb-card b{display:block;font-weight:650;margin-bottom:6px}.pyb-card small{display:block;opacity:.7;margin-top:6px;font-size:11.5px}
 .pyb-bar{height:4px;border-radius:4px;background:rgba(255,255,255,.15);overflow:hidden}.pyb-bar i{display:block;height:100%;width:3%;background:linear-gradient(90deg,#7dd3fc,#a7f3d0);transition:width .3s}
 .pyb-card.err{background:#5b1d1d}
-</style><b>${L("Python tarayıcında hazırlanıyor…", "Starting Python in your browser…")}</b><div class="pyb-bar"><i></i></div><small>${L("İlk açılışta bir kez indirilir (~15 MB), sonra çevrimdışı da çalışır. Verilerin bu cihazdan çıkmaz.", "Downloaded once (~15 MB), then it also works offline. Your data never leaves this device.")}</small>`;
+</style><b>${L("Python tarayıcında hazırlanıyor…", "Starting Python in your browser…")}</b><div class="pyb-bar"><i></i></div><small>${L("İlk açılışta bir kez indirilir (~17 MB), sonra çevrimdışı da çalışır. Verilerin bu cihazdan çıkmaz.", "Downloaded once (~15 MB), then it also works offline. Your data never leaves this device.")}</small>`;
   const mount = () => document.body.append(card);
   document.body ? mount() : document.addEventListener("DOMContentLoaded", mount);
   const bar = card.querySelector("i");
@@ -70,39 +70,28 @@ background:rgba(20,22,30,.92);color:#f4f1ea;font:500 13px/1.4 system-ui,-apple-s
     return res;
   };
 
-  // ---- soft sounds ----
-  let ctx = null;
-  let on = true;
-  try { on = localStorage.getItem("pyb.sound") !== "0"; } catch {}
-  function tone(f, t0, dur, vol, type = "sine") {
-    const o = ctx.createOscillator(), g = ctx.createGain();
-    o.type = type; o.frequency.value = f;
-    g.gain.setValueAtTime(0.0001, ctx.currentTime + t0);
-    g.gain.exponentialRampToValueAtTime(vol, ctx.currentTime + t0 + 0.01);
-    g.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + t0 + dur);
-    o.connect(g).connect(ctx.destination);
-    o.start(ctx.currentTime + t0); o.stop(ctx.currentTime + t0 + dur + 0.02);
-  }
-  let last = 0;
+  // ---- sounds (AppKit.SoundKit: synthesized mallet/bell palette) ----
+  // "ambient" session: mixes with other audio and follows the phone's silent switch.
+  const AK = window.AppKit;
+  const kit = AK ? AK.uiSounds(new AK.SoundKit({ storageKey: "pyb.sound", volume: 0.7, reverb: 0.14, session: "ambient" })) : null;
+  const NAMES = { ok: "success", err: "error", click: "tap", tap: "tap", upload: "upload", notify: "notify", select: "select" };
+  const VOL = { ok: 0.42, err: 0.45, click: 0.3, tap: 0.3, upload: 0.35, notify: 0.4, select: 0.3 };
   function sound(kind) {
-    if (!on) return;
-    const now = performance.now();
-    if (now - last < 120) return;
-    last = now;
-    try {
-      ctx ??= new AudioContext();
-      if (ctx.state !== "running") ctx.resume();
-      if (kind === "ok") { tone(880, 0, 0.25, 0.035); tone(1320, 0.07, 0.3, 0.025); }
-      else if (kind === "err") { tone(330, 0, 0.22, 0.04, "triangle"); tone(262, 0.1, 0.3, 0.035, "triangle"); }
-      else if (kind === "click") tone(1000, 0, 0.05, 0.02);
-    } catch {}
+    if (!kit || !NAMES[kind]) return;
+    kit.play(NAMES[kind], { vol: VOL[kind] }, 120);
   }
   window.pybridge = {
     get ready() { return isReady; },
     sound,
-    get soundOn() { return on; },
-    setSound(v) { on = v; try { localStorage.setItem("pyb.sound", v ? "1" : "0"); } catch {} },
+    get soundOn() { return kit ? kit.enabled : false; },
+    setSound(v) { kit && kit.setEnabled(v); },
   };
+  // Install hint (Android dialog / iPhone "Add to Home Screen" steps), persistent storage,
+  // and a status bar colour that follows the app's light/dark theme.
+  if (AK) {
+    AK.installHint({ app: S.dataset.app || document.title, accent: S.dataset.accent || "#2563eb", lang: () => (tr ? "tr" : "en") });
+    AK.syncThemeColor();
+  }
 
   // A sound on/off button placed next to an existing header button of the app.
   function soundButton() {
@@ -113,11 +102,12 @@ background:rgba(20,22,30,.92);color:#f4f1ea;font:500 13px/1.4 system-ui,-apple-s
     btn.className = anchor.className;
     btn.title = L("Sesler", "Sounds");
     const paint = () => {
+      const on = window.pybridge.soundOn;
       btn.setAttribute("aria-pressed", String(on));
       btn.setAttribute("aria-label", on ? L("Sesleri kapat", "Mute sounds") : L("Sesleri aç", "Unmute sounds"));
       btn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9v6h4l5 4V5L8 9Z"/>${on ? '<path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/>' : '<path d="M16 9l6 6M22 9l-6 6"/>'}</svg>`;
     };
-    btn.onclick = () => { window.pybridge.setSound(!on); paint(); sound("click"); };
+    btn.onclick = () => { window.pybridge.setSound(!window.pybridge.soundOn); paint(); sound("click"); };
     paint();
     anchor.before(btn);
   }
